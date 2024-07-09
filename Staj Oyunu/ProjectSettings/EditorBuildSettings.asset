@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/DikeyScene/Scene0.unity
+    guid: bb723307971ff444c844f5d59874ade6
+  - enabled: 1
+    path: Assets/Scenes/DikeyScene/Scene1.unity
+    guid: 2d336903e183086408378aac1b8c8eb9
   m_configObjects: {}
