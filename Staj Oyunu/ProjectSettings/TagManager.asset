@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - adimSon
+  - "adim\u0130lk"
+  - orta
+  - ortaiki
   layers:
   - Default
   - TransparentFX
