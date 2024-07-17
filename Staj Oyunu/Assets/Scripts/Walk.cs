@@ -37,24 +37,24 @@ namespace DS
                 adim += 1;
                 anim.SetBool("walk",true);
             }
-            if (collision.gameObject.tag == "orta")
-            {
-                adim += 1;
-                anim.SetBool("walk", false);
-                anim.SetBool("idle", true);
-            }
-            if (collision.gameObject.tag == "ortaiki")
-            {
-                adim += 1;
-                anim.SetBool("walk", false);
-                anim.SetBool("idle", true);
-            }
-            if (collision.gameObject.tag == "adimSon")
-            {
-                adim += 1;
-                anim.SetBool("walk", false);
-                anim.SetBool("idle", true);
-            }
+            //if (collision.gameObject.tag == "orta")
+            //{
+            //    adim += 1;
+            //    anim.SetBool("walk", false);
+            //    anim.SetBool("idle", true);
+            //}
+            //if (collision.gameObject.tag == "ortaiki")
+            //{
+            //    adim += 1;
+            //    anim.SetBool("walk", false);
+            //    anim.SetBool("idle", true);
+            //}
+            //if (collision.gameObject.tag == "adimSon")
+            //{
+            //    adim += 1;
+            //    anim.SetBool("walk", false);
+            //    anim.SetBool("idle", true);
+            //}
         }
     }
 }
