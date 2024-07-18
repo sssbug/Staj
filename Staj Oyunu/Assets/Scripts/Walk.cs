@@ -35,7 +35,7 @@ namespace DS
             if (collision.gameObject.tag == "adimİlk")
             {
                 adim += 1;
-                anim.SetBool("walk",true);
+                
             }
             //if (collision.gameObject.tag == "orta")
             //{
