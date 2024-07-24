@@ -17,15 +17,16 @@ namespace DS
 
         public CharacterSpawn(Vector2 _checkPoint, int _spawnCount)
         {
-            
-            _checkPoint = checkPoint;
-            _spawnCount = SpawnCount;
+
+            checkPoint = _checkPoint;
+            SpawnCount = _spawnCount;
             
 
-            _myChar = Instantiate(gameManager.characters[_spawnCount]);
+            _myChar = Instantiate(gameManager.charactersPrefab[_spawnCount]);
             _myChar.gameObject.transform.parent = GameObject.Find("Canvas").gameObject.transform;
             _myChar.transform.position = _checkPoint;
             _myChar.transform.rotation = Quaternion.identity;
+            gameManager.characters.Add(_myChar);
         }
 
         //isActive

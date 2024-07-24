@@ -5406,7 +5406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddbc97ff81326d48af657cac8840d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characters:
+  charactersPrefab:
   - {fileID: 2286265646766524907, guid: 945e317d130032748800bf17093888f6, type: 3}
   - {fileID: 1547170222794598554, guid: 2ec8a927cbb112b4aadbc5b5d7b3200b, type: 3}
   - {fileID: 8506341106327049874, guid: 212e24fe7579e6d468cdacba947679fa, type: 3}
@@ -5489,6 +5489,7 @@ MonoBehaviour:
   - {fileID: 2552260730612481173, guid: d78ea3cc8d451ee4889d96a501c3d1f3, type: 3}
   - {fileID: 7370273853227408338, guid: fe4c93cc8cae7d146acfe88ecc98679a, type: 3}
   - {fileID: 2056481047698669583, guid: d644e394fe10b7f459667562dfb47530, type: 3}
+  characters: []
 --- !u!1 &800495936
 GameObject:
   m_ObjectHideFlags: 0
@@ -7448,6 +7449,7 @@ RectTransform:
   - {fileID: 2076305983}
   - {fileID: 468409841}
   - {fileID: 778975366}
+  - {fileID: 1983385826}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8739,7 +8741,6 @@ RectTransform:
   - {fileID: 99606}
   - {fileID: 2001104734}
   - {fileID: 421525806}
-  - {fileID: 1983385826}
   - {fileID: 114427725}
   - {fileID: 1719073534}
   - {fileID: 665824438}
@@ -13396,17 +13397,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983385825}
-  m_LocalRotation: {x: -0, y: -0, z: 0.010057778, w: 0.9999494}
+  m_LocalRotation: {x: -0, y: -0, z: 0.010057779, w: 0.99994946}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1225101064}
+  m_Father: {fileID: 1064257443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.153}
   m_AnchorMin: {x: 0.38956413, y: 0.68946975}
   m_AnchorMax: {x: 0.48970944, y: 0.75346965}
-  m_AnchoredPosition: {x: -6.0429688, y: -7.5}
-  m_SizeDelta: {x: -17, y: -21}
+  m_AnchoredPosition: {x: 21.211304, y: -484.75244}
+  m_SizeDelta: {x: -17, y: -62.368896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1983385827
 BoxCollider2D:
