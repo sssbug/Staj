@@ -1,0 +1,3 @@
+Export ettikten sonra jsonda versiyonda 3.8 olarak değiştir
+
+unityye attıktan sonra alpha transpanı kapat

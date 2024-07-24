@@ -1,0 +1,76 @@
+
+1.png
+size: 734,274
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2/Arm_l
+  rotate: true
+  xy: 386, 71
+  size: 80, 346
+  orig: 80, 346
+  offset: 0, 0
+  index: -1
+2/Arm_r
+  rotate: true
+  xy: 386, 71
+  size: 80, 346
+  orig: 80, 346
+  offset: 0, 0
+  index: -1
+2/Body
+  rotate: true
+  xy: 2, 2
+  size: 149, 382
+  orig: 149, 382
+  offset: 0, 0
+  index: -1
+2/Hand_l
+  rotate: true
+  xy: 528, 16
+  size: 53, 91
+  orig: 53, 91
+  offset: 0, 0
+  index: -1
+2/Hand_r
+  rotate: true
+  xy: 528, 16
+  size: 53, 91
+  orig: 53, 91
+  offset: 0, 0
+  index: -1
+2/Head
+  rotate: true
+  xy: 567, 161
+  size: 111, 164
+  orig: 119, 186
+  offset: 4, 11
+  index: -1
+2/Leg_l
+  rotate: true
+  xy: 2, 153
+  size: 119, 563
+  orig: 119, 563
+  offset: 0, 0
+  index: -1
+2/Leg_r
+  rotate: true
+  xy: 2, 153
+  size: 119, 563
+  orig: 119, 563
+  offset: 0, 0
+  index: -1
+2/Shoes_l
+  rotate: false
+  xy: 386, 15
+  size: 140, 54
+  orig: 140, 54
+  offset: 0, 0
+  index: -1
+2/Shoes_r
+  rotate: false
+  xy: 386, 15
+  size: 140, 54
+  orig: 140, 54
+  offset: 0, 0
+  index: -1
