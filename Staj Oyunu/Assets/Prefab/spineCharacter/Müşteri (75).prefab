@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 1063783699189619716}
   - component: {fileID: 7696568150567235285}
   - component: {fileID: 629391490562661817}
+  - component: {fileID: 7709263492806214824}
   m_Layer: 5
   m_Name: "M\xFC\u015Fteri (75)"
   m_TagString: Untagged
@@ -158,7 +159,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -2.4265137, y: -62.150604}
@@ -200,4 +201,16 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
+--- !u!114 &7709263492806214824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8967545273172727509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42fe11e1da69b1c4d98fce7145530a1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
