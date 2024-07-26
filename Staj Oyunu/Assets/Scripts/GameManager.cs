@@ -16,8 +16,8 @@ namespace DS
         public List<GameObject> charactersBack = new List<GameObject>();
         private void Start()
         {
-           
-            Invoke("spawner",2);
+
+            InvokeRepeating("spawner",1,3);
         }
         void spawner()
         {
