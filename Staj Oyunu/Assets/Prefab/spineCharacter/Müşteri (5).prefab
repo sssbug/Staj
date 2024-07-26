@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 5805630441473324004}
   - component: {fileID: 9204249108614068940}
   - component: {fileID: 2529136003405067247}
+  - component: {fileID: -1430022504962256439}
   m_Layer: 5
   m_Name: "M\xFC\u015Fteri (5)"
   m_TagString: Untagged
@@ -200,4 +201,16 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
+--- !u!114 &-1430022504962256439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786643562324211843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42fe11e1da69b1c4d98fce7145530a1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,6 +1,6 @@
 
 skeleton.png
-size: 550,354
+size: 550,364
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
@@ -35,14 +35,14 @@ repeat: none
 16/Leg_l
   rotate: true
   xy: 2, 223
-  size: 129, 546
+  size: 139, 546
   orig: 139, 546
-  offset: 5, 0
+  offset: 0, 0
   index: -1
 16/Leg_r
   rotate: true
   xy: 2, 223
-  size: 129, 546
+  size: 139, 546
   orig: 139, 546
-  offset: 5, 0
+  offset: 0, 0
   index: -1

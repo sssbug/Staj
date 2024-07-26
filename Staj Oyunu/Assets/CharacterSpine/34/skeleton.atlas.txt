@@ -7,27 +7,27 @@ repeat: none
 35/Arm_l
   rotate: true
   xy: 2, 2
-  size: 72, 361
+  size: 72, 365
   orig: 72, 365
-  offset: 0, 2
+  offset: 0, 0
   index: -1
 35/Arm_r
   rotate: true
   xy: 2, 2
-  size: 72, 361
+  size: 72, 365
   orig: 72, 365
-  offset: 0, 2
+  offset: 0, 0
   index: -1
 35/Body
   rotate: true
   xy: 2, 76
-  size: 133, 312
+  size: 133, 316
   orig: 133, 316
-  offset: 0, 2
+  offset: 0, 0
   index: -1
 35/Head
   rotate: true
-  xy: 316, 83
+  xy: 320, 83
   size: 126, 207
   orig: 126, 207
   offset: 0, 0

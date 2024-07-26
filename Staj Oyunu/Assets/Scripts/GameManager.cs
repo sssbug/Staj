@@ -12,7 +12,7 @@ namespace DS
 
         public List<GameObject> charactersPrefab = new List<GameObject>();
         public List<GameObject> characters = new List<GameObject>();
-
+        public List<GameObject> charactersBack = new List<GameObject>();
         private void Start()
         {
            
@@ -20,7 +20,7 @@ namespace DS
         }
         void spawner()
         {
-            CharacterSpawn walk = new CharacterSpawn(new Vector2(-110.886909f, 1271.63879f), 3);
+            CharacterSpawn walk = new CharacterSpawn(new Vector2(-110.886909f, 1271.63879f), 1);
         }
     }
 }

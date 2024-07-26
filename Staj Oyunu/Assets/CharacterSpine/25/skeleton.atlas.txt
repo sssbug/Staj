@@ -21,13 +21,13 @@ repeat: none
 5/Body
   rotate: true
   xy: 2, 80
-  size: 141, 311
+  size: 141, 361
   orig: 141, 361
-  offset: 0, 25
+  offset: 0, 0
   index: -1
 5/Head
-  rotate: true
-  xy: 315, 100
+  rotate: false
+  xy: 365, 76
   size: 121, 145
   orig: 121, 145
   offset: 0, 0
