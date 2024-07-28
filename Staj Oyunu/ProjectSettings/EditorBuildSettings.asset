@@ -14,4 +14,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DikeyScene/Scene1.unity
     guid: 2d336903e183086408378aac1b8c8eb9
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: a2fb7266b80d6cb4ea6e6ab6d65ce66e, type: 2}

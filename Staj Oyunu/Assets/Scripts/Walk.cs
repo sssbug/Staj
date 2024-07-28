@@ -306,7 +306,16 @@ namespace DS
                 {
                     _skeletonGraphic.startingAnimation = "İdle";
                     SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(_skeletonGraphic);
-                    _myChar = Instantiate(gameManager.charactersBackPrefab[_characterCount]);
+
+
+                    for (int i = 0; i < gameManager.charactersBackPrefab.Count; i++)
+                    {
+                        if (gameManager.charactersPrefab[_characterCount].gameObject.tag == gameManager.charactersBackPrefab[i].gameObject.tag)
+                        {
+                            _myChar = Instantiate(gameManager.charactersBackPrefab[_characterCount]);
+                        }
+                    }
+
                     _myChar.gameObject.transform.parent = GameObject.Find("Canvas").gameObject.transform;
                     _myChar.transform.position = this.gameObject.transform.position;
                     _myChar.transform.rotation = Quaternion.identity;
