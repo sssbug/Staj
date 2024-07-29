@@ -4,42 +4,42 @@ size: 550,376
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-8/Arm_l
+6/Arm_l
   rotate: true
   xy: 2, 2
   size: 76, 361
   orig: 76, 361
   offset: 0, 0
   index: -1
-8/Arm_r
+6/Arm_r
   rotate: true
   xy: 2, 2
   size: 76, 361
   orig: 76, 361
   offset: 0, 0
   index: -1
-8/Body
+6/Body
   rotate: true
   xy: 2, 80
   size: 141, 311
   orig: 141, 311
   offset: 0, 0
   index: -1
-8/Head
+6/Head
   rotate: true
   xy: 315, 100
   size: 121, 171
   orig: 121, 171
   offset: 0, 0
   index: -1
-8/Leg_l
+6/Leg_l
   rotate: true
   xy: 2, 223
   size: 151, 546
   orig: 151, 546
   offset: 0, 0
   index: -1
-8/Leg_r
+6/Leg_r
   rotate: true
   xy: 2, 223
   size: 151, 546
