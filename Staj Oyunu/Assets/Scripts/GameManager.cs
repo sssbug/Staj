@@ -17,7 +17,7 @@ namespace DS
         private void Start()
         {
 
-            //InvokeRepeating("spawner",1,3);
+            InvokeRepeating("spawner", 1, 3);
         }
         void spawner()
         {

@@ -308,13 +308,9 @@ namespace DS
                     SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(_skeletonGraphic);
 
 
-                    for (int i = 0; i < gameManager.charactersBackPrefab.Count; i++)
-                    {
-                        if (gameManager.charactersPrefab[_characterCount].gameObject.tag == gameManager.charactersBackPrefab[i].gameObject.tag)
-                        {
-                            _myChar = Instantiate(gameManager.charactersBackPrefab[_characterCount]);
-                        }
-                    }
+                    
+                    _myChar = Instantiate(gameManager.charactersBackPrefab[int.Parse(gameObject.tag) - 1]);
+                    
 
                     _myChar.gameObject.transform.parent = GameObject.Find("Canvas").gameObject.transform;
                     _myChar.transform.position = this.gameObject.transform.position;
@@ -326,7 +322,7 @@ namespace DS
                 if (gameManager.charactersBack.Contains(this.gameObject))
                 {
                     pointCount = +1;
-                    Debug.Log(pointCount);
+                    
                 }
 
                 

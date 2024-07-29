@@ -29,8 +29,6 @@ namespace DS
             gameManager.characters.Add(_myChar);
         }
 
-        //isActive
-        //spawnlar ve adımlar listesi olusştur ve spwanlanıp ilerleyebileceği seçenekleri olucak
 
     }
 }
