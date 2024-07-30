@@ -11,7 +11,7 @@ namespace DS
     public class Objects : MonoBehaviour, IPointerClickHandler
     {
         private NPCConversation _myConvarsation;
-
+        GameObject lift;
 
 
         private void Start()
@@ -20,6 +20,12 @@ namespace DS
             {
                 _myConvarsation = GetComponent<NPCConversation>();
             }
+            if (lift.activeInHierarchy)
+            {
+                lift = GameObject.Find("LiftButton");
+                lift.SetActive(false);
+            }
+
         }
 
         public void OnPointerClick(PointerEventData eventData)
@@ -38,7 +44,8 @@ namespace DS
             {
                 Debug.Log(222);
             }
-            
+          
+
         }
     }
 }
