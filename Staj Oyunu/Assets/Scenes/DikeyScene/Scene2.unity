@@ -7252,6 +7252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   liftButton: {fileID: 1412531008}
+  _startPos: {x: 0, y: 0, z: 0}
+  _endPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1771321624
 GameObject:
   m_ObjectHideFlags: 0
@@ -8784,7 +8786,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!1 &2060132949
 GameObject:
   m_ObjectHideFlags: 0

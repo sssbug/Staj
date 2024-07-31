@@ -7,6 +7,7 @@ namespace DS
     public class Swipex : MonoBehaviour,  IDragHandler, IEndDragHandler
     {
         private Vector3 panelLocation;
+        GameManager2 gameManager2;
         public float percentThreshold = 0.2f;
         public float easing = 0.5f;
         public int totalPages = 9;
@@ -15,10 +16,19 @@ namespace DS
        
         private void Start()
         {
+            gameManager2 = GameObject.Find("GameManager").GetComponent<GameManager2>();
+            
             panelLocation = transform.position;
         }
+        private void Update()
+        {
+            if (gameManager2.isLiftOut == true)
+            {
+                panelLocation = transform.position;
+                gameManager2.isLiftOut = false;
+            }
+        }
 
-        
 
         public void OnDrag(PointerEventData eventData)
         {

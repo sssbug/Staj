@@ -7,6 +7,7 @@ namespace DS
     public class GameManager2 : MonoBehaviour
     {
         public GameObject liftButton;
-       
+
+        public bool isLiftOut;
     }
 }
