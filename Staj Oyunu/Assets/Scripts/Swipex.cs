@@ -101,7 +101,7 @@ namespace DS
             if (gameManager2.isLifter == true)
             {
                 float difference = eventData.pressPosition.x - eventData.position.x;
-                transform.position = panelLocation - new Vector3(difference, 0, 0);
+                transform.position = panelLocation - new Vector3(difference/200, 0, 0);
             }
         }
 
@@ -119,14 +119,14 @@ namespace DS
 
                         currentPage++;
                         Debug.Log(currentPage);
-                        newLocation += new Vector3(-Screen.width, 0, 0);
+                        newLocation += new Vector3(-4.65f, 0, 0);
                     }
                     else if (percentage < 0 && currentPage > 1)
                     {
 
                         currentPage--;
                         Debug.Log(currentPage);
-                        newLocation += new Vector3(Screen.width, 0, 0);
+                        newLocation += new Vector3(4.65f, 0, 0);
                     }
                     
 
