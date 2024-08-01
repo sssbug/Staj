@@ -1,5 +1,7 @@
 ﻿//using DialogueEditor;
 using DialogueEditor;
+using Spine.Unity;
+using Spine.Unity.Editor;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,17 +16,19 @@ namespace DS
         GameManager2 gameManager2;
         private GameObject bina;
         private float easing = 0.5f;
-
-        private Vector3 _endPos;
         public bool isLift = false;
-        
-        private float speed = 400;
+        private Vector3 _endPos;
+        SkeletonGraphic[] _skeletonGraphic;
+        GameObject[] sakınsilme;
+        private float speed = 600;
         private void Start()
         {
             if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
             {
                 _myConvarsation = GetComponent<NPCConversation>();
             }
+
+            sakınsilme =  GameObject.FindGameObjectsWithTag("Asansor");
             
             gameManager2 = GameObject.Find("GameManager").GetComponent<GameManager2>();
             gameManager2.liftButton.transform.position = new Vector3(100587, 100045, 0);
@@ -49,15 +53,30 @@ namespace DS
                 else
                 {
                     gameManager2.isLiftOut = true;
+                    gameManager2.isLiftOut1 = true;
+                    gameManager2.isLiftOut2 = true;
+                    gameManager2.isLiftOut3 = true;
+                    gameManager2.isLiftOut4 = true;
                     bina.transform.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                    
+                    foreach (var item in sakınsilme)
+                    {
+                        _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
+                        foreach (var items in _skeletonGraphic)
+                        {
+                            items.startingAnimation = "Open";
+                            SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(items);
+                        }
+
+                    }
+
                 }
 
                 
                 bina.transform.position = Vector3.MoveTowards(bina.transform.position, _endPos, speed * Time.deltaTime);
                 if (bina.transform.GetComponent<Rigidbody2D>().velocity == Vector2.zero)
                 {
-
+                    
+                    gameManager2.isLifter = true;
                     isLift = false;
                     Debug.Log(isLift);
                 }
@@ -81,56 +100,92 @@ namespace DS
             if (clickedObject != null && clickedObject.name == "ilkKat")
             {
                 gameManager2.liftButton.transform.position = new Vector3(100587, 100045, 0);
-                //if (_startPos == new Vector3(0, 0, 0))
-                //{
-                //    bina.transform.position = new Vector3(570, -70, 0);
-                //    _startPos = new Vector3(570, -70, 0);
-                //}
-                //else
-                //{
-                //    StartCoroutine(SmoothMove(_startPos, new Vector3(570, -70, 0), easing));
-                //    _startPos = new Vector3(570, -70, 0);
-                //}
-                _endPos = new Vector3(570, -70, 0);
                 
+                _endPos = new Vector3(570, -70, 0);
+                gameManager2.isLifter = false;
                 isLift = true;
+                foreach (var item in sakınsilme)
+                {
+                     _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
+                    foreach (var items in _skeletonGraphic)
+                    {
+                        items.startingAnimation = "Close";
+                        SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(items);
+                    }
+                   
+                }
                 
 
             }
             if (clickedObject != null && clickedObject.name == "ikinciKat")
             {
                 gameManager2.liftButton.transform.position = new Vector3(100587, 100045, 0);
-                //if (_startPos == new Vector3(0,0,0))
-                //{
-                //    bina.transform.position = new Vector3(570, 2600, 0);
-                //    _startPos = new Vector3(570, 2600, 0);
-                //}
-                //else
-                //{
-                //    StartCoroutine(SmoothMove(_startPos, new Vector3(570, 2600, 0), easing));
-                //    _startPos = new Vector3(570, 2600, 0);
-                //}
+                gameManager2.isLifter = false;
                 _endPos = new Vector3(570, 2600, 0);
                 isLift = true;
-                
+                foreach(var item in sakınsilme)
+                {
+                    _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
+                    foreach (var items in _skeletonGraphic)
+                    {
+                        items.startingAnimation = "Close";
+                        SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(items);
+                    }
+
+                }
 
 
             }
             if (clickedObject != null && clickedObject.name == "üçüncüKat")
             {
-                Debug.Log(222);
+                gameManager2.liftButton.transform.position = new Vector3(100587, 100045, 0);
+                gameManager2.isLifter = false;
+                _endPos = new Vector3(570, 5320, 0);
+                isLift = true;
+                foreach (var item in sakınsilme)
+                {
+                    _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
+                    foreach (var items in _skeletonGraphic)
+                    {
+                        items.startingAnimation = "Close";
+                        SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(items);
+                    }
+
+                }
             }
             if (clickedObject != null && clickedObject.name == "dördüncüKat")
             {
-                Debug.Log(222);
+                gameManager2.liftButton.transform.position = new Vector3(100587, 100045, 0);
+                gameManager2.isLifter = false;
+                _endPos = new Vector3(570, 8040, 0);
+                isLift = true;
+                foreach (var item in sakınsilme)
+                {
+                    _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
+                    foreach (var items in _skeletonGraphic)
+                    {
+                        items.startingAnimation = "Close";
+                        SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(items);
+                    }
+
+                }
             }
             if (clickedObject != null && clickedObject.name == "beşinciKat")
             {
-                Debug.Log(222);
-            }
-            if (clickedObject != null && clickedObject.name == "altıncıKat")
-            {
-                Debug.Log(222);
+                gameManager2.liftButton.transform.position = new Vector3(100587, 100045, 0);
+                gameManager2.isLifter = false;
+                _endPos = new Vector3(570, 10740, 0);
+                isLift = true;
+                foreach (var item in sakınsilme)
+                {
+                    _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
+                    foreach (var items in _skeletonGraphic)
+                    {
+                        items.startingAnimation = "Close";
+                        SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(items);
+                    }
+
+                }
             }
             if (clickedObject != null && clickedObject.name == "ÇıkışKat")
             {

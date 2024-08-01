@@ -8,6 +8,11 @@ namespace DS
     {
         public GameObject liftButton;
 
-        public bool isLiftOut;
+        public bool isLiftOut = false;
+        public bool isLiftOut1 = false;
+        public bool isLiftOut2 = false;
+        public bool isLiftOut3 = false;
+        public bool isLiftOut4 = false;
+        public bool isLifter = true;
     }
 }

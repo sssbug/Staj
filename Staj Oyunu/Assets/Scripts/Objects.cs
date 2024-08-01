@@ -20,11 +20,7 @@ namespace DS
             {
                 _myConvarsation = GetComponent<NPCConversation>();
             }
-            if (lift.activeInHierarchy)
-            {
-                lift = GameObject.Find("LiftButton");
-                lift.SetActive(false);
-            }
+            
 
         }
 

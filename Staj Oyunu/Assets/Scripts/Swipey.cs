@@ -4,56 +4,67 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 namespace DS
 {
-    public class Swipey : MonoBehaviour,  IDragHandler, IEndDragHandler
+    public class Swipey : MonoBehaviour, IDragHandler, IEndDragHandler
     {
         private Vector3 panelLocation;
+        GameManager2 gameManager2;
         public float percentThreshold = 0.2f;
         public float easing = 0.5f;
-        
-        private int currentPage = 1;
+        public int totalPages = 9;
+        public int currentPage = 5;
 
-        public Swipex ilk;
-        public Swipex ikinci;
-        
-        
+
         private void Start()
         {
+            gameManager2 = GameObject.Find("GameManager").GetComponent<GameManager2>();
+
             panelLocation = transform.position;
         }
+        private void Update()
+        {
+            if (gameManager2.isLiftOut == true)
+            {
 
-        
+                panelLocation = this.transform.position;
+                Debug.Log(panelLocation);
+
+
+                gameManager2.isLiftOut = false;
+            }
+        }
+
 
         public void OnDrag(PointerEventData eventData)
         {
-            if (ilk.currentPage == 5 && ikinci.currentPage == 5)
+            if (gameManager2.isLifter == true)
             {
                 float difference = eventData.pressPosition.x - eventData.position.x;
                 transform.position = panelLocation - new Vector3(difference, 0, 0);
             }
-            
         }
 
         public void OnEndDrag(PointerEventData eventData)
         {
-            if (ilk.currentPage == 5 && ikinci.currentPage == 5)
+            if (gameManager2.isLifter == true)
             {
-                float percentage = (eventData.pressPosition.y - eventData.position.y) / Screen.width;
+                float percentage = (eventData.pressPosition.x - eventData.position.x) / Screen.width;
+
                 if (Mathf.Abs(percentage) >= percentThreshold)
                 {
                     Vector3 newLocation = panelLocation;
-                    if (percentage > 0 && currentPage < 6)
+                    if (percentage > 0 && currentPage < totalPages)
                     {
 
                         currentPage++;
                         Debug.Log(currentPage);
-                        newLocation += new Vector3(0, -Screen.width, 0);
+                        newLocation += new Vector3(-Screen.width, 0, 0);
                     }
                     else if (percentage < 0 && currentPage > 1)
                     {
 
                         currentPage--;
                         Debug.Log(currentPage);
-                        newLocation += new Vector3(0, Screen.width, 0);
+                        newLocation += new Vector3(Screen.width, 0, 0);
                     }
 
                     StartCoroutine(SmoothMove(transform.position, newLocation, easing));
@@ -64,7 +75,10 @@ namespace DS
                     StartCoroutine(SmoothMove(transform.position, panelLocation, easing));
                 }
             }
-            
+
+
+
+
         }
         IEnumerator SmoothMove(Vector3 startPos, Vector3 endPos, float seconds)
         {

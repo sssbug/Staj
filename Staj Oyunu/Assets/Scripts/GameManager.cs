@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,6 +26,12 @@ namespace DS
         void spawner()
         {
             CharacterSpawn walk = new CharacterSpawn(new Vector2(-110.886909f, 1271.63879f), 1);
+        }
+
+
+        public void ilkkonusma() 
+        {
+            Debug.Log("oldu");
         }
     }
 }

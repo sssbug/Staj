@@ -1,0 +1,20 @@
+
+skeleton.png
+size: 933,748
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Kapı/1
+  rotate: false
+  xy: 2, 2
+  size: 529, 744
+  orig: 529, 744
+  offset: 0, 0
+  index: -1
+Kapı302/2
+  rotate: false
+  xy: 533, 57
+  size: 398, 689
+  orig: 398, 689
+  offset: 0, 0
+  index: -1
