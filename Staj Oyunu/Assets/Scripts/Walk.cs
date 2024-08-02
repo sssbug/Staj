@@ -11,9 +11,9 @@ namespace DS
         GameManager gameManager = new GameManager();
         private int _characterCount;
         private int _characterBackCount;
-        private Vector2[] points = { new Vector2(440f, 1317.7345f), new Vector2(457.341125f, 1934.89075f) };
+        private Vector2[] points = { new Vector3(-0.4f, 0f, 0), new Vector3(-0.6f, 2.3f, 0) }; 
         private int pointCount = 0;
-        private float speed = 100f;
+        private float speed = 0.5f;
         int counter = 0;
         int counterTwo = 0;
 
@@ -62,7 +62,7 @@ namespace DS
                     {
 
                         direction.Normalize();
-                        GetComponent<Rigidbody2D>().velocity = Vector2.right;
+                        GetComponent<Rigidbody2D>().velocity = new Vector2(0.001f,0);
 
 
                     }
@@ -80,17 +80,17 @@ namespace DS
                     }
                     else
                     {
-                        if (gameManager.charactersBack.Count == 5)
+                        if (gameManager.charactersBack.Count == 6)
                         {
-                            transform.position = Vector3.MoveTowards(transform.position,new Vector3(263, 1300, 0), speed * Time.deltaTime);
-                            Vector2 direc = new Vector2(263, 1300) - GetComponent<Rigidbody2D>().position;
+                            transform.position = Vector3.MoveTowards(transform.position,new Vector3(-1.3f, 0, 0), speed * Time.deltaTime);
+                            Vector2 direc = new Vector2(-1.3f, 0) - GetComponent<Rigidbody2D>().position;
 
 
                             if (direc.magnitude > 0.1f)
                             {
 
                                 direc.Normalize();
-                                GetComponent<Rigidbody2D>().velocity = Vector2.right;
+                                GetComponent<Rigidbody2D>().velocity = new Vector2(0.001f, 0);
 
 
                             }
@@ -149,17 +149,17 @@ namespace DS
                     }
                     else
                     {
-                        transform.position = Vector3.MoveTowards(transform.position, gameManager.characters[_characterCount - 1].transform.position + new Vector3(-200, 0, 0), speed * Time.deltaTime);
+                        transform.position = Vector3.MoveTowards(transform.position, gameManager.characters[_characterCount - 1].transform.position + new Vector3(-0.6f, 0, 0), speed * Time.deltaTime);
                         if (gameManager.characters[_characterCount - 1].GetComponent<Rigidbody2D>().velocity == Vector2.zero)
                         {
-                            Vector2 direction = new Vector2(gameManager.characters[_characterCount - 1].transform.position.x + -200,this.gameObject.transform.position.y ) - GetComponent<Rigidbody2D>().position;
+                            Vector2 direction = new Vector2(gameManager.characters[_characterCount - 1].transform.position.x + -0.6f,this.gameObject.transform.position.y ) - GetComponent<Rigidbody2D>().position;
 
 
                             if (direction.magnitude > 0.1f)
                             {
 
                                 direction.Normalize();
-                                GetComponent<Rigidbody2D>().velocity = Vector2.right;
+                                GetComponent<Rigidbody2D>().velocity = new Vector2(0.001f, 0);
 
 
                             }
@@ -205,25 +205,22 @@ namespace DS
 
                 if (gameManager.charactersBack[0] == this.gameObject)
                 {
-                    Vector2 direction = points[pointCount] - GetComponent<Rigidbody2D>().position;
+                    Vector2 direction = points[1] - GetComponent<Rigidbody2D>().position;
 
 
                     if (direction.magnitude > 0.1f)
                     {
 
                         direction.Normalize();
-                        GetComponent<Rigidbody2D>().velocity = Vector2.right;
 
+                        if (counterTwo == 1)
+                        {
+                            _skeletonGraphic.freeze = false;
+                            counterTwo = 0;
+                        }
 
                     }
                     else
-                    {
-
-                        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-
-                    }
-                    transform.position = Vector3.MoveTowards(transform.position, points[pointCount], speed * Time.deltaTime);
-                    if (gameManager.charactersBack[0].GetComponent<Rigidbody2D>().velocity == Vector2.zero)
                     {
 
                         if (counterTwo == 0)
@@ -231,15 +228,10 @@ namespace DS
                             _skeletonGraphic.freeze = true;
                             counterTwo = 1;
                         }
+
                     }
-                    else
-                    {
-                        if (counterTwo == 1)
-                        {
-                            _skeletonGraphic.freeze = false;
-                            counterTwo = 0;
-                        }
-                    }
+                    transform.position = Vector3.MoveTowards(transform.position, points[1], speed * Time.deltaTime);
+                   
                 }
                 else
                 {
@@ -257,21 +249,21 @@ namespace DS
 
 
 
-                        transform.position = Vector3.MoveTowards(transform.position, points[pointCount], speed * Time.deltaTime);
+                        transform.position = Vector3.MoveTowards(transform.position, points[1], speed * Time.deltaTime);
                     }
                     else
                     {
-                        transform.position = Vector3.MoveTowards(transform.position, gameManager.charactersBack[_characterBackCount - 1].transform.position + new Vector3(0, -150, 0), speed * Time.deltaTime);
+                        transform.position = Vector3.MoveTowards(transform.position, gameManager.charactersBack[_characterBackCount - 1].transform.position + new Vector3(0, -0.4f, 0), speed * Time.deltaTime);
                         if (gameManager.charactersBack[_characterBackCount - 1].GetComponent<Rigidbody2D>().velocity == Vector2.zero)
                         {
-                            Vector2 direction = new Vector2(this.gameObject.transform.position.x, gameManager.charactersBack[_characterBackCount - 1].transform.position.y + -150) - GetComponent<Rigidbody2D>().position;
+                            Vector2 direction = new Vector2(this.gameObject.transform.position.x, gameManager.charactersBack[_characterBackCount - 1].transform.position.y + -0.4f) - GetComponent<Rigidbody2D>().position;
 
 
                             if (direction.magnitude > 0.1f)
                             {
 
                                 direction.Normalize();
-                                GetComponent<Rigidbody2D>().velocity = Vector2.right;
+                                
 
 
                             }
@@ -282,7 +274,7 @@ namespace DS
                                     _skeletonGraphic.freeze = true;
                                     counter = 1;
                                 }
-                                GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                                
 
                             }
                            

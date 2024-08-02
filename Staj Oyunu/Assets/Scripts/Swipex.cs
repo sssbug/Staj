@@ -39,7 +39,8 @@ namespace DS
 
                     gameManager2.isLiftOut = false;
                 }
-            }if (gameObject.name == "ikinciKat")
+            }
+            if (gameObject.name == "ikinciKat")
             {
 
 
@@ -52,7 +53,8 @@ namespace DS
 
                     gameManager2.isLiftOut1 = false;
                 }
-            }if (gameObject.name == "üçüncüKat")
+            }
+            if (gameObject.name == "üçüncüKat")
             {
 
 
@@ -65,7 +67,8 @@ namespace DS
 
                     gameManager2.isLiftOut2 = false;
                 }
-            }if (gameObject.name == "DördüncüKat")
+            }
+            if (gameObject.name == "DördüncüKat")
             {
 
 
@@ -104,7 +107,7 @@ namespace DS
                 transform.position = panelLocation - new Vector3(difference/200, 0, 0);
             }
         }
-
+        
         public void OnEndDrag(PointerEventData eventData)
         {
             if (gameManager2.isLifter == true)

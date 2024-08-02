@@ -25,7 +25,7 @@ namespace DS
         }
         void spawner()
         {
-            CharacterSpawn walk = new CharacterSpawn(new Vector2(-110.886909f, 1271.63879f), 1);
+            CharacterSpawn walk = new CharacterSpawn(new Vector3(-2.8f, 0, 0), 1);
         }
 
 

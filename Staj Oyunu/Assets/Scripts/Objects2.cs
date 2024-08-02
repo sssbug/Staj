@@ -20,7 +20,7 @@ namespace DS
         private Vector3 _endPos;
         SkeletonGraphic[] _skeletonGraphic;
         GameObject[] sakınsilme;
-        private float speed = 30;
+        private float speed = 1;
         private void Start()
         {
             if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
@@ -72,7 +72,7 @@ namespace DS
                 }
 
                 
-                bina.transform.position = Vector3.MoveTowards(bina.transform.position, _endPos, speed * Time.deltaTime);
+                bina.transform.position = Vector3.Lerp(bina.transform.position, _endPos, speed * Time.deltaTime);
 
 
                 if (bina.transform.GetComponent<Rigidbody2D>().velocity == Vector2.zero)
