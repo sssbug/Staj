@@ -11,7 +11,7 @@ namespace DS
     public class Objects : MonoBehaviour, IPointerClickHandler
     {
         private NPCConversation _myConvarsation;
-        GameObject lift;
+        GameManager gameManager;
 
 
         private void Start()
@@ -20,7 +20,7 @@ namespace DS
             {
                 _myConvarsation = GetComponent<NPCConversation>();
             }
-            
+            gameManager = GameObject.Find("GameManager").transform.GetComponent<GameManager>();
 
         }
 
@@ -33,8 +33,17 @@ namespace DS
 
             if (clickedObject != null && clickedObject.tag == "1")
             {
-                ConversationManager.Instance.StartConversation(_myConvarsation);
-                //Inventory halı = new Inventory(clickedObject.GetComponent<Image>().sprite, "hali");
+
+                for (int i = 0; i < gameManager.inventoryItems.Count; i++)
+                {
+                    if (gameManager.inventoryItems[i].name == clickedObject.name)
+                    {
+                        Inventory halı = new Inventory(clickedObject.GetComponent<Image>().sprite, gameManager.inventoryItems[i]);
+                    }
+                }
+                //ConversationManager.Instance.StartConversation(_myConvarsation);
+                
+                
             }
             if (clickedObject != null && clickedObject.name == "hali(Clone)")
             {

@@ -11,12 +11,14 @@ namespace DS
     {
         private Sprite _objectImage;
         private GameObject _myObject;
-        private string _name;
-        public Inventory(Sprite objectImage, string name)
+        
+        private GameObject _prefab;
+        
+        public Inventory(Sprite objectImage, GameObject prefab)
         {
             _objectImage = objectImage;
-            _name = name;
-
+            
+            _prefab = prefab;
             Spawner();
             
             
@@ -24,15 +26,10 @@ namespace DS
         void Spawner()
         {
 
-            GameObject theObject = new GameObject(_name);
-            theObject.AddComponent<CanvasRenderer>();
-            theObject.AddComponent<Objects>();
-            theObject.AddComponent<Image>().sprite = _objectImage;
-
-            _myObject = Instantiate(theObject);
-
+            _myObject = Instantiate(_prefab);
+            _myObject.transform.rotation = Quaternion.identity;
             _myObject.gameObject.transform.parent = GameObject.Find("SlotBox").gameObject.transform;
-            
+
         }
     }
 }

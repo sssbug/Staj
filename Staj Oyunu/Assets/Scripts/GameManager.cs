@@ -15,9 +15,10 @@ namespace DS
         public List<GameObject> charactersBackPrefab = new List<GameObject>();
         public List<GameObject> charactersBack = new List<GameObject>();
 
+        public List<GameObject> inventoryItems = new List<GameObject>();
 
 
-     
+
         private void Start()
         {
 
