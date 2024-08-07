@@ -1,4 +1,5 @@
-﻿using Spine.Unity;
+﻿using DialogueEditor;
+using Spine.Unity;
 using Spine.Unity.Editor;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ namespace DS
 {
     public class Walk : MonoBehaviour
     {
-        GameManager gameManager = new GameManager();
+        GameManager gameManager;
         private int _characterCount;
         private int _characterBackCount;
         private Vector2[] points = { new Vector3(-0.4f, 0f, 0), new Vector3(-0.6f, 2.3f, 0) }; 
@@ -16,7 +17,7 @@ namespace DS
         private float speed = 0.5f;
         int counter = 0;
         int counterTwo = 0;
-
+        private NPCConversation _myConvarsation;
         private GameObject _myChar;
         SkeletonGraphic _skeletonGraphic;
         private void Awake()
@@ -225,6 +226,11 @@ namespace DS
 
                         if (counterTwo == 0)
                         {
+                            if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
+                            {
+                                _myConvarsation = GetComponent<NPCConversation>();
+                            }
+                            ConversationManager.Instance.StartConversation(_myConvarsation);
                             _skeletonGraphic.freeze = true;
                             counterTwo = 1;
                         }
@@ -322,6 +328,18 @@ namespace DS
             }
 
         }
-
+        public void yokOl()
+        {
+            Destroy(gameObject);
+        }
+        public void anahtarAç()
+        {
+            gameManager.odaVeriTabanıı.gün = ConversationManager.Instance.GetInt("gün");
+            gameManager.keys.SetActive(true);
+        }
+        public void anahtarKapa()
+        {
+            gameManager.keys.SetActive(false);
+        }
     }
 }

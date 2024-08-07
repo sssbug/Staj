@@ -2,6 +2,7 @@
 using DialogueEditor;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -41,13 +42,21 @@ namespace DS
                         Inventory halı = new Inventory(clickedObject.GetComponent<Image>().sprite, gameManager.inventoryItems[i]);
                     }
                 }
-                //ConversationManager.Instance.StartConversation(_myConvarsation);
+                
                 
                 
             }
-            if (clickedObject != null && clickedObject.name == "hali(Clone)")
+            if (clickedObject != null && clickedObject.name == "Anahtar")
             {
-                Debug.Log(222);
+
+                
+                gameManager.odaVeriTabanıı.oda = int.Parse(clickedObject.gameObject.transform.tag);
+                gameManager.odaVeriTabanıı.odaData();
+                gameManager.keys.SetActive(false);
+                gameManager.cikis();
+                Destroy(gameObject);
+                
+
             }
           
 

@@ -122,6 +122,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &2930426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2930428}
+  - component: {fileID: 2930427}
+  m_Layer: 0
+  m_Name: "OdaVeriTaban\u0131"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2930427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2930426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afafd72736a81b8458e786602e50b8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2930428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2930426}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.82537884, y: 1.1830561, z: -3.197907}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &28022064
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,7 +291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.4594727, y: -1.7006378}
+  m_AnchoredPosition: {x: -1.5, y: 11.083233}
   m_SizeDelta: {x: 528.99994, y: 744.33435}
   m_Pivot: {x: 0.47803402, y: 0.548627}
 --- !u!114 &54112667
@@ -389,8 +433,8 @@ GameObject:
   m_Component:
   - component: {fileID: 103555226}
   m_Layer: 5
-  m_Name: "Kap\u0131 (8)"
-  m_TagString: Untagged
+  m_Name: 12
+  m_TagString: 12
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -411,10 +455,10 @@ RectTransform:
   - {fileID: 1206305395}
   m_Father: {fileID: 1786439757}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.009435898, y: 0}
-  m_AnchorMax: {x: 0.100324795, y: 0.5512124}
-  m_AnchoredPosition: {x: 994.80005, y: 1.2000122}
-  m_SizeDelta: {x: 36.93886, y: 1.38321}
+  m_AnchorMin: {x: 0.8722671, y: 0}
+  m_AnchorMax: {x: 0.93830144, y: 0.5512124}
+  m_AnchoredPosition: {x: 1.3000488, y: 1.2000122}
+  m_SizeDelta: {x: 65.93884, y: 1.3832092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &175816747
 GameObject:
@@ -500,9 +544,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 196639885}
+  - component: {fileID: 196639886}
   m_Layer: 5
-  m_Name: "Kap\u0131 (2)"
-  m_TagString: Untagged
+  m_Name: 6
+  m_TagString: 6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -523,11 +568,23 @@ RectTransform:
   - {fileID: 342900604}
   m_Father: {fileID: 1861618682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.009435898, y: 0}
-  m_AnchorMax: {x: 0.100324795, y: 0.5512124}
-  m_AnchoredPosition: {x: 287.5, y: 0.6930542}
-  m_SizeDelta: {x: 36.93886, y: 1.38321}
+  m_AnchorMin: {x: 0.27171233, y: 0}
+  m_AnchorMax: {x: 0.33343154, y: 0.56736267}
+  m_AnchoredPosition: {x: -1.5, y: -1.8069458}
+  m_SizeDelta: {x: 70.93886, y: -3.6167898}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &196639886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196639884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fb3af294148c14bb6b105ab2f82638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &202674142
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,8 +697,8 @@ GameObject:
   m_Component:
   - component: {fileID: 207386864}
   m_Layer: 5
-  m_Name: "Kap\u0131 (13)"
-  m_TagString: Untagged
+  m_Name: 22
+  m_TagString: 22
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -768,8 +825,8 @@ GameObject:
   m_Component:
   - component: {fileID: 256600473}
   m_Layer: 5
-  m_Name: "Kap\u0131 (11)"
-  m_TagString: Untagged
+  m_Name: 9
+  m_TagString: 9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -880,8 +937,8 @@ GameObject:
   m_Component:
   - component: {fileID: 289327906}
   m_Layer: 5
-  m_Name: "Kap\u0131 (13)"
-  m_TagString: Untagged
+  m_Name: 14
+  m_TagString: 14
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -992,8 +1049,8 @@ GameObject:
   m_Component:
   - component: {fileID: 331633566}
   m_Layer: 5
-  m_Name: "Kap\u0131 (12)"
-  m_TagString: Untagged
+  m_Name: 21
+  m_TagString: 21
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2217,9 +2274,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 513482588}
+  - component: {fileID: 513482589}
   m_Layer: 5
-  m_Name: "Kap\u0131 (4)"
-  m_TagString: Untagged
+  m_Name: 1
+  m_TagString: 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2240,11 +2298,23 @@ RectTransform:
   - {fileID: 230206031}
   m_Father: {fileID: 1861618682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.009435898, y: 0}
-  m_AnchorMax: {x: 0.100324795, y: 0.5512124}
-  m_AnchoredPosition: {x: 641.50006, y: -3.0999756}
-  m_SizeDelta: {x: 36.93886, y: 1.38321}
+  m_AnchorMin: {x: 0.5732877, y: 0}
+  m_AnchorMax: {x: 0.63756853, y: 0.5512124}
+  m_AnchoredPosition: {x: -0.99993896, y: -3.0999756}
+  m_SizeDelta: {x: 67.93884, y: 1.3832092}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &513482589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513482587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fb3af294148c14bb6b105ab2f82638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &515981981
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,8 +2325,8 @@ GameObject:
   m_Component:
   - component: {fileID: 515981982}
   m_Layer: 5
-  m_Name: "Kap\u0131 (9)"
-  m_TagString: Untagged
+  m_Name: 11
+  m_TagString: 11
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2277,10 +2347,10 @@ RectTransform:
   - {fileID: 353575306}
   m_Father: {fileID: 1786439757}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.009435898, y: 0}
-  m_AnchorMax: {x: 0.100324795, y: 0.5512124}
-  m_AnchoredPosition: {x: 876.7001, y: 1.2000122}
-  m_SizeDelta: {x: 36.93886, y: 1.38321}
+  m_AnchorMin: {x: 0.77243155, y: 0}
+  m_AnchorMax: {x: 0.83800006, y: 0.5512124}
+  m_AnchoredPosition: {x: 0.20007324, y: 1.2000122}
+  m_SizeDelta: {x: 65.93884, y: 1.3832092}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &529046071
 GameObject:
@@ -2291,9 +2361,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 529046072}
+  - component: {fileID: 529046073}
   m_Layer: 5
-  m_Name: "Kap\u0131 (1)"
-  m_TagString: Untagged
+  m_Name: 7
+  m_TagString: 7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2314,11 +2385,23 @@ RectTransform:
   - {fileID: 858562900}
   m_Father: {fileID: 1861618682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.009435898, y: 0}
-  m_AnchorMax: {x: 0.100324795, y: 0.5512124}
-  m_AnchoredPosition: {x: 166.30005, y: 0.6930542}
-  m_SizeDelta: {x: 36.938858, y: 1.3832092}
+  m_AnchorMin: {x: 0.16800001, y: 0}
+  m_AnchorMax: {x: 0.2305685, y: 0.56736267}
+  m_AnchoredPosition: {x: -2.1999512, y: -1.8069458}
+  m_SizeDelta: {x: 69.93886, y: -3.6167908}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &529046073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529046071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fb3af294148c14bb6b105ab2f82638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &530442654
 GameObject:
   m_ObjectHideFlags: 0
@@ -2328,9 +2411,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 530442655}
+  - component: {fileID: 530442656}
   m_Layer: 5
-  m_Name: "Kap\u0131 (7)"
-  m_TagString: Untagged
+  m_Name: 4
+  m_TagString: 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2351,11 +2435,23 @@ RectTransform:
   - {fileID: 1079494818}
   m_Father: {fileID: 1861618682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.009435898, y: 0}
-  m_AnchorMax: {x: 0.100324795, y: 0.5512124}
-  m_AnchoredPosition: {x: 994, y: 0.6930542}
-  m_SizeDelta: {x: 36.93886, y: 1.38321}
+  m_AnchorMin: {x: 0.87471926, y: 0}
+  m_AnchorMax: {x: 0.94143844, y: 0.5512124}
+  m_AnchoredPosition: {x: -2, y: 0.6930542}
+  m_SizeDelta: {x: 64.93884, y: 1.3832092}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &530442656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530442654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fb3af294148c14bb6b105ab2f82638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &533609947
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,8 +2462,8 @@ GameObject:
   m_Component:
   - component: {fileID: 533609948}
   m_Layer: 5
-  m_Name: "Kap\u0131 (12)"
-  m_TagString: Untagged
+  m_Name: 13
+  m_TagString: 13
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2494,8 +2590,8 @@ GameObject:
   m_Component:
   - component: {fileID: 543873892}
   m_Layer: 5
-  m_Name: "Kap\u0131 (9)"
-  m_TagString: Untagged
+  m_Name: 19
+  m_TagString: 19
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2713,8 +2809,8 @@ GameObject:
   m_Component:
   - component: {fileID: 594921872}
   m_Layer: 5
-  m_Name: "Kap\u0131 (14)"
-  m_TagString: Untagged
+  m_Name: 23
+  m_TagString: 23
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2825,8 +2921,8 @@ GameObject:
   m_Component:
   - component: {fileID: 601644777}
   m_Layer: 5
-  m_Name: "Kap\u0131 (15)"
-  m_TagString: Untagged
+  m_Name: 16
+  m_TagString: 16
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3104,8 +3200,8 @@ GameObject:
   m_Component:
   - component: {fileID: 639459722}
   m_Layer: 5
-  m_Name: "Kap\u0131 (10)"
-  m_TagString: Untagged
+  m_Name: 26
+  m_TagString: 26
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3365,9 +3461,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 697945726}
+  - component: {fileID: 697945727}
   m_Layer: 5
-  m_Name: "Kap\u0131"
-  m_TagString: Untagged
+  m_Name: 8
+  m_TagString: 8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3388,11 +3485,23 @@ RectTransform:
   - {fileID: 1069531205}
   m_Father: {fileID: 1861618682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.009435898, y: 0}
-  m_AnchorMax: {x: 0.100324795, y: 0.5512124}
-  m_AnchoredPosition: {x: 48.53711, y: 0}
-  m_SizeDelta: {x: 36.93886, y: 1.38321}
+  m_AnchorMin: {x: 0.06428768, y: 0}
+  m_AnchorMax: {x: 0.12856163, y: 0.5512124}
+  m_AnchoredPosition: {x: 0.037109375, y: 0}
+  m_SizeDelta: {x: 67.93886, y: 1.38321}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &697945727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697945725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fb3af294148c14bb6b105ab2f82638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &738312790
 GameObject:
   m_ObjectHideFlags: 0
@@ -3557,126 +3666,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749176051}
   m_CullTransparentMesh: 1
---- !u!1 &788930166
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 788930167}
-  - component: {fileID: 788930170}
-  - component: {fileID: 788930169}
-  - component: {fileID: 788930168}
-  m_Layer: 5
-  m_Name: "Men\xFC (1)"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &788930167
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788930166}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1599999267}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7527095, y: 0}
-  m_AnchorMax: {x: 0.85729057, y: 0.6734166}
-  m_AnchoredPosition: {x: -1.5, y: 0.6100006}
-  m_SizeDelta: {x: -3, y: 1.880539}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &788930168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788930166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 788930169}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &788930169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788930166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cf6b6819cbd22a440b87b5a86fc5589a, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &788930170
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788930166}
-  m_CullTransparentMesh: 1
 --- !u!1 &807485005
 GameObject:
   m_ObjectHideFlags: 0
@@ -3719,8 +3708,8 @@ GameObject:
   m_Component:
   - component: {fileID: 818068259}
   m_Layer: 5
-  m_Name: "Kap\u0131 (8)"
-  m_TagString: Untagged
+  m_Name: 28
+  m_TagString: 28
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3847,8 +3836,8 @@ GameObject:
   m_Component:
   - component: {fileID: 830754404}
   m_Layer: 5
-  m_Name: "Kap\u0131 (15)"
-  m_TagString: Untagged
+  m_Name: 32
+  m_TagString: 32
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3959,8 +3948,8 @@ GameObject:
   m_Component:
   - component: {fileID: 849586748}
   m_Layer: 5
-  m_Name: "Kap\u0131 (15)"
-  m_TagString: Untagged
+  m_Name: 24
+  m_TagString: 24
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4344,8 +4333,8 @@ GameObject:
   m_Component:
   - component: {fileID: 958501872}
   m_Layer: 5
-  m_Name: "Kap\u0131 (10)"
-  m_TagString: Untagged
+  m_Name: 18
+  m_TagString: 18
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4852,8 +4841,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1060936269}
   m_Layer: 5
-  m_Name: "Kap\u0131 (14)"
-  m_TagString: Untagged
+  m_Name: 15
+  m_TagString: 15
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5714,7 +5703,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.6012573, y: -12.083229}
+  m_AnchoredPosition: {x: -2.6012573, y: -3.3}
   m_SizeDelta: {x: 453.6271, y: 696.3545}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1183358267
@@ -7133,8 +7122,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1430463635}
   m_Layer: 5
-  m_Name: "Kap\u0131 (11)"
-  m_TagString: Untagged
+  m_Name: 25
+  m_TagString: 25
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7823,8 +7812,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1573945062}
   m_Layer: 5
-  m_Name: "Kap\u0131 (13)"
-  m_TagString: Untagged
+  m_Name: 30
+  m_TagString: 30
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7859,9 +7848,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1584886279}
+  - component: {fileID: 1584886280}
   m_Layer: 5
-  m_Name: "Kap\u0131 (6)"
-  m_TagString: Untagged
+  m_Name: 3
+  m_TagString: 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7882,11 +7872,23 @@ RectTransform:
   - {fileID: 371711938}
   m_Father: {fileID: 1861618682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.009435898, y: 0}
-  m_AnchorMax: {x: 0.100324795, y: 0.5512124}
-  m_AnchoredPosition: {x: 876.7, y: 0.6930542}
-  m_SizeDelta: {x: 36.93886, y: 1.38321}
+  m_AnchorMin: {x: 0.7771301, y: 0}
+  m_AnchorMax: {x: 0.8387261, y: 0.56736267}
+  m_AnchoredPosition: {x: -3.2999878, y: -1.8069458}
+  m_SizeDelta: {x: 70.93884, y: -3.6167908}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1584886280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584886278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fb3af294148c14bb6b105ab2f82638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1591818607
 GameObject:
   m_ObjectHideFlags: 0
@@ -8008,7 +8010,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2076305983}
-  - {fileID: 788930167}
   - {fileID: 1625200427}
   m_Father: {fileID: 1064257443}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8079,8 +8080,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1623175204}
   m_Layer: 5
-  m_Name: "Kap\u0131 (12)"
-  m_TagString: Untagged
+  m_Name: 29
+  m_TagString: 29
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8650,8 +8651,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1668815639}
   m_Layer: 5
-  m_Name: "Kap\u0131 (8)"
-  m_TagString: Untagged
+  m_Name: 20
+  m_TagString: 20
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8810,13 +8811,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd75efed10eaed3469c07af043294ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "odaVeriTaban\u0131\u0131": {fileID: 11400000, guid: f1a0ce1395d2bb64a98517f1e5556efa, type: 2}
   liftButton: {fileID: 1412531008}
+  temilik: {fileID: 6679545750100396667, guid: d6ac2c0595fe32f4f919c18b2c56e092, type: 3}
   isLiftOut: 0
   isLiftOut1: 0
   isLiftOut2: 0
   isLiftOut3: 0
   isLiftOut4: 0
   isLifter: 1
+  gunes: {fileID: 1425337433}
+  odalar:
+  - {fileID: 513482587}
+  - {fileID: 1971071775}
+  - {fileID: 1584886278}
+  - {fileID: 530442654}
+  - {fileID: 1849345039}
+  - {fileID: 196639884}
+  - {fileID: 529046071}
+  - {fileID: 697945725}
+  - {fileID: 256600472}
+  - {fileID: 2095905352}
+  - {fileID: 515981981}
+  - {fileID: 103555225}
+  - {fileID: 533609947}
+  - {fileID: 289327905}
+  - {fileID: 1060936268}
+  - {fileID: 601644776}
+  - {fileID: 1751877070}
+  - {fileID: 958501871}
+  - {fileID: 543873891}
+  - {fileID: 1668815638}
+  - {fileID: 331633565}
+  - {fileID: 207386863}
+  - {fileID: 594921871}
+  - {fileID: 849586747}
+  - {fileID: 1430463634}
+  - {fileID: 639459721}
+  - {fileID: 1891473561}
+  - {fileID: 818068258}
+  - {fileID: 1623175203}
+  - {fileID: 1573945061}
+  - {fileID: 2127251131}
+  - {fileID: 830754403}
 --- !u!1 &1749794931
 GameObject:
   m_ObjectHideFlags: 0
@@ -8902,8 +8939,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1751877071}
   m_Layer: 5
-  m_Name: "Kap\u0131 (11)"
-  m_TagString: Untagged
+  m_Name: 17
+  m_TagString: 17
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9388,9 +9425,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1849345040}
+  - component: {fileID: 1849345041}
   m_Layer: 5
-  m_Name: "Kap\u0131 (3)"
-  m_TagString: Untagged
+  m_Name: 5
+  m_TagString: 5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9411,11 +9449,23 @@ RectTransform:
   - {fileID: 28022065}
   m_Father: {fileID: 1861618682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.009435898, y: 0}
-  m_AnchorMax: {x: 0.100324795, y: 0.5512124}
-  m_AnchoredPosition: {x: 402, y: 0.6930542}
-  m_SizeDelta: {x: 36.93886, y: 1.38321}
+  m_AnchorMin: {x: 0.36585617, y: 0}
+  m_AnchorMax: {x: 0.43257537, y: 0.5512124}
+  m_AnchoredPosition: {x: 0, y: 0.6930542}
+  m_SizeDelta: {x: 64.93884, y: 1.3832092}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1849345041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849345039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fb3af294148c14bb6b105ab2f82638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1861618681
 GameObject:
   m_ObjectHideFlags: 0
@@ -9528,8 +9578,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1891473562}
   m_Layer: 5
-  m_Name: "Kap\u0131 (9)"
-  m_TagString: Untagged
+  m_Name: 27
+  m_TagString: 27
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9639,9 +9689,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1971071776}
+  - component: {fileID: 1971071777}
   m_Layer: 5
-  m_Name: "Kap\u0131 (5)"
-  m_TagString: Untagged
+  m_Name: 2
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9662,11 +9713,23 @@ RectTransform:
   - {fileID: 54112666}
   m_Father: {fileID: 1861618682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.009435898, y: 0}
-  m_AnchorMax: {x: 0.100324795, y: 0.5512124}
-  m_AnchoredPosition: {x: 758.2001, y: 9.799988}
-  m_SizeDelta: {x: 36.93886, y: 1.38321}
+  m_AnchorMin: {x: 0.6752808, y: 0}
+  m_AnchorMax: {x: 0.73515075, y: 0.59300005}
+  m_AnchoredPosition: {x: 0, y: -9.603897}
+  m_SizeDelta: {x: 71.94, y: -11.625}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1971071777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971071775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89fb3af294148c14bb6b105ab2f82638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2006948810
 GameObject:
   m_ObjectHideFlags: 0
@@ -10280,8 +10343,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2095905353}
   m_Layer: 5
-  m_Name: "Kap\u0131 (10)"
-  m_TagString: Untagged
+  m_Name: 10
+  m_TagString: 10
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10317,8 +10380,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2127251132}
   m_Layer: 5
-  m_Name: "Kap\u0131 (14)"
-  m_TagString: Untagged
+  m_Name: 31
+  m_TagString: 31
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10444,3 +10507,4 @@ SceneRoots:
   - {fileID: 1009063014}
   - {fileID: 1744069003}
   - {fileID: 807485006}
+  - {fileID: 2930428}
