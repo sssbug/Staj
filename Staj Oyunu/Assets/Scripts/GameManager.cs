@@ -21,14 +21,14 @@ namespace DS
 
         public List<GameObject> inventoryItems = new List<GameObject>();
         public List<GameObject> otelinSahibi = new List<GameObject>();
-
+        public GameObject lamba;
         public GameObject keys;
 
         public GameObject sıradaki;
         public int spawnlanacak;
         public Light2D gunes;
 
-        
+
 
 
 
@@ -38,7 +38,7 @@ namespace DS
 
         private float currentTimeOfDay = 0f;
 
-        
+
 
         private void Update()
         {
@@ -46,9 +46,19 @@ namespace DS
 
             UpdateLighting(timePercent);
 
-            
+            if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) < 0.8 && (Math.Floor(TimeManager.Instance.timePercent * 10) / 10) > 0.1)
+            {
 
-            
+                lamba.SetActive(false);
+
+            }
+            else
+            {
+
+                lamba.SetActive(true);
+
+            }
+
         }
         void UpdateLighting(float timePercent)
         {
@@ -69,11 +79,11 @@ namespace DS
                 gunes.color = Color.Lerp(new Color(1f, 0.95f, 0.8f), new Color(0.1f, 0.1f, 0.4f), (timePercent - 0.75f) / 0.25f);
             }
         }
-        
-        
+
+
         public void cikis()
         {
-             string[] ismi = sıradaki.name.Split("(Clone)");
+            string[] ismi = sıradaki.name.Split("(Clone)");
             for (int i = 0; i < charactersBackPrefab.Count; i++)
             {
                 if (charactersBackPrefab[i].name == ismi[0])
@@ -85,11 +95,11 @@ namespace DS
                     Destroy(sıradaki);
                 }
             }
-            
-                
-                
-                
-            
+
+
+
+
+
         }
 
 

@@ -54,7 +54,7 @@ namespace DS
                 gameManager.odaVeriTabanıı.odaData();
                 gameManager.keys.SetActive(false);
                 gameManager.cikis();
-                Destroy(gameObject);
+                
                 
 
             }

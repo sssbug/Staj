@@ -35,23 +35,25 @@ namespace DS
 
         private void Update()
         {
-            // Zamanı ilerlet
+
             timePercent += (Time.deltaTime / (24f * 60f)) * speedFactor;
             if (timePercent >= 1f) timePercent = 0f;
 
-            if (Math.Round(timePercent) == 1)
+            if ((Math.Floor(timePercent * 10) / 10) == 0)
             {
                 if (basla == 1)
                 {
+                    Debug.Log("TimeManager");
                     odaVeriTabanıı.odalar();
                     basla = 0;
                 }
-                
+
             }
             else
             {
                 basla = 1;
             }
+            
         }
 
         private void OnApplicationQuit()

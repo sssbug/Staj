@@ -20,16 +20,17 @@ namespace DS
         public int[] odadata = new int[40];
 
         public bool[] temizlikOdalar = new bool[40];
-        
-        public void odaData() 
+
+       
+        public void odaData()
         {
             if (isim != null && oda != 0 && gün != 0)
             {
-                
+
                 isimdata[oda] = isim;
                 gündata[oda] = gün;
                 odadata[oda] = oda;
-                
+
                 isim = null;
                 oda = 0;
                 gün = 0;
@@ -38,35 +39,34 @@ namespace DS
             {
                 Debug.Log("hata");
             }
-            
+
         }
         public void odalar()
         {
-            
-            if (Math.Round(TimeManager.Instance.timePercent) == 1f)
+
+
+            Debug.Log("odaveritabanı");
+            for (int i = 0; i < odadata.Length; i++)
             {
-                
-                for (int i = 0; i < odadata.Length; i++)
+                if (gündata[i] != 0)
                 {
-                    if (gündata[i] != 0)
+                    Debug.Log(isimdata[i]);
+
+
+                    gündata[i] = gündata[i] - 1;
+                    if (gündata[i] == 0)
                     {
-                        Debug.Log(isimdata[i]);
+                        isimdata[i] = null;
+                        gündata[i] = 0;
+                        odadata[i] = 0;
+                        temizlikOdalar[i] = true;
 
-
-                        gündata[i] = gündata[i] - 1;
-                        if (gündata[i] == 0)
-                        {
-                            isimdata[i] = null;
-                            gündata[i] = 0;
-                            odadata[i] = 0;
-                            temizlikOdalar[i] = true;
-                            
-                        }
                     }
-                    
                 }
+
             }
-            
+
+
         }
     }
 }

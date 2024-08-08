@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
@@ -10,7 +11,8 @@ namespace DS
         [SerializeField]
         public odaVeriTabanı odaVeriTabanıı;
         public GameObject liftButton;
-        public GameObject temilik;
+        public List<GameObject> odalar = new List<GameObject>();
+        private bool[] temizlikYapıldıMı = new bool[33];
         public bool isLiftOut = false;
         public bool isLiftOut1 = false;
         public bool isLiftOut2 = false;
@@ -18,16 +20,14 @@ namespace DS
         public bool isLiftOut4 = false;
         public bool isLifter = true;
         public Light2D gunes;
-        public List<GameObject> odalar = new List<GameObject>();
-        private bool[] temizlikYapıldıMı = new bool[33];
-        
-
+        public GameObject temizlikMalzemesi;
+        public List<GameObject> lamba = new List<GameObject>();
+        int basla = 1;
         private void Update()
         {
             float timePercent = TimeManager.Instance.timePercent;
 
             UpdateLighting(timePercent);
-
             for (int i = 1; i < odalar.Count; i++)
             {
                 if (temizlikYapıldıMı[i] == false)
@@ -35,21 +35,43 @@ namespace DS
                     if (odaVeriTabanıı.temizlikOdalar[i] == true)
                     {
 
-                        GameObject spawn = Instantiate(temilik, odalar[i].transform.position + new Vector3(-1,3,0), Quaternion.identity);
+                        GameObject spawn = Instantiate(temizlikMalzemesi, odalar[i].transform.position + new Vector3(-1, 3, 0), Quaternion.identity);
                         spawn.transform.parent = odalar[i].transform;
-                        
 
 
                     }
                     temizlikYapıldıMı[i] = true;
                 }
-                
+
             }
-            if (Mathf.Round(timePercent) == 0)
+            if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) == 0.1)
             {
-                for (int i = 0; i < odalar.Count; i++)
+                if (basla == 1)
                 {
-                    temizlikYapıldıMı[i] = false;
+                    for (int i = 0; i < odalar.Count; i++)
+                    {
+                        temizlikYapıldıMı[i] = false;
+                    }
+                    basla = 0;
+                }
+
+            }
+            if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) == 0.2)
+            {
+                basla = 1;
+            }
+            if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) < 0.8 && (Math.Floor(TimeManager.Instance.timePercent * 10) / 10) > 0.1)
+            {
+                for (int i = 0; i < lamba.Count; i++)
+                {
+                    lamba[i].SetActive(false);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < lamba.Count; i++)
+                {
+                    lamba[i].SetActive(true);
                 }
             }
         }
