@@ -146,10 +146,10 @@ namespace DS
             {
                 
             }
-            if (clickedObject != null && clickedObject.name == "Temizlik")
+            if (clickedObject != null && clickedObject.name == "Temizlik(Clone)")
             {
                 gameManager.odaVeriTabanıı.temizlikOdalar[int.Parse(clickedObject.transform.parent.gameObject.tag)] = false;
-
+                
 
                 Destroy(clickedObject);
             }

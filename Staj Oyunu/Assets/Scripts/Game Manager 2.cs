@@ -19,7 +19,7 @@ namespace DS
         public bool isLifter = true;
         public Light2D gunes;
         public List<GameObject> odalar = new List<GameObject>();
-        private bool[] temizlikYapıldıMı = new bool[32];
+        private bool[] temizlikYapıldıMı = new bool[33];
         
 
         private void Update()
@@ -28,7 +28,7 @@ namespace DS
 
             UpdateLighting(timePercent);
 
-            for (int i = 0; i < odalar.Count; i++)
+            for (int i = 1; i < odalar.Count; i++)
             {
                 if (temizlikYapıldıMı[i] == false)
                 {

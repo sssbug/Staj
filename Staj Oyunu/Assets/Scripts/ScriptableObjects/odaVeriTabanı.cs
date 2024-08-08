@@ -53,7 +53,7 @@ namespace DS
                         Debug.Log(isimdata[i]);
 
 
-                        gündata[i] = -1;
+                        gündata[i] = gündata[i] - 1;
                         if (gündata[i] == 0)
                         {
                             isimdata[i] = null;
