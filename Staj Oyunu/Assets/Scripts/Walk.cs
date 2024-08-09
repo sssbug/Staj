@@ -12,7 +12,7 @@ namespace DS
         GameManager gameManager;
         private int _characterCount;
         private int _characterBackCount;
-        private Vector2[] points = { new Vector3(-0.4f, 0f, 0), new Vector3(-0.6f, 2.3f, 0) }; 
+        private Vector2[] points = { new Vector3(-0.4f, 0f, 0), new Vector3(-0.6f, 2.3f, 0) };
         private int pointCount = 0;
         private float speed = 0.5f;
         int counter = 0;
@@ -20,6 +20,10 @@ namespace DS
         private NPCConversation _myConvarsation;
         private GameObject _myChar;
         SkeletonGraphic _skeletonGraphic;
+        private void Start()
+        {
+            Load();
+        }
         private void Awake()
         {
             _skeletonGraphic = transform.GetChild(0).transform.GetComponent<SkeletonGraphic>();
@@ -341,5 +345,18 @@ namespace DS
         {
             gameManager.keys.SetActive(false);
         }
+
+
+        private void OnApplicationQuit()
+        {
+            PlayerPrefs.SetString(gameObject.name, JsonUtility.ToJson(this));
+        }
+
+        private void Load()
+        {
+            JsonUtility.FromJsonOverwrite(PlayerPrefs.GetString(gameObject.name),this);
+        }
+
+
     }
 }
