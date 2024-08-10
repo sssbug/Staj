@@ -1,7 +1,7 @@
 ﻿//using DialogueEditor;
 using DialogueEditor;
 using Spine.Unity;
-using Spine.Unity.Editor;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -64,7 +64,7 @@ namespace DS
                         foreach (var items in _skeletonGraphic)
                         {
                             items.startingAnimation = "Open";
-                            SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(items);
+                            
                         }
 
                     }
@@ -112,7 +112,7 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.startingAnimation = "Close";
-                        SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(items);
+                        
                     }
                    
                 }
@@ -132,7 +132,7 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.startingAnimation = "Close";
-                        SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(items);
+                        
                     }
 
                 }
@@ -151,7 +151,7 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.startingAnimation = "Close";
-                        SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(items);
+                       
                     }
 
                 }
@@ -170,7 +170,7 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.startingAnimation = "Close";
-                        SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(items);
+                        
                     }
 
                 }
@@ -190,7 +190,7 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.startingAnimation = "Close";
-                        SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(items);
+                        
                     }
 
                 }

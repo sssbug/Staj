@@ -1,6 +1,6 @@
 using DialogueEditor;
 using Spine.Unity;
-using Spine.Unity.Editor;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,7 +37,7 @@ namespace DS
                 if (yuru == 1)
                 {
                     _skeletonGraphic.startingAnimation = "Walk";
-                    SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(_skeletonGraphic);
+                    
                     yuru = 0;
                 }
                 
@@ -52,7 +52,7 @@ namespace DS
                     spawn.transform.parent = GameObject.Find("Canvas").transform;
                     spawn.AddComponent<ÇıkışSon>();
                     _skeletonGraphic.startingAnimation = "İdle";
-                    SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(_skeletonGraphic);
+                    
                     Destroy(gameObject);
                     basla = 0;
                 }

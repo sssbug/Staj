@@ -1,6 +1,6 @@
 ﻿
 using Spine.Unity;
-using Spine.Unity.Editor;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -138,12 +138,12 @@ namespace DS
                         if (currentPage == 1)
                         {
                             _skeletonGraphic.startingAnimation = "Open";
-                            SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(_skeletonGraphic);
+                            
                         }
                         else
                         {
                             _skeletonGraphic.startingAnimation = "Close";
-                            SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(_skeletonGraphic);
+                            
                         }
                     }
                     else
@@ -151,12 +151,12 @@ namespace DS
                         if (currentPage == 5)
                         {
                             _skeletonGraphic.startingAnimation = "Open";
-                            SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(_skeletonGraphic);
+                            
                         }
                         else
                         {
                             _skeletonGraphic.startingAnimation = "Close";
-                            SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(_skeletonGraphic);
+                            
                         }
                     }
                     StartCoroutine(SmoothMove(transform.position, newLocation, easing));

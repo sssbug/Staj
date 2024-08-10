@@ -1,5 +1,5 @@
 using Spine.Unity;
-using Spine.Unity.Editor;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,7 +35,6 @@ namespace DS
                 if (yuru==1)
                 {
                     _skeletonGraphic.startingAnimation = "Walk";
-                    SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(_skeletonGraphic);
                     yuru = 0;
                 }
                 
@@ -47,10 +46,8 @@ namespace DS
                 if (basla == 1)
                 {
                     _skeletonGraphic.startingAnimation = "İdle";
-                    SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(_skeletonGraphic);
                     basla = 0;
                     GameObject.Find("Asansor").GetComponent<SkeletonGraphic>().startingAnimation = "Close";
-                    SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(GameObject.Find("Asansor").GetComponent<SkeletonGraphic>());
                     StartCoroutine(run(3));
                     Destroy(gameObject,4);
                 }
@@ -65,7 +62,6 @@ namespace DS
                     
                 yield return new WaitForSeconds(waitTime);
                 GameObject.Find("Asansor").GetComponent<SkeletonGraphic>().startingAnimation = "Open";
-                SpineEditorUtilities.ReloadSkeletonDataAssetAndComponent(GameObject.Find("Asansor").GetComponent<SkeletonGraphic>());
 
             }
         }
