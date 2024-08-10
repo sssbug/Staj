@@ -611,7 +611,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.32900003, y: 0.93377304}
   m_AnchorMax: {x: 0.44614533, y: 1}
-  m_AnchoredPosition: {x: 199.64249, y: -753.71295}
+  m_AnchoredPosition: {x: 199.64249, y: -753.713}
   m_SizeDelta: {x: -27.802185, y: -26}
   m_Pivot: {x: -0.93376786, y: 8.070073}
 --- !u!61 &114427726
@@ -3332,7 +3332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6248547, y: 0.53234833}
   m_AnchorMax: {x: 1, y: 0.842409}
-  m_AnchoredPosition: {x: 420.09998, y: -1.7600098}
+  m_AnchoredPosition: {x: 420.10004, y: -1.7600098}
   m_SizeDelta: {x: 838.3192, y: -2.2543335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &540461719
@@ -7498,7 +7498,6 @@ GameObject:
   - component: {fileID: 1012349564}
   - component: {fileID: 1012349566}
   - component: {fileID: 1012349565}
-  - component: {fileID: 1012349567}
   m_Layer: 0
   m_Name: Asansor
   m_TagString: Asansor
@@ -7579,27 +7578,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012349563}
   m_CullTransparentMesh: 1
---- !u!95 &1012349567
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012349563}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3c7e4152cb6ba1348b4b181d6efcf794, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1031055209
 GameObject:
   m_ObjectHideFlags: 0
@@ -11372,7 +11350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timePercent: 0
-  speedFactor: 45.3
+  speedFactor: 1
   "odaVeriTaban\u0131\u0131": {fileID: 11400000, guid: f1a0ce1395d2bb64a98517f1e5556efa, type: 2}
   basla: 0
 --- !u!4 &1489122508

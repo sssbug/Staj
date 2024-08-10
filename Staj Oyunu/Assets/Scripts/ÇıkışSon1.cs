@@ -34,7 +34,7 @@ namespace DS
 
                 if (yuru==1)
                 {
-                    _skeletonGraphic.startingAnimation = "Walk";
+                    _skeletonGraphic.AnimationState.SetAnimation(1, "Walk", true);
                     yuru = 0;
                 }
                 
@@ -45,9 +45,9 @@ namespace DS
 
                 if (basla == 1)
                 {
-                    _skeletonGraphic.startingAnimation = "İdle";
+                    _skeletonGraphic.AnimationState.SetAnimation(1, "İdle", true);
                     basla = 0;
-                    GameObject.Find("Asansor").GetComponent<SkeletonGraphic>().startingAnimation = "Close";
+                    GameObject.Find("Asansor").GetComponent<SkeletonGraphic>().AnimationState.SetAnimation(1, "Close", false);
                     StartCoroutine(run(3));
                     Destroy(gameObject,4);
                 }
@@ -61,7 +61,7 @@ namespace DS
                 
                     
                 yield return new WaitForSeconds(waitTime);
-                GameObject.Find("Asansor").GetComponent<SkeletonGraphic>().startingAnimation = "Open";
+                GameObject.Find("Asansor").GetComponent<SkeletonGraphic>().AnimationState.SetAnimation(1, "Open", false); 
 
             }
         }

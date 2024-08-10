@@ -5,6 +5,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using static UnityEditor.Progress;
+
 namespace DS
 {
     public class Swipex : MonoBehaviour, IDragHandler, IEndDragHandler
@@ -137,26 +139,26 @@ namespace DS
                     {
                         if (currentPage == 1)
                         {
-                            _skeletonGraphic.startingAnimation = "Open";
-                            
+
+                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
                         }
                         else
                         {
-                            _skeletonGraphic.startingAnimation = "Close";
-                            
+                            _skeletonGraphic.AnimationState.SetAnimation(1, "Close", false);
+
                         }
                     }
                     else
                     {
                         if (currentPage == 5)
                         {
-                            _skeletonGraphic.startingAnimation = "Open";
-                            
+                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+
                         }
                         else
                         {
-                            _skeletonGraphic.startingAnimation = "Close";
-                            
+                            _skeletonGraphic.AnimationState.SetAnimation(1, "Close", false);
+
                         }
                     }
                     StartCoroutine(SmoothMove(transform.position, newLocation, easing));

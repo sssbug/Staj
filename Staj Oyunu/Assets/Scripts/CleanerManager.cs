@@ -28,10 +28,7 @@ namespace DS
         
         void Update()
         {
-            if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) == 0.7)
-            {
-
-            }
+            
         }
     }
 }

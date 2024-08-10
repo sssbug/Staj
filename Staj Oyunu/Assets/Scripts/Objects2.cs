@@ -58,16 +58,7 @@ namespace DS
                     gameManager2.isLiftOut3 = true;
                     gameManager2.isLiftOut4 = true;
                     bina.transform.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                    foreach (var item in sakınsilme)
-                    {
-                        _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
-                        foreach (var items in _skeletonGraphic)
-                        {
-                            items.startingAnimation = "Open";
-                            
-                        }
-
-                    }
+                   
 
                 }
 
@@ -80,7 +71,16 @@ namespace DS
                     
                     gameManager2.isLifter = true;
                     isLift = false;
-                   
+                    foreach (var item in sakınsilme)
+                    {
+                        _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
+                        foreach (var items in _skeletonGraphic)
+                        {
+
+                            items.AnimationState.SetAnimation(1, "Open", false);
+                        }
+
+                    }
                 }
                 
             }
@@ -94,7 +94,11 @@ namespace DS
 
             if (clickedObject != null && clickedObject.name == "Asansor")
             {
-                gameManager2.liftButton.transform.position = clickedObject.transform.position;
+                if (isLift == false)
+                {
+                    gameManager2.liftButton.transform.position = clickedObject.transform.position;
+                }
+                
                 
                
                 
@@ -111,8 +115,8 @@ namespace DS
                      _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
                     foreach (var items in _skeletonGraphic)
                     {
-                        items.startingAnimation = "Close";
-                        
+                        items.AnimationState.SetAnimation(1, "Close", false);
+
                     }
                    
                 }
@@ -131,8 +135,8 @@ namespace DS
                     _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
                     foreach (var items in _skeletonGraphic)
                     {
-                        items.startingAnimation = "Close";
-                        
+                        items.AnimationState.SetAnimation(1, "Close", false);
+
                     }
 
                 }
@@ -150,8 +154,8 @@ namespace DS
                     _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
                     foreach (var items in _skeletonGraphic)
                     {
-                        items.startingAnimation = "Close";
-                       
+                        items.AnimationState.SetAnimation(1, "Close", false);
+
                     }
 
                 }
@@ -169,8 +173,8 @@ namespace DS
                     _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
                     foreach (var items in _skeletonGraphic)
                     {
-                        items.startingAnimation = "Close";
-                        
+                        items.AnimationState.SetAnimation(1, "Close", false);
+
                     }
 
                 }
@@ -189,8 +193,8 @@ namespace DS
                     _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
                     foreach (var items in _skeletonGraphic)
                     {
-                        items.startingAnimation = "Close";
-                        
+                        items.AnimationState.SetAnimation(1, "Close", false);
+
                     }
 
                 }

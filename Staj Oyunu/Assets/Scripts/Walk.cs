@@ -118,8 +118,8 @@ namespace DS
 
                         if (counterTwo == 0)
                         {
-                            _skeletonGraphic.startingAnimation = "İdle";
-                            
+                            _skeletonGraphic.AnimationState.SetAnimation(1, "İdle", true);
+
                             counterTwo = 1;
                         }
                     }
@@ -127,8 +127,8 @@ namespace DS
                     {
                         if (counterTwo == 1)
                         {
-                            _skeletonGraphic.startingAnimation = "Walk";
-                            
+                            _skeletonGraphic.AnimationState.SetAnimation(1, "Walk", true);
+
                             counterTwo = 0;
                         }
                     }
@@ -142,7 +142,7 @@ namespace DS
 
                         if (counter == 1)
                         {
-                            _skeletonGraphic.startingAnimation = "Walk";
+                            _skeletonGraphic.AnimationState.SetAnimation(1, "Walk", true);
                             
                             counter = 0;
                         }
@@ -172,8 +172,8 @@ namespace DS
                             {
                                 if (counter == 0)
                                 {
-                                    _skeletonGraphic.startingAnimation = "İdle";
-                                    
+                                    _skeletonGraphic.AnimationState.SetAnimation(1, "İdle", true);
+
                                     counter = 1;
                                 }
                                 GetComponent<Rigidbody2D>().velocity = Vector2.zero;
@@ -306,7 +306,7 @@ namespace DS
                
                 if (gameManager.characters.Contains(this.gameObject))
                 {
-                    _skeletonGraphic.startingAnimation = "İdle";
+                    _skeletonGraphic.AnimationState.SetAnimation(1, "İdle", true);
                     
 
 
@@ -349,12 +349,12 @@ namespace DS
 
         private void OnApplicationQuit()
         {
-            PlayerPrefs.SetString(gameObject.name, JsonUtility.ToJson(this));
+            //PlayerPrefs.SetString(gameObject.name, JsonUtility.ToJson(this));
         }
 
         private void Load()
         {
-            JsonUtility.FromJsonOverwrite(PlayerPrefs.GetString(gameObject.name),this);
+            //JsonUtility.FromJsonOverwrite(PlayerPrefs.GetString(gameObject.name),this);
         }
 
 

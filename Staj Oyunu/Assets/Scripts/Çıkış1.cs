@@ -36,7 +36,7 @@ namespace DS
                 direction.Normalize();
                 if (yuru == 1)
                 {
-                    _skeletonGraphic.startingAnimation = "Walk";
+                    _skeletonGraphic.AnimationState.SetAnimation(1, "Walk", true);
                     
                     yuru = 0;
                 }
@@ -52,7 +52,7 @@ namespace DS
                     spawn.transform.parent = GameObject.Find("Canvas").transform;
                     Destroy(spawn.transform.GetComponent<Walk>());
                     spawn.AddComponent<ÇıkışSon1>();
-                    _skeletonGraphic.startingAnimation = "İdle";
+                    _skeletonGraphic.AnimationState.SetAnimation(1, "İdle", true);
                     
                     Destroy(gameObject);
                     basla = 0;
