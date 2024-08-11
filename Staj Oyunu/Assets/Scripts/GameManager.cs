@@ -38,6 +38,10 @@ namespace DS
 
         private float currentTimeOfDay = 0f;
 
+        private void Start()
+        {
+            
+        }
 
 
         private void Update()
@@ -105,6 +109,6 @@ namespace DS
 
 
         public void sahne2() { SceneManager.LoadScene("Scene2"); }
-
+        
     }
 }

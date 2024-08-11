@@ -20,15 +20,12 @@ namespace DS
         private NPCConversation _myConvarsation;
         private GameObject _myChar;
         SkeletonGraphic _skeletonGraphic;
-        private void Start()
-        {
-            Load();
-        }
+        
         private void Awake()
         {
             _skeletonGraphic = transform.GetChild(0).transform.GetComponent<SkeletonGraphic>();
             gameManager = GameObject.Find("GameManager").transform.GetComponent<GameManager>();
-
+           
         }
         private void Update()
         {
@@ -347,15 +344,7 @@ namespace DS
         }
 
 
-        private void OnApplicationQuit()
-        {
-            //PlayerPrefs.SetString(gameObject.name, JsonUtility.ToJson(this));
-        }
-
-        private void Load()
-        {
-            //JsonUtility.FromJsonOverwrite(PlayerPrefs.GetString(gameObject.name),this);
-        }
+        
 
 
     }

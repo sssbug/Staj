@@ -54,6 +54,7 @@ namespace DS
                     if (prefab != null)
                     {
                         GameObject obj = Instantiate(prefab, data.position, data.rotation);
+                        obj.transform.parent = GameObject.Find("Canvas").transform;
                         obj.layer = 6; // Yüklerken layer'ı tekrar 6 olarak ayarlarız
                     }
                 }

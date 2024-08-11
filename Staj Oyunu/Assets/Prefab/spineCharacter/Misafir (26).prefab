@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 6168178594251928104}
   - component: {fileID: 6308209533372684547}
   - component: {fileID: -6355103045559370370}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Misafir (26)
   m_TagString: 27
   m_Icon: {fileID: 0}

@@ -40,16 +40,13 @@ namespace DS
             }
             else
             {
-                if (başla == 1)
-                {
-                    ConversationManager.Instance.StartConversation(_myConvarsation);
-                    başla = 0;
-                }
+                 
                 
 
                 
             }
         }
+
         public void bitti()
         {
             GameObject spawn = Instantiate(gameManager.otelinSahibi[1], transform.position, Quaternion.identity);
@@ -57,6 +54,13 @@ namespace DS
             spawn.AddComponent<Çıkış>();
             Destroy(gameObject);
             CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.70f, 0f, 0),15);
+        }
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.tag == "orta")
+            {
+                ConversationManager.Instance.StartConversation(_myConvarsation);
+            }
         }
     }
 }
