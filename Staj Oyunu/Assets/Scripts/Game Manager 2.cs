@@ -12,6 +12,7 @@ namespace DS
         public odaVeriTabanı odaVeriTabanıı;
         public GameObject liftButton;
         public List<GameObject> odalar = new List<GameObject>();
+        public List<GameObject> Characters = new List<GameObject>();
         private bool[] temizlikYapıldıMı = new bool[33];
         public bool isLiftOut = false;
         public bool isLiftOut1 = false;

@@ -19,9 +19,10 @@ namespace DS
             
             if (collision.gameObject.layer == 6)
             {
+                Debug.Log(collision.gameObject.name);
                 gameManager.sıradaki = collision.gameObject;
 
-                odaVeriTabanıı.isim = collision.gameObject.name;
+                odaVeriTabanıı.isim = collision.gameObject.name.Replace("(Clone)", "").Trim();
                 
             }
         }
