@@ -54,6 +54,7 @@ namespace DS
         private void Start()
         {
             savePath = Path.Combine(Application.persistentDataPath, "gameData.json");
+            
         }
 
 
@@ -134,7 +135,7 @@ namespace DS
             data.charactersNames = new List<string>();
             foreach (var character in characters)
             {
-                data.charactersNames.Add(character.name);
+                data.charactersNames.Add(character.name.Replace("(Clone)", "").Trim());
             }
 
             
@@ -143,7 +144,7 @@ namespace DS
             data.charactersBackNames = new List<string>();
             foreach (var character in charactersBack)
             {
-                data.charactersBackNames.Add(character.name);
+                data.charactersBackNames.Add(character.name.Replace("(Clone)", "").Trim());
             }
 
             

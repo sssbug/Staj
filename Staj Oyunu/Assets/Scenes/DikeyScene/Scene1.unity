@@ -5825,6 +5825,13 @@ MonoBehaviour:
   - {fileID: 8788925328170856298, guid: 38dd08f005cd16f429a7cfa220000dae, type: 3}
   - {fileID: 142836047856512954, guid: 67612fec74d68b64984569ae1a467a43, type: 3}
   - {fileID: 9034020390299348843, guid: 0de2622df2036ef43960889ef06f2ac0, type: 3}
+  loadedCharactersPrefabNames: []
+  loadedCharactersNames: []
+  loadedCharactersBackPrefabNames: []
+  loadedCharactersBackNames: []
+  loadedCharactersReversePrefabNames: []
+  loadedInventoryItemNames: []
+  loadedOtelinSahibiNames: []
   inventoryItems:
   - {fileID: 6237363602486116218, guid: b0e7f0ad4f61faf4e846bb450ec8ad6c, type: 3}
   otelinSahibi:
@@ -7746,6 +7753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectManager: {fileID: 597698543}
+  manager: {fileID: 799716932}
 --- !u!4 &1045758163
 Transform:
   m_ObjectHideFlags: 0

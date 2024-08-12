@@ -4,7 +4,8 @@ using UnityEngine;
 
 namespace DS
 {
-    public class GameData : MonoBehaviour
+    [System.Serializable]
+    public class GameData
     {
         
         public List<string> charactersNames;
