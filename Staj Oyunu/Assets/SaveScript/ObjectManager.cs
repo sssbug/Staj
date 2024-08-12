@@ -14,9 +14,11 @@ namespace DS
         private List<LayeredObjectData> layeredObjectsData = new List<LayeredObjectData>();
         private string savePath;
         private string _savePath;
+        GameManager gameManager;
         private void Start()
         {
             savePath = Path.Combine(Application.persistentDataPath, "layeredObjects.json");
+            gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         }
 
         public void SaveObjects()
@@ -53,9 +55,21 @@ namespace DS
                     GameObject prefab = prefabs.Find(p => p.name == data.prefabName);
                     if (prefab != null)
                     {
-                        GameObject obj = Instantiate(prefab, data.position, data.rotation);
-                        obj.transform.parent = GameObject.Find("Canvas").transform;
-                        obj.layer = 6; // Yüklerken layer'ı tekrar 6 olarak ayarlarız
+                        if (gameManager.loadedCharactersNames.Contains(prefab.name))
+                        {
+                            GameObject obj = Instantiate(prefab, data.position, data.rotation);
+                            gameManager.characters.Add(obj);
+                            obj.transform.parent = GameObject.Find("Canvas").transform;
+                            obj.layer = 6;
+                        }
+                        else if (gameManager.loadedCharactersBackNames.Contains(prefab.name))
+                        {
+                            GameObject obj = Instantiate(prefab, data.position, data.rotation);
+                            gameManager.charactersBack.Add(obj);
+                            obj.transform.parent = GameObject.Find("Canvas").transform;
+                            obj.layer = 6;
+                        }
+
                     }
                 }
             }

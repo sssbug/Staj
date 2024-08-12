@@ -10,7 +10,7 @@ namespace DS
         public Vector3 position;  // Objeyi sahnede nereye koyacağınız
         public Quaternion rotation;  // Objeyi hangi yönde koyacağınız
         public string prefabName;  // Objeyi oluşturduğunuz prefabın ismi
-
+        
         public LayeredObjectData(Vector3 pos, Quaternion rot, string prefab)
         {
             position = pos;
