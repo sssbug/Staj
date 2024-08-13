@@ -11,7 +11,7 @@ namespace DS
     public class ObjectManager : MonoBehaviour
     {
         public List<GameObject> prefabs; // Bu sahnede kullanılabilecek prefabların listesi
-        private List<LayeredObjectData> layeredObjectsData = new List<LayeredObjectData>();
+        public List<LayeredObjectData> layeredObjectsData = new List<LayeredObjectData>();
         private string savePath;
         private string _savePath;
         GameManager gameManager;

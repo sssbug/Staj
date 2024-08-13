@@ -14,6 +14,8 @@ namespace DS
     {
         [SerializeField]
         public odaVeriTabanı odaVeriTabanıı;
+        [SerializeField]
+        public Story story;
         public List<GameObject> charactersPrefab = new List<GameObject>();
         public List<GameObject> characters = new List<GameObject>();
         public List<GameObject> charactersBackPrefab = new List<GameObject>();
@@ -148,6 +150,8 @@ namespace DS
             foreach (var character in charactersBack)
             {
                 data.charactersBackNames.Add(character.name.Replace("(Clone)", "").Trim());
+
+
             }
 
             

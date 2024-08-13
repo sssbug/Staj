@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 3618169914930050022}
   - component: {fileID: 6178209160828457733}
   - component: {fileID: 800097699671142424}
+  - component: {fileID: 4290899776251447771}
   m_Layer: 6
   m_Name: Misafirb (15)
   m_TagString: 16
@@ -524,6 +525,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4290899776251447771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5108323274264570777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0eced54864325e4b8a8991ffcebba0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6395412907359212673
 GameObject:
   m_ObjectHideFlags: 0

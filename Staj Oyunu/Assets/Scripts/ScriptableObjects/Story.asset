@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 435579fb1e639ff4bb63d410a237d798, type: 3}
+  m_Name: Story
+  m_EditorClassIdentifier: 
+  dialog1: 0
+  dialog2: 0
+  dialog3: 0
+  dialog4: 0
+  dialog5: 0
+  dialog6: 0
+  dialog7: 0
+  dialog8: 0
+  dialog9: 0
+  dialog10: 0
+  dialog11: 0
+  dialog12: 0
+  dialog13: 0
+  dialog14: 0
+  dialog15: 0
+  dialog16: 0
+  dialog17: 0
+  dialog18: 0
+  dialog19: 0
+  dialog20: 0
+  dialog21: 0
+  dialog22: 0
+  dialog23: 0
+  dialog24: 0
+  dialog25: 0
+  dialog26: 0
+  dialog27: 0
+  dialog28: 0
