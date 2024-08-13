@@ -12,6 +12,7 @@ namespace DS
         public int gün;
         public int oda;
 
+        public int storyCount;
 
         public string[] isimdata = new string[40];
 
