@@ -41,7 +41,8 @@ namespace DS
 
 
 
-
+        private List<string> destroyedObjects = new List<string>();
+        private string destroySavePath;
 
 
 
@@ -54,10 +55,12 @@ namespace DS
         private void Start()
         {
             savePath = Path.Combine(Application.persistentDataPath, "gameData.json");
-            
+            destroySavePath = Path.Combine(Application.persistentDataPath, "destroyedObjects.json");
+            LoadDestroyedObjects();
+            RemoveDestroyedObjectsFromScene();
         }
 
-
+       
         private void Update()
         {
             float timePercent = TimeManager.Instance.timePercent;
@@ -183,5 +186,64 @@ namespace DS
             }
         }
 
+        public void RegisterDestroyedObject(string objectName)
+        {
+            // Obje ismini listeye ekle
+            if (!destroyedObjects.Contains(objectName))
+            {
+                destroyedObjects.Add(objectName);
+                SaveDestroyedObjects();
+            }
+        }
+
+        private void SaveDestroyedObjects()
+        {
+            // Listeyi JSON formatında kaydet
+            string json = JsonUtility.ToJson(new SerializableListt<string>(destroyedObjects), true);
+            File.WriteAllText(destroySavePath, json);
+            Debug.Log("Destroyed objects saved to " + destroySavePath);
+        }
+        private void RemoveDestroyedObjectsFromScene()
+        {
+            foreach (string objectName in destroyedObjects)
+            {
+                GameObject obj = GameObject.Find(objectName);
+                if (obj != null)
+                {
+                    Destroy(obj);
+                }
+            }
+        }
+        private void LoadDestroyedObjects()
+        {
+            if (File.Exists(destroySavePath))
+            {
+                string json = File.ReadAllText(destroySavePath);
+                SerializableListt<string> data = JsonUtility.FromJson<SerializableListt<string>>(json);
+                destroyedObjects = data.List;
+                Debug.Log("Destroyed objects loaded from " + destroySavePath);
+            }
+            else
+            {
+                Debug.LogWarning("Save file not found at " + destroySavePath);
+            }
+        }
     }
+    
+
+
+    [System.Serializable]
+    public class SerializableListt<T>
+    {
+        public List<T> List;
+
+        public SerializableListt(List<T> list)
+        {
+            List = list;
+        }
+    }
+
+
+
 }
+

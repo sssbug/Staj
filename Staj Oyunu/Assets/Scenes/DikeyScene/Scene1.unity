@@ -23850,6 +23850,7 @@ GameObject:
   - component: {fileID: 6339801643060041948}
   - component: {fileID: 1098431834911496415}
   - component: {fileID: 3644921413182241205}
+  - component: {fileID: 7197099063542415408}
   m_Layer: 5
   m_Name: OtelSahibi
   m_TagString: 24
@@ -25557,6 +25558,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6163554794728264658}
   m_CullTransparentMesh: 1
+--- !u!114 &7197099063542415408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6163554794728264658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 218f7088555af28499b51f6c51501e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7209133506304508116
 GameObject:
   m_ObjectHideFlags: 0
