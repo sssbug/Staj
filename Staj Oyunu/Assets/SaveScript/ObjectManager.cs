@@ -33,10 +33,10 @@ namespace DS
                     string prefabName = obj.name.Replace("(Clone)", "").Trim();
                     LayeredObjectData data = new LayeredObjectData(obj.transform.position, obj.transform.rotation, prefabName);
                     layeredObjectsData.Add(data);
-                    layeredObjectsData.Reverse();
+                    
                 }
             }
-
+            layeredObjectsData.Reverse();
             // Verileri JSON olarak serileştirip kaydet
             string json = JsonUtility.ToJson(new SerializableList<LayeredObjectData>(layeredObjectsData));
             File.WriteAllText(savePath, json);
