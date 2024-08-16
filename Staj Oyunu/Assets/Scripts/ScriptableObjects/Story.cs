@@ -1,4 +1,4 @@
-
+﻿
 using System;
 using UnityEngine;
 
@@ -8,8 +8,12 @@ namespace DS
     [CreateAssetMenu(fileName = "Story", menuName = "Persistence")]
     public class Story : ScriptableObject
     {
+        public int para;
+        public bool müşteriBasla;
         public bool basla;
+        //burası liste olabilir ama değil
         public bool dialog1;
+        public int dialog1KaldigiYer;
         public bool dialog2;
         public bool dialog3;
         public bool dialog4;

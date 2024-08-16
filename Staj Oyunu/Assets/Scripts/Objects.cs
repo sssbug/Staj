@@ -1,5 +1,4 @@
-﻿//using DialogueEditor;
-using DialogueEditor;
+﻿using DialogueEditor;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;

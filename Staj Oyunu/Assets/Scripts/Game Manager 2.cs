@@ -24,6 +24,11 @@ namespace DS
         public GameObject temizlikMalzemesi;
         public List<GameObject> lamba = new List<GameObject>();
         int basla = 1;
+
+
+
+
+
         private void Update()
         {
             float timePercent = TimeManager.Instance.timePercent;

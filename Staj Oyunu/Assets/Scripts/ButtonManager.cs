@@ -1,5 +1,6 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace DS
@@ -7,11 +8,13 @@ namespace DS
     public class ButtonManager : MonoBehaviour
     {
         GameManager gameManager;
-        
+         
 
         void Start()
         {
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            
+            
         }
         public void Dialog1()
         {
@@ -120,5 +123,9 @@ namespace DS
         {
             gameManager.story.dialog23 = true; gameManager.story.basla = false;
         }
+
+
+        
+
     }
 }

@@ -33,6 +33,7 @@ namespace DS
                     string prefabName = obj.name.Replace("(Clone)", "").Trim();
                     LayeredObjectData data = new LayeredObjectData(obj.transform.position, obj.transform.rotation, prefabName);
                     layeredObjectsData.Add(data);
+                    layeredObjectsData.Reverse();
                 }
             }
 
@@ -55,6 +56,7 @@ namespace DS
                     GameObject prefab = prefabs.Find(p => p.name == data.prefabName);
                     if (prefab != null)
                     {
+                        
                         if (gameManager.loadedCharactersNames.Contains(prefab.name))
                         {
                             GameObject obj = Instantiate(prefab, data.position, data.rotation);

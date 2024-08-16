@@ -3,6 +3,7 @@ using Spine.Unity;
 
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace DS
@@ -20,12 +21,13 @@ namespace DS
         private NPCConversation _myConvarsation;
         private GameObject _myChar;
         SkeletonGraphic _skeletonGraphic;
-        
+        TMP_Text myText;
         private void Awake()
         {
+            //bütün childlara erişilmesi lazım
             _skeletonGraphic = transform.GetChild(0).transform.GetComponent<SkeletonGraphic>();
             gameManager = GameObject.Find("GameManager").transform.GetComponent<GameManager>();
-           
+            myText = gameManager.myText;
         }
         private void Update()
         {
@@ -303,11 +305,12 @@ namespace DS
                
                 if (gameManager.characters.Contains(this.gameObject))
                 {
-                    _skeletonGraphic.AnimationState.SetAnimation(1, "İdle", true);
+                    
+                     _skeletonGraphic.AnimationState.SetAnimation(1, "İdle", true);
+                    
+                    
                     
 
-
-                    
                     _myChar = Instantiate(gameManager.charactersBackPrefab[int.Parse(gameObject.tag) - 1]);
                     
 
@@ -343,8 +346,12 @@ namespace DS
             gameManager.keys.SetActive(false);
         }
 
+        public void ParaEkle()
+        {
+            gameManager.story.para = int.Parse(myText.text) + 1500;
+            myText.text = gameManager.story.para.ToString();
+        }
 
-        
 
 
     }

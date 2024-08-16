@@ -53,7 +53,7 @@ namespace DS
             spawn.transform.parent = GameObject.Find("Canvas").transform;
             spawn.AddComponent<Çıkış>();
             Destroy(gameObject);
-            CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.70f, 0f, 0),15);
+            gameManager.story.müşteriBasla = true;
         }
         private void OnTriggerEnter2D(Collider2D collision)
         {

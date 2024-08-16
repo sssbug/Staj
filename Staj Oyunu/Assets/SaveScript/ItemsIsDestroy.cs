@@ -19,7 +19,11 @@ namespace DS
             // Obje yok olurken GameManager'a bildir
             if (gameManager != null)
             {
-                gameManager.RegisterDestroyedObject(this.gameObject.name);
+                if (this.gameObject.activeSelf == false)
+                {
+                    gameManager.RegisterDestroyedObject(this.gameObject.name);
+                }
+                
             }
         }
 

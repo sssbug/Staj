@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
@@ -53,6 +54,7 @@ namespace DS
         private float currentTimeOfDay = 0f;
 
         private string savePath;
+        public TMP_Text myText;
 
         private void Start()
         {
@@ -60,6 +62,8 @@ namespace DS
             destroySavePath = Path.Combine(Application.persistentDataPath, "destroyedObjects.json");
             LoadDestroyedObjects();
             RemoveDestroyedObjectsFromScene();
+            
+            myText.text = (story.para).ToString();
         }
 
        
@@ -234,7 +238,7 @@ namespace DS
         }
     }
     
-
+   
 
     [System.Serializable]
     public class SerializableListt<T>
@@ -247,7 +251,7 @@ namespace DS
         }
     }
 
-
+    
 
 }
 
