@@ -23,9 +23,10 @@ namespace DS
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             // Save dosyasının yolunu belirleyin
             savePath = Path.Combine(Application.persistentDataPath, "generatedNumbers.json");
-            CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), 1);
+            
             // Önceden kaydedilmiş sayıları yükle
             LoadGeneratedNumbers();
+           
         }
 
         

@@ -24,11 +24,30 @@ namespace DS
         TMP_Text myText;
         private void Awake()
         {
-            //bütün childlara erişilmesi lazım
-            Debug.Log(transform.childCount);
-            //yanlış oldu
-            _skeletonGraphic.Add(transform.GetChild(0).transform.GetComponent<SkeletonGraphic>());
-            _skeletonGraphic.Add(transform.GetChild(1).transform.GetComponent<SkeletonGraphic>());
+            // for çalışmıyor
+            if (transform.childCount == 1)
+            {
+                _skeletonGraphic.Add(transform.GetChild(0).transform.GetComponent<SkeletonGraphic>());
+            }
+            if (transform.childCount == 2)
+            {
+                _skeletonGraphic.Add(transform.GetChild(0).transform.GetComponent<SkeletonGraphic>());
+                _skeletonGraphic.Add(transform.GetChild(1).transform.GetComponent<SkeletonGraphic>());
+            }
+            if (transform.childCount == 3)
+            {
+                _skeletonGraphic.Add(transform.GetChild(0).transform.GetComponent<SkeletonGraphic>());
+                _skeletonGraphic.Add(transform.GetChild(1).transform.GetComponent<SkeletonGraphic>());
+                _skeletonGraphic.Add(transform.GetChild(2).transform.GetComponent<SkeletonGraphic>());
+            }
+            if (transform.childCount == 4)
+            {
+                _skeletonGraphic.Add(transform.GetChild(0).transform.GetComponent<SkeletonGraphic>());
+                _skeletonGraphic.Add(transform.GetChild(1).transform.GetComponent<SkeletonGraphic>());
+                _skeletonGraphic.Add(transform.GetChild(2).transform.GetComponent<SkeletonGraphic>());
+                _skeletonGraphic.Add(transform.GetChild(3).transform.GetComponent<SkeletonGraphic>());
+            }
+
 
             gameManager = GameObject.Find("GameManager").transform.GetComponent<GameManager>();
             myText = gameManager.myText;
@@ -334,8 +353,8 @@ namespace DS
             if (collision.gameObject.tag == "adimİlk")
             {
 
-                
-               
+
+                Debug.Log("hbjfs");
                 if (gameManager.characters.Contains(this.gameObject))
                 {
 
