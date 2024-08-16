@@ -23,7 +23,7 @@ namespace DS
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             // Save dosyasının yolunu belirleyin
             savePath = Path.Combine(Application.persistentDataPath, "generatedNumbers.json");
-
+            CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), 1);
             // Önceden kaydedilmiş sayıları yükle
             LoadGeneratedNumbers();
         }
@@ -51,23 +51,23 @@ namespace DS
                     }
                 }
             }
-            if (gameManager.story.müşteriBasla == true)
-            {
+            //if (gameManager.story.müşteriBasla == true)
+            //{
                 
-                if (gameManager.story.dialog1 == false)
-                {
+            //    if (gameManager.story.dialog1 == false)
+            //    {
                     
-                    for (int i = gameManager.story.dialog1KaldigiYer; i < 32; i++)
-                    {
+            //        for (int i = gameManager.story.dialog1KaldigiYer; i < 32; i++)
+            //        {
                        
-                        if (bitti == true)
-                        {
-                            misafirSpawn();
-                        }
-                        //kapatıldığında nereden kaldığını al ya liste
-                    }
-                }
-            }
+            //            if (bitti == true)
+            //            {
+            //                misafirSpawn();
+            //            }
+            //            //kapatıldığında nereden kaldığını al ya liste
+            //        }
+            //    }
+            //}
             
         }
         public void misafirSpawn()

@@ -20,12 +20,16 @@ namespace DS
         int counterTwo = 0;
         private NPCConversation _myConvarsation;
         private GameObject _myChar;
-        SkeletonGraphic _skeletonGraphic;
+        public List<SkeletonGraphic>_skeletonGraphic;
         TMP_Text myText;
         private void Awake()
         {
             //bütün childlara erişilmesi lazım
-            _skeletonGraphic = transform.GetChild(0).transform.GetComponent<SkeletonGraphic>();
+            Debug.Log(transform.childCount);
+            //yanlış oldu
+            _skeletonGraphic.Add(transform.GetChild(0).transform.GetComponent<SkeletonGraphic>());
+            _skeletonGraphic.Add(transform.GetChild(1).transform.GetComponent<SkeletonGraphic>());
+
             gameManager = GameObject.Find("GameManager").transform.GetComponent<GameManager>();
             myText = gameManager.myText;
         }
@@ -117,7 +121,11 @@ namespace DS
 
                         if (counterTwo == 0)
                         {
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "İdle", true);
+                            foreach (var item in _skeletonGraphic)
+                            {
+                                item.AnimationState.SetAnimation(1, "İdle", true);
+                            }
+                            
 
                             counterTwo = 1;
                         }
@@ -126,7 +134,11 @@ namespace DS
                     {
                         if (counterTwo == 1)
                         {
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Walk", true);
+                            foreach (var item in _skeletonGraphic)
+                            {
+                                item.AnimationState.SetAnimation(1, "Walk", true);
+                            }
+                            
 
                             counterTwo = 0;
                         }
@@ -141,7 +153,11 @@ namespace DS
 
                         if (counter == 1)
                         {
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Walk", true);
+                            foreach (var item in _skeletonGraphic)
+                            {
+                                item.AnimationState.SetAnimation(1, "Walk", true);
+                            }
+                            
                             
                             counter = 0;
                         }
@@ -171,7 +187,10 @@ namespace DS
                             {
                                 if (counter == 0)
                                 {
-                                    _skeletonGraphic.AnimationState.SetAnimation(1, "İdle", true);
+                                    foreach (var item in _skeletonGraphic)
+                                    {
+                                        item.AnimationState.SetAnimation(1, "İdle", true);
+                                    }
 
                                     counter = 1;
                                 }
@@ -219,7 +238,10 @@ namespace DS
 
                         if (counterTwo == 1)
                         {
-                            _skeletonGraphic.freeze = false;
+                            foreach (var item in _skeletonGraphic)
+                            {
+                                item.freeze = false;
+                            }
                             counterTwo = 0;
                         }
 
@@ -234,7 +256,10 @@ namespace DS
                                 _myConvarsation = GetComponent<NPCConversation>();
                             }
                             ConversationManager.Instance.StartConversation(_myConvarsation);
-                            _skeletonGraphic.freeze = true;
+                            foreach (var item in _skeletonGraphic)
+                            {
+                                item.freeze = true;
+                            }
                             counterTwo = 1;
                         }
 
@@ -251,7 +276,11 @@ namespace DS
 
                         if (counter == 1)
                         {
-                            _skeletonGraphic.freeze = false;
+                            foreach (var item in _skeletonGraphic)
+                            {
+                                item.freeze = false;
+                            }
+                            
                             counter = 0;
                         }
 
@@ -280,7 +309,11 @@ namespace DS
                             {
                                 if (counter == 0)
                                 {
-                                    _skeletonGraphic.freeze = true;
+                                    foreach (var item in _skeletonGraphic)
+                                    {
+                                        item.freeze = true;
+                                    }
+                                    
                                     counter = 1;
                                 }
                                 
@@ -305,11 +338,13 @@ namespace DS
                
                 if (gameManager.characters.Contains(this.gameObject))
                 {
-                    
-                     _skeletonGraphic.AnimationState.SetAnimation(1, "İdle", true);
-                    
-                    
-                    
+
+                    foreach (var item in _skeletonGraphic)
+                    {
+                        item.AnimationState.SetAnimation(1, "İdle", true);
+                    }
+
+
 
                     _myChar = Instantiate(gameManager.charactersBackPrefab[int.Parse(gameObject.tag) - 1]);
                     
