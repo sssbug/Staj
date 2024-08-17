@@ -6,24 +6,24 @@ filter: Linear,Linear
 repeat: none
 6/Arm_l
   rotate: true
-  xy: 316, 15
-  size: 72, 361
+  xy: 320, 15
+  size: 72, 365
   orig: 72, 365
-  offset: 0, 2
+  offset: 0, 0
   index: -1
 6/Arm_r
   rotate: true
-  xy: 316, 15
-  size: 72, 361
+  xy: 320, 15
+  size: 72, 365
   orig: 72, 365
-  offset: 0, 2
+  offset: 0, 0
   index: -1
 6/Body
   rotate: true
   xy: 2, 2
-  size: 133, 312
+  size: 133, 316
   orig: 133, 316
-  offset: 0, 2
+  offset: 0, 0
   index: -1
 6/Head
   rotate: false

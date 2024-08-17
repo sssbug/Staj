@@ -52,36 +52,39 @@ namespace DS
                     }
                 }
             }
-            //if (gameManager.story.müşteriBasla == true)
-            //{
-                
-            //    if (gameManager.story.dialog1 == false)
-            //    {
-                    
-            //        for (int i = gameManager.story.dialog1KaldigiYer; i < 32; i++)
-            //        {
-                       
-            //            if (bitti == true)
-            //            {
-            //                misafirSpawn();
-            //            }
-            //            //kapatıldığında nereden kaldığını al ya liste
-            //        }
-            //    }
-            //}
-            
+            if (gameManager.story.müşteriBasla == true)
+            {
+
+                if (gameManager.story.dialog1 == false)
+                {
+
+                    for (int i = gameManager.story.dialog1KaldigiYer; i < 22; i++)
+                    {
+
+                        if (bitti == true)
+                        {
+                            misafirSpawn();
+                        }
+                        //kapatıldığında nereden kaldığını al ya liste
+                    }
+                }
+            }
+
         }
         public void misafirSpawn()
         {
+            if (GenerateUniqueRandomNumber() != -1)
+            {
+                StartCoroutine(mySpawn(GenerateUniqueRandomNumber()));
+            }
             
-            StartCoroutine(mySpawn(GenerateUniqueRandomNumber()));
         }
         public int GenerateUniqueRandomNumber()
         {
             // 1-30 arası sayılardan henüz üretilmemiş olanları bul
             List<int> availableNumbers = new List<int>();
 
-            for (int i = 1; i <= 32; i++)
+            for (int i = 1; i <= 22; i++)
             {
                 if (!generatedNumbers.Contains(i))
                 {
@@ -96,6 +99,7 @@ namespace DS
                 bitti = false;
                 return -1;
             }
+            
 
             // Rastgele bir sayı seç
             int randomIndex = Random.Range(0, availableNumbers.Count);
