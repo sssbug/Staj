@@ -85,7 +85,7 @@ namespace DS
                     Vector2 direction = points[pointCount] - GetComponent<Rigidbody2D>().position;
 
 
-                    if (direction.magnitude > 0.1f)
+                    if (direction.magnitude > 0.01f)
                     {
 
                         direction.Normalize();
@@ -113,7 +113,7 @@ namespace DS
                             Vector2 direc = new Vector2(-1.3f, 0) - GetComponent<Rigidbody2D>().position;
 
 
-                            if (direc.magnitude > 0.1f)
+                            if (direc.magnitude > 0.01f)
                             {
 
                                 direc.Normalize();
@@ -194,7 +194,7 @@ namespace DS
                             Vector2 direction = new Vector2(gameManager.characters[_characterCount - 1].transform.position.x + -0.6f,this.gameObject.transform.position.y ) - GetComponent<Rigidbody2D>().position;
 
 
-                            if (direction.magnitude > 0.1f)
+                            if (direction.magnitude > 0.01f)
                             {
 
                                 direction.Normalize();
@@ -250,7 +250,7 @@ namespace DS
                     Vector2 direction = points[1] - GetComponent<Rigidbody2D>().position;
 
 
-                    if (direction.magnitude > 0.1f)
+                    if (direction.magnitude > 0.01f)
                     {
 
                         direction.Normalize();
@@ -316,7 +316,7 @@ namespace DS
                             Vector2 direction = new Vector2(this.gameObject.transform.position.x, gameManager.charactersBack[_characterBackCount - 1].transform.position.y + -0.4f) - GetComponent<Rigidbody2D>().position;
 
 
-                            if (direction.magnitude > 0.1f)
+                            if (direction.magnitude > 0.01f)
                             {
 
                                 direction.Normalize();

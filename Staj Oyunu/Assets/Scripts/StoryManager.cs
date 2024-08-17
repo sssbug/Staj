@@ -137,7 +137,7 @@ namespace DS
         }
         IEnumerator mySpawn(int j)
         {
-            float randomWaitTime = Random.Range(1f, 5f);
+            float randomWaitTime = Random.Range(1f, 10f);
             yield return new WaitForSeconds(randomWaitTime);
             CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), j);
         }
