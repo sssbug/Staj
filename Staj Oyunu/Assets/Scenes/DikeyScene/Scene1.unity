@@ -5754,8 +5754,8 @@ MonoBehaviour:
   inventoryItems:
   - {fileID: 6237363602486116218, guid: b0e7f0ad4f61faf4e846bb450ec8ad6c, type: 3}
   otelinSahibi:
-  - {fileID: 3959227041649209907, guid: 7f725dbcf2ebed64f9ea102c4dd5b55b, type: 3}
   - {fileID: 6508489909213102728, guid: 58acf9cefe5cf8f45a22177039188c3b, type: 3}
+  - {fileID: 3959227041649209907, guid: 7f725dbcf2ebed64f9ea102c4dd5b55b, type: 3}
   lamba: {fileID: 967825544}
   keys: {fileID: 7326283349236885683}
   "s\u0131radaki": {fileID: 0}

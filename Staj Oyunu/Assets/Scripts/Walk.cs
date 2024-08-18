@@ -20,7 +20,7 @@ namespace DS
         int counterTwo = 0;
         private NPCConversation _myConvarsation;
         private GameObject _myChar;
-        public List<SkeletonGraphic>_skeletonGraphic;
+        public List<SkeletonGraphic> _skeletonGraphic;
         TMP_Text myText;
         private void Awake()
         {
@@ -89,7 +89,7 @@ namespace DS
                     {
 
                         direction.Normalize();
-                        GetComponent<Rigidbody2D>().velocity = new Vector2(0.001f,0);
+                        GetComponent<Rigidbody2D>().velocity = new Vector2(0.001f, 0);
 
 
                     }
@@ -109,7 +109,7 @@ namespace DS
                     {
                         if (gameManager.charactersBack.Count == 6)
                         {
-                            transform.position = Vector3.MoveTowards(transform.position,new Vector3(-1.3f, 0, 0), speed * Time.deltaTime);
+                            transform.position = Vector3.MoveTowards(transform.position, new Vector3(-1.3f, 0, 0), speed * Time.deltaTime);
                             Vector2 direc = new Vector2(-1.3f, 0) - GetComponent<Rigidbody2D>().position;
 
 
@@ -144,7 +144,7 @@ namespace DS
                             {
                                 item.AnimationState.SetAnimation(1, "İdle", true);
                             }
-                            
+
 
                             counterTwo = 1;
                         }
@@ -157,7 +157,7 @@ namespace DS
                             {
                                 item.AnimationState.SetAnimation(1, "Walk", true);
                             }
-                            
+
 
                             counterTwo = 0;
                         }
@@ -176,8 +176,8 @@ namespace DS
                             {
                                 item.AnimationState.SetAnimation(1, "Walk", true);
                             }
-                            
-                            
+
+
                             counter = 0;
                         }
 
@@ -191,32 +191,46 @@ namespace DS
                         transform.position = Vector3.MoveTowards(transform.position, gameManager.characters[_characterCount - 1].transform.position + new Vector3(-0.6f, 0, 0), speed * Time.deltaTime);
                         if (gameManager.characters[_characterCount - 1].GetComponent<Rigidbody2D>().velocity == Vector2.zero)
                         {
-                            Vector2 direction = new Vector2(gameManager.characters[_characterCount - 1].transform.position.x + -0.6f,this.gameObject.transform.position.y ) - GetComponent<Rigidbody2D>().position;
+                            Vector2 direction = new Vector2(gameManager.characters[_characterCount - 1].transform.position.x + -0.6f, this.gameObject.transform.position.y) - GetComponent<Rigidbody2D>().position;
 
 
-                            if (direction.magnitude > 0.01f)
+                            if (direction.magnitude > 0.1f)
                             {
 
                                 direction.Normalize();
                                 GetComponent<Rigidbody2D>().velocity = new Vector2(0.001f, 0);
 
+                                if (counter == 1)
+                                {
+                                    foreach (var item in _skeletonGraphic)
+                                    {
+                                        item.AnimationState.SetAnimation(1, "Walk", true);
+                                    }
+
+                                    counter = 0;
+                                }
+
+
 
                             }
                             else
                             {
-                                if (counter == 0)
+                                if (gameManager.characters[0].GetComponent<Rigidbody2D>().velocity == Vector2.zero)
                                 {
-                                    foreach (var item in _skeletonGraphic)
+                                    if (counter == 0)
                                     {
-                                        item.AnimationState.SetAnimation(1, "İdle", true);
-                                    }
+                                        foreach (var item in _skeletonGraphic)
+                                        {
+                                            item.AnimationState.SetAnimation(1, "İdle", true);
+                                        }
 
-                                    counter = 1;
+                                        counter = 1;
+                                    }
                                 }
                                 GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
                             }
-                            
+
                         }
                     }
                 }
@@ -270,11 +284,11 @@ namespace DS
 
                         if (counterTwo == 0)
                         {
-                            if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
-                            {
-                                _myConvarsation = GetComponent<NPCConversation>();
-                            }
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
+                            //if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
+                            //{
+                            //    _myConvarsation = GetComponent<NPCConversation>();
+                            //}
+                            //ConversationManager.Instance.StartConversation(_myConvarsation);
                             foreach (var item in _skeletonGraphic)
                             {
                                 item.freeze = true;
@@ -284,7 +298,7 @@ namespace DS
 
                     }
                     transform.position = Vector3.MoveTowards(transform.position, points[1], speed * Time.deltaTime);
-                   
+
                 }
                 else
                 {
@@ -299,7 +313,7 @@ namespace DS
                             {
                                 item.freeze = false;
                             }
-                            
+
                             counter = 0;
                         }
 
@@ -320,7 +334,7 @@ namespace DS
                             {
 
                                 direction.Normalize();
-                                
+
 
 
                             }
@@ -332,13 +346,13 @@ namespace DS
                                     {
                                         item.freeze = true;
                                     }
-                                    
+
                                     counter = 1;
                                 }
-                                
+
 
                             }
-                           
+
                         }
                     }
                 }
@@ -366,7 +380,7 @@ namespace DS
 
 
                     _myChar = Instantiate(gameManager.charactersBackPrefab[int.Parse(gameObject.tag) - 1]);
-                    
+
 
                     _myChar.gameObject.transform.parent = GameObject.Find("Canvas").gameObject.transform;
                     _myChar.transform.position = this.gameObject.transform.position;
@@ -378,10 +392,10 @@ namespace DS
                 if (gameManager.charactersBack.Contains(this.gameObject))
                 {
                     pointCount = +1;
-                    
+
                 }
 
-                
+
 
             }
 

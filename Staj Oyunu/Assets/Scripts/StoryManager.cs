@@ -14,6 +14,8 @@ namespace DS
         private string savePath;
         int spawnınKaldığıYer58;
         bool bitti = true;
+        float eski;
+        float randomWaitTime;
         void Start()
         {
             if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
@@ -64,6 +66,7 @@ namespace DS
                         if (bitti == true)
                         {
                             misafirSpawn();
+                            eski += 10;
                         }
                         //kapatıldığında nereden kaldığını al ya liste
                     }
@@ -76,6 +79,7 @@ namespace DS
             if (GenerateUniqueRandomNumber() != -1)
             {
                 StartCoroutine(mySpawn(GenerateUniqueRandomNumber()));
+                
             }
             
         }
@@ -137,8 +141,12 @@ namespace DS
         }
         IEnumerator mySpawn(int j)
         {
-            float randomWaitTime = Random.Range(1f, 10f);
-            yield return new WaitForSeconds(randomWaitTime);
+            eski += randomWaitTime;
+            randomWaitTime = 20f;
+            
+            yield return new WaitForSeconds(eski + randomWaitTime);
+            
+            
             CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), j);
         }
         [System.Serializable]
