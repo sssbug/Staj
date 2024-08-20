@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Story
   m_EditorClassIdentifier: 
   para: 0
-  "m\xFC\u015FteriBasla": 1
+  "m\xFC\u015FteriBasla": 0
   basla: 0
   dialog1: 0
-  dialog1KaldigiYer: 0
+  currentCallCount: 0
+  timer: 0
   dialog2: 0
   dialog3: 0
   dialog4: 0

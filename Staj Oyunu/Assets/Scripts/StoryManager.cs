@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-
+using System;
 namespace DS
 {
     public class StoryManager : MonoBehaviour
@@ -12,10 +12,14 @@ namespace DS
         private NPCConversation _myConvarsation;
         private List<int> generatedNumbers = new List<int>();
         private string savePath;
-        int spawnınKaldığıYer58;
         bool bitti = true;
-        float eski;
-        float randomWaitTime;
+        public float interval = 5f;  // Her 20 saniyede bir çalışacak
+        public int maxCalls = 23;     // Fonksiyon toplamda 23 kere çalışacak
+
+        private int currentCallCountLocal;
+        private float timerLocal;
+
+        bool basla = true;
         void Start()
         {
             if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
@@ -25,31 +29,36 @@ namespace DS
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             // Save dosyasının yolunu belirleyin
             savePath = Path.Combine(Application.persistentDataPath, "generatedNumbers.json");
-            
+
             // Önceden kaydedilmiş sayıları yükle
             LoadGeneratedNumbers();
-           
+            LoadProgress(); // Uygulama açıldığında ilerlemeyi yükle
+
+            if (currentCallCountLocal < maxCalls)
+            {
+                timerLocal = interval - timerLocal; // Kaldığı yerden devam edebilmesi için kalan süreyi hesapla
+            }
         }
 
-        
+
         void Update()
         {
             //Burada dialogları başlatıyorum 
             if (gameManager.story.dialog2 == false)
             {
-                
+
                 for (int i = 0; i < gameManager.odaVeriTabanıı.temizlikOdalar.Length; i++)
                 {
-                    
+
                     if (gameManager.odaVeriTabanıı.temizlikOdalar[i] == true)
                     {
-                        if (gameManager.story.basla  == false)
+                        if (gameManager.story.basla == false)
                         {
                             ConversationManager.Instance.StartConversation(_myConvarsation);
                             ConversationManager.Instance.SetInt("story", 1);
                             gameManager.story.basla = true;
                         }
-                        
+
                         break;
                     }
                 }
@@ -60,53 +69,73 @@ namespace DS
                 if (gameManager.story.dialog1 == false)
                 {
 
-                    for (int i = gameManager.story.dialog1KaldigiYer; i < 22; i++)
-                    {
 
-                        if (bitti == true)
+
+                    if (currentCallCountLocal < maxCalls)
+                    {
+                        timerLocal += Time.deltaTime;
+
+                        if (timerLocal >= interval)
                         {
+
                             misafirSpawn();
-                            eski += 10;
+
+                            currentCallCountLocal++;
+                            timerLocal = 0f; // Zamanlayıcıyı sıfırla
+
+                            SaveProgress(); // Her işlemde ilerlemeyi kaydet
+
+
+
                         }
-                        //kapatıldığında nereden kaldığını al ya liste
                     }
+                    else
+                    {
+                        gameManager.story.dialog1 = true;
+                        gameManager.story.müşteriBasla = false;
+                    }
+
+
+
                 }
             }
 
         }
         public void misafirSpawn()
         {
-            if (GenerateUniqueRandomNumber() != -1)
+            int generated = GenerateUniqueRandomNumber();
+            if (generated != -1)
             {
-                StartCoroutine(mySpawn(GenerateUniqueRandomNumber()));
-                
+                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), generated);
+
             }
-            
+
         }
         public int GenerateUniqueRandomNumber()
         {
             // 1-30 arası sayılardan henüz üretilmemiş olanları bul
             List<int> availableNumbers = new List<int>();
 
-            for (int i = 1; i <= 22; i++)
+            for (int i = 0; i <= 22; i++)
             {
                 if (!generatedNumbers.Contains(i))
                 {
                     availableNumbers.Add(i);
+
                 }
             }
 
             // Eğer üretilecek sayı kalmadıysa, -1 döndür
-            if (availableNumbers.Count == 0)
+            if (availableNumbers.Count == 1)
             {
                 Debug.Log("Tüm sayılar üretildi.");
-                bitti = false;
+
                 return -1;
             }
-            
 
+            Debug.Log(availableNumbers.Count);
             // Rastgele bir sayı seç
-            int randomIndex = Random.Range(0, availableNumbers.Count);
+            int randomIndex = UnityEngine.Random.Range(0, availableNumbers.Count);
             int randomNumber = availableNumbers[randomIndex];
 
             // Sayıyı listeye ekle
@@ -124,7 +153,11 @@ namespace DS
             File.WriteAllText(savePath, json);
             Debug.Log("Generated numbers saved.");
         }
-
+        void SaveProgress()
+        {
+            gameManager.story.currentCallCount = currentCallCountLocal;
+            gameManager.story.timer = timerLocal;
+        }
         private void LoadGeneratedNumbers()
         {
             if (File.Exists(savePath))
@@ -139,15 +172,10 @@ namespace DS
                 Debug.Log("No save file found.");
             }
         }
-        IEnumerator mySpawn(int j)
+        void LoadProgress()
         {
-            eski += randomWaitTime;
-            randomWaitTime = 20f;
-            
-            yield return new WaitForSeconds(eski + randomWaitTime);
-            
-            
-            CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), j);
+            currentCallCountLocal = gameManager.story.currentCallCount;
+            timerLocal = gameManager.story.timer;
         }
         [System.Serializable]
         public class SerializableList<T>
@@ -161,7 +189,7 @@ namespace DS
         }
         private void OnApplicationQuit()
         {
-            
+            SaveProgress();
         }
     }
 }

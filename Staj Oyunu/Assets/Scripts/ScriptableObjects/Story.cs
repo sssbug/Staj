@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -13,7 +14,8 @@ namespace DS
         public bool basla;
         //burası liste olabilir ama değil
         public bool dialog1;
-        public int dialog1KaldigiYer;
+        public int currentCallCount;
+        public float timer;
         public bool dialog2;
         public bool dialog3;
         public bool dialog4;
