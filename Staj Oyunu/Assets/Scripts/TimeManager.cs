@@ -12,11 +12,17 @@ namespace DS
         public float speedFactor = 1f;
         [SerializeField]
         public odaVeriTabanı odaVeriTabanıı;
+        [SerializeField]
+        public Story story;
         private const string TimePercentKey = "TimePercent";
         private const string LastSavedTimeKey = "LastSavedTime";
         public int basla = 1;
+        private int gunSayacı = 0;
+        private GameObject conversationManager;
         private void Awake()
         {
+
+            conversationManager = GameObject.Find("Panel_Dialogue").gameObject;
             if (Instance == null)
             {
                 Instance = this;
@@ -35,24 +41,29 @@ namespace DS
 
         private void Update()
         {
-
-            timePercent += (Time.deltaTime / (24f * 60f)) * speedFactor;
-            if (timePercent >= 1f) timePercent = 0f;
-
-            if ((Math.Floor(timePercent * 10) / 10) == 0)
+            if (conversationManager.activeSelf == false)
             {
-                if (basla == 1)
+                timePercent += (Time.deltaTime / (24f * 60f)) * speedFactor;
+                if (timePercent >= 1f) timePercent = 0f;
+
+                if ((Math.Floor(timePercent * 10) / 10) == 0)
                 {
-                    Debug.Log("TimeManager");
-                    odaVeriTabanıı.odalar();
-                    basla = 0;
-                }
+                    if (basla == 1)
+                    {
+                        odaVeriTabanıı.odalar();
+                        story.gun[gunSayacı] = false;
+                        story.gun[gunSayacı + 1] = true;
+                        gunSayacı += 1;
+                        basla = 0;
+                    }
 
+                }
+                else
+                {
+                    basla = 1;
+                }
             }
-            else
-            {
-                basla = 1;
-            }
+            
             
         }
 

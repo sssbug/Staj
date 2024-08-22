@@ -12,6 +12,15 @@ namespace DS
         public int para;
         public bool müşteriBasla;
         public bool basla;
+        public bool[] gun;
+        public int generated;
+        public int generated1;
+        public int generated2;
+        public int generated3;
+        public int generated4;
+        public int generated5;
+        public int generated6;
+        public int generated7;
         //burası liste olabilir ama değil
         public bool dialog1;
         public int currentCallCount;

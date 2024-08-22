@@ -25,22 +25,22 @@ namespace DS
         private void Awake()
         {
             // for çalışmıyor
-            if (transform.childCount == 1)
-            {
-                _skeletonGraphic.Add(transform.GetChild(0).transform.GetComponent<SkeletonGraphic>());
-            }
             if (transform.childCount == 2)
             {
                 _skeletonGraphic.Add(transform.GetChild(0).transform.GetComponent<SkeletonGraphic>());
-                _skeletonGraphic.Add(transform.GetChild(1).transform.GetComponent<SkeletonGraphic>());
             }
             if (transform.childCount == 3)
             {
                 _skeletonGraphic.Add(transform.GetChild(0).transform.GetComponent<SkeletonGraphic>());
                 _skeletonGraphic.Add(transform.GetChild(1).transform.GetComponent<SkeletonGraphic>());
-                _skeletonGraphic.Add(transform.GetChild(2).transform.GetComponent<SkeletonGraphic>());
             }
             if (transform.childCount == 4)
+            {
+                _skeletonGraphic.Add(transform.GetChild(0).transform.GetComponent<SkeletonGraphic>());
+                _skeletonGraphic.Add(transform.GetChild(1).transform.GetComponent<SkeletonGraphic>());
+                _skeletonGraphic.Add(transform.GetChild(2).transform.GetComponent<SkeletonGraphic>());
+            }
+            if (transform.childCount == 5)
             {
                 _skeletonGraphic.Add(transform.GetChild(0).transform.GetComponent<SkeletonGraphic>());
                 _skeletonGraphic.Add(transform.GetChild(1).transform.GetComponent<SkeletonGraphic>());
@@ -284,11 +284,11 @@ namespace DS
 
                         if (counterTwo == 0)
                         {
-                            //if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
-                            //{
-                            //    _myConvarsation = GetComponent<NPCConversation>();
-                            //}
-                            //ConversationManager.Instance.StartConversation(_myConvarsation);
+                            if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
+                            {
+                                _myConvarsation = GetComponent<NPCConversation>();
+                            }
+                            ConversationManager.Instance.StartConversation(_myConvarsation);
                             foreach (var item in _skeletonGraphic)
                             {
                                 item.freeze = true;

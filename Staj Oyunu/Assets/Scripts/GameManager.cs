@@ -17,6 +17,7 @@ namespace DS
         public odaVeriTabanı odaVeriTabanıı;
         [SerializeField]
         public Story story;
+        public List<string> charactersPrefabNames;
         public List<GameObject> charactersPrefab = new List<GameObject>();
         public List<GameObject> characters = new List<GameObject>();
         public List<GameObject> charactersBackPrefab = new List<GameObject>();
@@ -24,7 +25,7 @@ namespace DS
         public List<GameObject> charactersReversePrefab = new List<GameObject>();
 
 
-        public List<string> loadedCharactersPrefabNames;
+        
         public List<string> loadedCharactersNames;
         public List<string> loadedCharactersBackPrefabNames;
         public List<string> loadedCharactersBackNames;
@@ -158,18 +159,18 @@ namespace DS
 
             }
 
-            
-            
 
-            // Envanter item isimlerini kaydet
-            data.inventoryItemNames = new List<string>();
-            foreach (var item in inventoryItems)
+            data.spawnedharactersPrefabNames = new List<string>();
+            foreach (var character in charactersPrefabNames)
             {
-                data.inventoryItemNames.Add(item.name);
+                data.spawnedharactersPrefabNames.Add(character.Replace("(Clone)", "").Trim());
+
+
             }
 
-            
-            
+
+
+
 
 
             // Veriyi JSON formatına dönüştür ve dosyaya yaz
@@ -188,7 +189,7 @@ namespace DS
                 // JSON'dan gelen verileri public listelere kaydet
                 loadedCharactersNames = data.charactersNames;
                 loadedCharactersBackNames = data.charactersBackNames;
-                loadedInventoryItemNames = data.inventoryItemNames;
+                charactersPrefabNames = data.spawnedharactersPrefabNames;
                 
                 
             }

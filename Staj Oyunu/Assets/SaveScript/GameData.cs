@@ -10,7 +10,6 @@ namespace DS
         
         public List<string> charactersNames;
         public List<string> charactersBackNames;
-        public List<string> inventoryItemNames;
-        
+        public List<string> spawnedharactersPrefabNames;
     }
 }

@@ -20,13 +20,17 @@ namespace DS
 
             checkPoint = _checkPoint;
             SpawnCount = _spawnCount;
-            
 
-            _myChar = Instantiate(gameManager.charactersPrefab[_spawnCount]);
-            _myChar.gameObject.transform.parent = GameObject.Find("Canvas").gameObject.transform;
-            _myChar.transform.position = _checkPoint;
-            _myChar.transform.rotation = Quaternion.identity;
-            gameManager.characters.Add(_myChar);
+            if (!gameManager.charactersPrefabNames.Contains(gameManager.charactersPrefab[_spawnCount].name))
+            {
+                _myChar = Instantiate(gameManager.charactersPrefab[_spawnCount]);
+                _myChar.gameObject.transform.parent = GameObject.Find("Canvas").gameObject.transform;
+                _myChar.transform.position = _checkPoint;
+                _myChar.transform.rotation = Quaternion.identity;
+                gameManager.characters.Add(_myChar);
+                gameManager.charactersPrefabNames.Add(_myChar.name);
+            }
+           
         }
 
 

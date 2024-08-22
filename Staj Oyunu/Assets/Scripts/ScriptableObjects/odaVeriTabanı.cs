@@ -61,7 +61,6 @@ namespace DS
                         gündata[i] = 0;
                         odadata[i] = 0;
                         temizlikOdalar[i] = true;
-
                     }
                 }
 
