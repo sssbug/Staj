@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 6183682084350727447}
   - component: {fileID: 2542528217148623710}
   - component: {fileID: 2152264301545769723}
+  - component: {fileID: -5923692068289152407}
   m_Layer: 6
   m_Name: Misafirler15
   m_TagString: 15
@@ -224,3 +225,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!114 &-5923692068289152407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6942352014692612017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0eced54864325e4b8a8991ffcebba0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &526339537115457733
+--- !u!1 &464240141565628861
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2270346946775929793}
-  - component: {fileID: 514884719519852621}
-  - component: {fileID: 4032021175931221505}
-  - component: {fileID: 3483318217353248433}
-  - component: {fileID: 861317821550569279}
-  - component: {fileID: 4699851205420846693}
+  - component: {fileID: 3716072433781992960}
+  - component: {fileID: 1418823870823179769}
+  - component: {fileID: 3590406864499481169}
+  - component: {fileID: 3160893472307063346}
+  - component: {fileID: 92732921564572019}
+  - component: {fileID: 1635448657359505469}
+  - component: {fileID: -8310577766529664491}
   m_Layer: 6
   m_Name: Misafirlerb23
   m_TagString: 1
@@ -21,20 +22,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2270346946775929793
+--- !u!224 &3716072433781992960
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526339537115457733}
+  m_GameObject: {fileID: 464240141565628861}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -22788}
   m_LocalScale: {x: 0.0015797791, y: 0.0015797791, z: 0.0015797791}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 3953642537938593384}
-  - {fileID: 5427261576072981426}
+  - {fileID: 2995524946156603262}
+  - {fileID: 1824604695799696953}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -42,21 +43,21 @@ RectTransform:
   m_AnchoredPosition: {x: -789.9597, y: 120.71997}
   m_SizeDelta: {x: -619.8, y: -1429.4}
   m_Pivot: {x: 0.49999994, y: 0.4999999}
---- !u!222 &514884719519852621
+--- !u!222 &1418823870823179769
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526339537115457733}
+  m_GameObject: {fileID: 464240141565628861}
   m_CullTransparentMesh: 1
---- !u!61 &4032021175931221505
+--- !u!61 &3590406864499481169
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526339537115457733}
+  m_GameObject: {fileID: 464240141565628861}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -95,27 +96,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 160.15155, y: 743.13116}
   m_EdgeRadius: 0
---- !u!114 &3483318217353248433
+--- !u!114 &3160893472307063346
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526339537115457733}
+  m_GameObject: {fileID: 464240141565628861}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42fe11e1da69b1c4d98fce7145530a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _skeletonGraphic: []
---- !u!50 &861317821550569279
+--- !u!50 &92732921564572019
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526339537115457733}
+  m_GameObject: {fileID: 464240141565628861}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -135,39 +136,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
---- !u!114 &4699851205420846693
+--- !u!114 &1635448657359505469
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526339537115457733}
+  m_GameObject: {fileID: 464240141565628861}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 28
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":42,\"yPos\":577},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mektuplar\u0131
-    masaya koydu.\",\"parentUIDs\":[21],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":620,\"yPos\":305},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bu
-    da odan\",\"parentUIDs\":[26],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":489,\"yPos\":-161},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ho\u015F
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":125.5,\"yPos\":580},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mektuplar\u0131
+    masaya koydu.\",\"parentUIDs\":[21],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":704.5,\"yPos\":308},\"ID\":27,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"Value\":20}],\"TMPFontGUID\":null,\"Text\":\"Bu
+    da odan\u0131z\",\"parentUIDs\":[26],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"sira\",\"IntValue\":1}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"sira\",\"CheckType\":0,\"RequiredValue\":1}],\"NodeUID\":18},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"sira\",\"CheckType\":0,\"RequiredValue\":2}],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":572.5,\"yPos\":-158},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ho\u015F
     geldiniz! Size nas\u0131l yard\u0131mc\u0131 olabilirim?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":30,\"yPos\":8},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Merhaba
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":113.5,\"yPos\":11},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Merhaba
     yar\u0131n ki olucak protestonun haberini yapmak i\xE7in ve seninle g\xF6r\xFC\u015Fmek
     i\xE7in geldim \",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Timur
-    A\u011F\u0131rel\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":34,\"yPos\":143},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Benim
+    A\u011F\u0131rel\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":117.5,\"yPos\":146},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Benim
     i\xE7in mi?\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":39,\"yPos\":293},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Evet
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":122.5,\"yPos\":296},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Evet
     abin \xF6ld\xFCr\xFCmeden \xF6nce bana mektupla ula\u015Fmaya \xE7al\u0131\u015Fm\u0131\u015F
     malesef ge\xE7en hafta g\xF6rd\xFCm ama g\xF6r\xFCr g\xF6rmez b\xFCt\xFCn planlar\u0131m\u0131
     iptal ettim buraya geldim.\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Timur
-    A\u011F\u0131rel\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":45,\"yPos\":446},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bir
+    A\u011F\u0131rel\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":128.5,\"yPos\":449},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bir
     mektup bana bir mektup ta sana gelmi\u015F ama senin mektubunu okumad\u0131m
     abin \xF6zelliklee belirtmi\u015Fti. Al bunlar da mektuplar.\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Timur
-    A\u011F\u0131rel\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":613,\"yPos\":-18},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Okudu\u011Fun
+    A\u011F\u0131rel\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":696.5,\"yPos\":-15},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Okudu\u011Fun
     gibi bundan sonra beraber abini \xF6ld\xFCren ki\u015Fileri bulmal\u0131y\u0131z
     bulana kadar da buradan ayr\u0131lm\u0131yaca\u011F\u0131m.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Timur
-    A\u011F\u0131rel\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":617,\"yPos\":148},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Timur
+    A\u011F\u0131rel\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":700.5,\"yPos\":151},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Timur
     abi \xE7ok te\u015Fekk\xFCr ederim burada istedi\u011Fin kadar kalabilirsin.\",\"parentUIDs\":[25],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
     Hal\u0131g\xFCr \",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -175,21 +176,33 @@ MonoBehaviour:
   DefaultSprite: {fileID: 0}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
-  - {fileID: 78784781341679453}
-  - {fileID: 2200071608508278880}
-  - {fileID: 1122950296314301120}
-  - {fileID: 1668435532028075562}
-  - {fileID: 8264314302426187598}
-  - {fileID: 5227183595271255549}
-  - {fileID: 924087561299563294}
-  - {fileID: 3276120421650718180}
-  - {fileID: 6991496512589013204}
+  - {fileID: 748142399621766683}
+  - {fileID: 8747683902253533818}
+  - {fileID: 8367994179616699143}
+  - {fileID: 2817254113594560883}
+  - {fileID: 7359083632028774042}
+  - {fileID: 6891116154434236271}
+  - {fileID: 6376397483865159057}
+  - {fileID: 1358944277065424125}
+  - {fileID: 926888394582626978}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1697032293704649200
+--- !u!114 &-8310577766529664491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464240141565628861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0eced54864325e4b8a8991ffcebba0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4967132090204944654
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,9 +210,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3953642537938593384}
-  - component: {fileID: 2146283834609997254}
-  - component: {fileID: 7694876312431578475}
+  - component: {fileID: 2995524946156603262}
+  - component: {fileID: 8737693581137134507}
+  - component: {fileID: 3727017245173866702}
   m_Layer: 0
   m_Name: SkeletonGraphic (skeleton)
   m_TagString: Untagged
@@ -207,40 +220,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &3953642537938593384
+--- !u!224 &2995524946156603262
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697032293704649200}
+  m_GameObject: {fileID: 4967132090204944654}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2270346946775929793}
+  m_Father: {fileID: 3716072433781992960}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -231, y: 479}
   m_SizeDelta: {x: 255.69815, y: 969.44116}
   m_Pivot: {x: -0.36882293, y: 0.9873694}
---- !u!222 &2146283834609997254
+--- !u!222 &8737693581137134507
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697032293704649200}
+  m_GameObject: {fileID: 4967132090204944654}
   m_CullTransparentMesh: 1
---- !u!114 &7694876312431578475
+--- !u!114 &3727017245173866702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697032293704649200}
+  m_GameObject: {fileID: 4967132090204944654}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
@@ -280,7 +293,7 @@ MonoBehaviour:
       calculateTangents: 0
       addNormals: 0
       immutableTriangles: 0
---- !u!1 &9015800310827228509
+--- !u!1 &8631209323858709743
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -288,16 +301,16 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5427261576072981426}
-  - component: {fileID: 78784781341679453}
-  - component: {fileID: 2200071608508278880}
-  - component: {fileID: 1122950296314301120}
-  - component: {fileID: 1668435532028075562}
-  - component: {fileID: 8264314302426187598}
-  - component: {fileID: 5227183595271255549}
-  - component: {fileID: 924087561299563294}
-  - component: {fileID: 3276120421650718180}
-  - component: {fileID: 6991496512589013204}
+  - component: {fileID: 1824604695799696953}
+  - component: {fileID: 748142399621766683}
+  - component: {fileID: 8747683902253533818}
+  - component: {fileID: 8367994179616699143}
+  - component: {fileID: 2817254113594560883}
+  - component: {fileID: 7359083632028774042}
+  - component: {fileID: 6891116154434236271}
+  - component: {fileID: 6376397483865159057}
+  - component: {fileID: 1358944277065424125}
+  - component: {fileID: 926888394582626978}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -305,28 +318,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5427261576072981426
+--- !u!4 &1824604695799696953
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9015800310827228509}
+  m_GameObject: {fileID: 8631209323858709743}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 500529.4, y: -77225.83, z: 0}
   m_LocalScale: {x: 160275.58, y: 160275.58, z: 160275.58}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2270346946775929793}
+  m_Father: {fileID: 3716072433781992960}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &78784781341679453
+--- !u!114 &748142399621766683
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9015800310827228509}
+  m_GameObject: {fileID: 8631209323858709743}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -339,13 +352,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
   Audio: {fileID: 0}
---- !u!114 &2200071608508278880
+--- !u!114 &8747683902253533818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9015800310827228509}
+  m_GameObject: {fileID: 8631209323858709743}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -356,15 +369,15 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 18
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 77ff1d6aeb59843469a451ba3d21b1d2, type: 3}
   Audio: {fileID: 0}
---- !u!114 &1122950296314301120
+--- !u!114 &8367994179616699143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9015800310827228509}
+  m_GameObject: {fileID: 8631209323858709743}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -375,15 +388,15 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 19
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
   Audio: {fileID: 0}
---- !u!114 &1668435532028075562
+--- !u!114 &2817254113594560883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9015800310827228509}
+  m_GameObject: {fileID: 8631209323858709743}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -394,15 +407,15 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 20
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 77ff1d6aeb59843469a451ba3d21b1d2, type: 3}
   Audio: {fileID: 0}
---- !u!114 &8264314302426187598
+--- !u!114 &7359083632028774042
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9015800310827228509}
+  m_GameObject: {fileID: 8631209323858709743}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -413,15 +426,15 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 21
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 77ff1d6aeb59843469a451ba3d21b1d2, type: 3}
   Audio: {fileID: 0}
---- !u!114 &5227183595271255549
+--- !u!114 &6891116154434236271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9015800310827228509}
+  m_GameObject: {fileID: 8631209323858709743}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -434,13 +447,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &924087561299563294
+--- !u!114 &6376397483865159057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9015800310827228509}
+  m_GameObject: {fileID: 8631209323858709743}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -451,15 +464,15 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 25
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 77ff1d6aeb59843469a451ba3d21b1d2, type: 3}
   Audio: {fileID: 0}
---- !u!114 &3276120421650718180
+--- !u!114 &1358944277065424125
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9015800310827228509}
+  m_GameObject: {fileID: 8631209323858709743}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -470,15 +483,15 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 26
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
   Audio: {fileID: 0}
---- !u!114 &6991496512589013204
+--- !u!114 &926888394582626978
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9015800310827228509}
+  m_GameObject: {fileID: 8631209323858709743}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -486,7 +499,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3160893472307063346}
+        m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
+        m_MethodName: "anahtarA\xE7"
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 27
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}

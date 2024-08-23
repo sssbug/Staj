@@ -414,13 +414,27 @@ namespace DS
             gameManager.keys.SetActive(false);
         }
 
-        public void ParaEkle()
+        public void ParaEkleT()
+        {
+            gameManager.story.para = int.Parse(myText.text) + (7 * 1000);
+            myText.text = gameManager.story.para.ToString();
+        }
+
+        public void ParaEkleC()
+        {
+            gameManager.story.para = int.Parse(myText.text) + (7 * 1500);
+            myText.text = gameManager.story.para.ToString();
+        }
+        public void ParaEkleTek()
+        {
+            gameManager.story.para = int.Parse(myText.text) + 1000;
+            myText.text = gameManager.story.para.ToString();
+        }
+
+        public void ParaEkleCok()
         {
             gameManager.story.para = int.Parse(myText.text) + 1500;
             myText.text = gameManager.story.para.ToString();
         }
-
-
-
     }
 }

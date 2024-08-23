@@ -18,11 +18,11 @@ namespace DS
         private const string LastSavedTimeKey = "LastSavedTime";
         public int basla = 1;
         private int gunSayacı = 0;
-        private GameObject conversationManager;
+        public bool isWork;
         private void Awake()
         {
-
-            conversationManager = GameObject.Find("Panel_Dialogue").gameObject;
+            
+            
             if (Instance == null)
             {
                 Instance = this;
@@ -41,7 +41,8 @@ namespace DS
 
         private void Update()
         {
-            if (conversationManager.activeSelf == false)
+           
+            if (isWork == false)
             {
                 timePercent += (Time.deltaTime / (24f * 60f)) * speedFactor;
                 if (timePercent >= 1f) timePercent = 0f;

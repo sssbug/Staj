@@ -24,15 +24,22 @@ namespace DS
         public GameObject temizlikMalzemesi;
         public List<GameObject> lamba = new List<GameObject>();
         int basla = 1;
+        public GameObject conversationManager;
 
-
-
+       
 
 
         private void Update()
         {
             float timePercent = TimeManager.Instance.timePercent;
-
+            if (conversationManager.activeSelf == false)
+            {
+                TimeManager.Instance.isWork = false;
+            }
+            else
+            {
+                TimeManager.Instance.isWork = true;
+            }
             UpdateLighting(timePercent);
             for (int i = 1; i < odalar.Count; i++)
             {

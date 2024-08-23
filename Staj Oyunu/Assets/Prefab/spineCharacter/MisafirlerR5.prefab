@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3979255448670203818}
   - component: {fileID: 1858099032800543246}
   - component: {fileID: 4136558029057344036}
+  - component: {fileID: 8446774882428414518}
+  - component: {fileID: 8040359232902261371}
   m_Layer: 6
   m_Name: MisafirlerR5
   m_TagString: 5
@@ -133,6 +135,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!114 &8446774882428414518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358936189070549847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0eced54864325e4b8a8991ffcebba0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8040359232902261371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358936189070549847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f49ca49dbcd7cc47a53a7773ca38067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4144398828970244938
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,7 +25,7 @@ namespace DS
         public List<GameObject> charactersReversePrefab = new List<GameObject>();
 
 
-        
+
         public List<string> loadedCharactersNames;
         public List<string> loadedCharactersBackPrefabNames;
         public List<string> loadedCharactersBackNames;
@@ -38,16 +38,15 @@ namespace DS
         public List<GameObject> otelinSahibi = new List<GameObject>();
         public GameObject lamba;
         public GameObject keys;
-
+        public GameObject InventoryObject;
         public GameObject sıradaki;
         public int spawnlanacak;
         public Light2D gunes;
 
-
+        public GameObject conversationManager;
 
         private List<string> destroyedObjects = new List<string>();
         private string destroySavePath;
-
 
 
         public float dayDuration = 24f; // Bir günün kaç saniye süreceği
@@ -59,20 +58,29 @@ namespace DS
 
         private void Start()
         {
+            
+
             savePath = Path.Combine(Application.persistentDataPath, "gameData.json");
             destroySavePath = Path.Combine(Application.persistentDataPath, "destroyedObjects.json");
             LoadDestroyedObjects();
             RemoveDestroyedObjectsFromScene();
-            
+
             myText.text = (story.para).ToString();
         }
 
-       
+
         private void Update()
         {
             float timePercent = TimeManager.Instance.timePercent;
-
-            UpdateLighting(timePercent);
+            if (conversationManager.activeSelf == false)
+            {
+                TimeManager.Instance.isWork = false;
+            }
+            else
+            {
+                TimeManager.Instance.isWork = true;
+            }
+                UpdateLighting(timePercent);
 
             if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) < 0.8 && (Math.Floor(TimeManager.Instance.timePercent * 10) / 10) > 0.1)
             {
@@ -120,6 +128,7 @@ namespace DS
                     GameObject spawn = Instantiate(charactersReversePrefab[i], sıradaki.transform.position, Quaternion.identity);
 
                     spawn.transform.parent = GameObject.Find("Canvas").transform;
+                    charactersBack.Remove(sıradaki);
                     Destroy(sıradaki);
                 }
             }
@@ -139,7 +148,7 @@ namespace DS
         {
             GameData data = new GameData();
 
-            
+
 
             // Karakter isimlerini kaydet
             data.charactersNames = new List<string>();
@@ -148,7 +157,7 @@ namespace DS
                 data.charactersNames.Add(character.name.Replace("(Clone)", "").Trim());
             }
 
-            
+
 
             // Arka plan karakter isimlerini kaydet
             data.charactersBackNames = new List<string>();
@@ -178,7 +187,17 @@ namespace DS
             File.WriteAllText(savePath, json);
         }
 
-
+        public void InventoryAc()
+        {
+            if (InventoryObject.activeSelf == false)
+            {
+                InventoryObject.SetActive(true);
+            }
+            else
+            {
+                InventoryObject.SetActive(false);
+            }
+        }
         public void LoadGame()
         {
             if (File.Exists(savePath))
@@ -190,8 +209,8 @@ namespace DS
                 loadedCharactersNames = data.charactersNames;
                 loadedCharactersBackNames = data.charactersBackNames;
                 charactersPrefabNames = data.spawnedharactersPrefabNames;
-                
-                
+
+
             }
         }
 
@@ -238,8 +257,8 @@ namespace DS
             }
         }
     }
+
     
-   
 
     [System.Serializable]
     public class SerializableListt<T>
@@ -252,7 +271,7 @@ namespace DS
         }
     }
 
-    
+
 
 }
 

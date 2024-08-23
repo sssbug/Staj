@@ -27,17 +27,17 @@ namespace DS
 
             if (clickedObject != null && clickedObject.tag == "1")
             {
-                Debug.Log("sefsf");
-                for (int i = 0; i < gameManager.Characters.Count; i++)
-                {
-                    if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
-                    {
-                        ConversationManager.Instance.StartConversation(_myConvarsation);
-                        ConversationManager.Instance.SetInt("misafir", i);
+                //Debug.Log("sefsf");
+                //for (int i = 0; i < gameManager.Characters.Count; i++)
+                //{
+                //    if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                //    {
+                //        ConversationManager.Instance.StartConversation(_myConvarsation);
+                //        ConversationManager.Instance.SetInt("misafir", i);
 
-                    }
+                //    }
 
-                }
+                //}
                 
             }
             if (clickedObject != null && clickedObject.tag == "2")

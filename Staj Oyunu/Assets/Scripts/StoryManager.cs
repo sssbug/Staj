@@ -80,6 +80,48 @@ namespace DS
 
         void Update()
         {
+            if (timerLocal>=70)
+            {
+                timerLocal = 70;
+            }
+            if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) < 0.1)
+            {
+
+                if (gameManager.story.gun[0] == true)
+                {
+                    maxCalls = gun.Length;
+                }
+                else if (gameManager.story.gun[1] == true)
+                {
+                    maxCalls = gun1.Length;
+                }
+                else if (gameManager.story.gun[2] == true)
+                {
+                    maxCalls = gun2.Length;
+                }
+                else if (gameManager.story.gun[3] == true)
+                {
+                    maxCalls = gun3.Length;
+                }
+                else if (gameManager.story.gun[4] == true)
+                {
+                    maxCalls = gun4.Length;
+                }
+                else if (gameManager.story.gun[5] == true)
+                {
+                    maxCalls = gun5.Length;
+                }
+                else if (gameManager.story.gun[6] == true)
+                {
+                    maxCalls = gun6.Length;
+                }
+                currentCallCountLocal = 0;
+                if (currentCallCountLocal < maxCalls)
+                {
+                    timerLocal = interval - timerLocal; 
+                }
+            }
+            
             //Burada dialogları başlatıyorum 
             if (gameManager.story.dialog2 == false)
             {
@@ -103,41 +145,36 @@ namespace DS
             if (gameManager.story.müşteriBasla == true)
             {
 
-                if (gameManager.story.dialog1 == false)
+
+                if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) > 0.2 && (Math.Floor(TimeManager.Instance.timePercent * 10) / 10) < 0.7)
                 {
-                    if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) > 0.2 && (Math.Floor(TimeManager.Instance.timePercent * 10) / 10) < 0.7)
+                    if (currentCallCountLocal < maxCalls)
                     {
-                        if (currentCallCountLocal < maxCalls)
+                        if (conversationManager.activeSelf == false)
                         {
-                            if (conversationManager.activeSelf == false)
+                            timerLocal += Time.deltaTime;
+
+
+                            if (timerLocal >= interval)
                             {
-                                timerLocal += Time.deltaTime;
 
+                                misafirSpawn();
 
-                                if (timerLocal >= interval)
-                                {
+                                currentCallCountLocal++;
+                                timerLocal = 0f; // Zamanlayıcıyı sıfırla
 
-                                    misafirSpawn();
-
-                                    currentCallCountLocal++;
-                                    timerLocal = 0f; // Zamanlayıcıyı sıfırla
-
-                                    SaveProgress(); // Her işlemde ilerlemeyi kaydet
+                                SaveProgress(); // Her işlemde ilerlemeyi kaydet
 
 
 
-                                }
                             }
                         }
-                        else
-                        {
-                            gameManager.story.dialog1 = true;
-                            gameManager.story.müşteriBasla = false;
-                        }
-
                     }
+                   
 
                 }
+
+
             }
 
         }

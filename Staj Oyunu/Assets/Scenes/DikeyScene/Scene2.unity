@@ -14655,6 +14655,7 @@ MonoBehaviour:
   - {fileID: 1530546497}
   - {fileID: 264534978}
   - {fileID: 788480491}
+  conversationManager: {fileID: 1457964426265510275}
 --- !u!1 &1749794931
 GameObject:
   m_ObjectHideFlags: 0
