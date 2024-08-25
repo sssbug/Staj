@@ -25,8 +25,8 @@ namespace DS
         public List<GameObject> lamba = new List<GameObject>();
         int basla = 1;
         public GameObject conversationManager;
+        public List<Sprite> sprites = new List<Sprite>();
 
-       
 
 
         private void Update()

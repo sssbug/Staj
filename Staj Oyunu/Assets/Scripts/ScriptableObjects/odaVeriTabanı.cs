@@ -22,7 +22,7 @@ namespace DS
 
         public bool[] temizlikOdalar = new bool[40];
 
-       
+
         public void odaData()
         {
             if (isim != null && oda != 0 && gün != 0)
@@ -53,19 +53,20 @@ namespace DS
                 {
                     Debug.Log(isimdata[i]);
 
-
+                    
                     gündata[i] = gündata[i] - 1;
+                    temizlikOdalar[i] = true;
                     if (gündata[i] == 0)
                     {
                         isimdata[i] = null;
                         gündata[i] = 0;
                         odadata[i] = 0;
-                        temizlikOdalar[i] = true;
+
                     }
                 }
 
             }
-
+            
 
         }
     }

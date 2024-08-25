@@ -77,7 +77,6 @@ namespace DS
                         _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
                         foreach (var items in _skeletonGraphic)
                         {
-
                             items.AnimationState.SetAnimation(1, "Open", false);
                         }
 
