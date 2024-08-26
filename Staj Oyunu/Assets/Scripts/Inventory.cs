@@ -9,26 +9,31 @@ namespace DS
 {
     public class Inventory : MonoBehaviour
     {
-        private Sprite _objectImage;
+        
         private GameObject _myObject;
         
         private GameObject _prefab;
+
+        private GameManager _gameManeger;
         
-        public Inventory(Sprite objectImage, GameObject prefab)
+        
+        public Inventory(GameManager gm ,GameObject prefab)
         {
-            _objectImage = objectImage;
+            
             
             _prefab = prefab;
+            _gameManeger = gm;
             Spawner();
             
             
         }
+        
         void Spawner()
         {
 
             _myObject = Instantiate(_prefab);
             _myObject.transform.rotation = Quaternion.identity;
-            _myObject.gameObject.transform.parent = GameObject.Find("SlotBox").gameObject.transform;
+            _gameManeger.inventory.Add(_myObject);
 
         }
     }

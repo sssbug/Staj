@@ -31,20 +31,7 @@ namespace DS
             
             GameObject clickedObject = eventData.pointerPress;
 
-            if (clickedObject != null && clickedObject.tag == "1")
-            {
-
-                for (int i = 0; i < gameManager.inventoryItems.Count; i++)
-                {
-                    if (gameManager.inventoryItems[i].name == clickedObject.name)
-                    {
-                        Inventory halı = new Inventory(clickedObject.GetComponent<Image>().sprite, gameManager.inventoryItems[i]);
-                    }
-                }
-                
-                
-                
-            }
+            
             if (clickedObject != null && clickedObject.name == "Anahtar")
             {
 

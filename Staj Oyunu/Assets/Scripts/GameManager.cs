@@ -23,8 +23,8 @@ namespace DS
         public List<GameObject> charactersBackPrefab = new List<GameObject>();
         public List<GameObject> charactersBack = new List<GameObject>();
         public List<GameObject> charactersReversePrefab = new List<GameObject>();
-
-
+        public List<GameObject> inventory = new List<GameObject>();
+        public GameObject slot;
 
         public List<string> loadedCharactersNames;
         public List<string> loadedCharactersBackPrefabNames;
@@ -47,30 +47,34 @@ namespace DS
 
         private List<string> destroyedObjects = new List<string>();
         private string destroySavePath;
-
+        private GameObject _myObject;
 
         public float dayDuration = 24f; // Bir günün kaç saniye süreceği
 
         private float currentTimeOfDay = 0f;
 
         private string savePath;
+        private string itemSavePath;
         public TMP_Text myText;
 
         private void Start()
         {
-            
 
+            
             savePath = Path.Combine(Application.persistentDataPath, "gameData.json");
+            itemSavePath = Path.Combine(Application.persistentDataPath, "itemData.json");
             destroySavePath = Path.Combine(Application.persistentDataPath, "destroyedObjects.json");
             LoadDestroyedObjects();
             RemoveDestroyedObjectsFromScene();
 
             myText.text = (story.para).ToString();
+            InventoryLoadGame();
         }
 
 
         private void Update()
         {
+
             float timePercent = TimeManager.Instance.timePercent;
             if (conversationManager.activeSelf == false)
             {
@@ -80,7 +84,7 @@ namespace DS
             {
                 TimeManager.Instance.isWork = true;
             }
-                UpdateLighting(timePercent);
+            UpdateLighting(timePercent);
 
             if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) < 0.8 && (Math.Floor(TimeManager.Instance.timePercent * 10) / 10) > 0.1)
             {
@@ -186,7 +190,46 @@ namespace DS
             string json = JsonUtility.ToJson(data, true);
             File.WriteAllText(savePath, json);
         }
+        public void InventorySaveGame()
+        {
+            InventoryData data = new InventoryData();
 
+
+
+            // Karakter isimlerini kaydet
+            data.itemsName = new List<string>();
+            foreach (var items in inventory)
+            {
+                data.itemsName.Add(items.name.Replace("(Clone)", "").Trim());
+            }
+
+
+            // Veriyi JSON formatına dönüştür ve dosyaya yaz
+            string json = JsonUtility.ToJson(data, true);
+            File.WriteAllText(itemSavePath, json);
+        }
+        public void InventoryLoadGame()
+        {
+            if (File.Exists(itemSavePath))
+            {
+                string json = File.ReadAllText(itemSavePath);
+                InventoryData data = JsonUtility.FromJson<InventoryData>(json);
+
+                // JSON'dan gelen verileri public listelere kaydet
+                loadedInventoryItemNames = data.itemsName;
+                foreach (var item in inventoryItems)
+                {
+                    if (loadedInventoryItemNames.Contains(item.name) )
+                    {
+                        _myObject = Instantiate(item);
+                        _myObject.transform.rotation = Quaternion.identity;
+                       inventory.Add(_myObject);
+                    }
+                }
+
+
+            }
+        }
         public void InventoryAc()
         {
             if (InventoryObject.activeSelf == false)
@@ -258,7 +301,7 @@ namespace DS
         }
     }
 
-    
+
 
     [System.Serializable]
     public class SerializableListt<T>

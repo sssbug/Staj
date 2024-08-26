@@ -1451,22 +1451,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 9
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":49,\"yPos\":193},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam\",\"parentUIDs\":[6],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"story\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"story\",\"CheckType\":0,\"RequiredValue\":1}],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":590,\"yPos\":-750},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hoporlerden
-    ses geilr.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":263,\"yPos\":-578},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hey
+  CurrentIDCounter: 11
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-357,\"yPos\":1012},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam\",\"parentUIDs\":[6],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":208,\"yPos\":395},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nazik\xE7e
+    masaya b\u0131rak\u0131r.\",\"parentUIDs\":[9],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"story\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"story\",\"CheckType\":0,\"RequiredValue\":1}],\"NodeUID\":1},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"story\",\"CheckType\":0,\"RequiredValue\":2}],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":184,\"yPos\":69},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hoporlerden
+    ses geilr.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-143,\"yPos\":241},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hey
     yeni \xE7ocuk ho\u015F geldin.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Zebercet
-    Gezgin\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":169,\"yPos\":-439},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ben
+    Gezgin\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-237,\"yPos\":380},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ben
     burada hademeyim ad\u0131m Zebercet Gezgin Z E B E R C E T sen sormadan cevaplayay\u0131m
     ismim bu.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Zebercet
-    Gezgin\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":125,\"yPos\":-261},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Senden
+    Gezgin\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-281,\"yPos\":558},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Senden
     bir \u015Fey istiyorum.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Zebercet
-    Gezgin\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":77,\"yPos\":-117},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Misafirler
+    Gezgin\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-329,\"yPos\":702},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Misafirler
     odadan \xE7\u0131k\u0131nca odalar\u0131 temizlemem gerekiyor temizlemem gereken
     odalar\u0131  merdivenlerden \xE7\u0131k\u0131p benim i\xE7in i\u015Faretler
     misin?\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Zebercet
-    Gezgin\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":68,\"yPos\":29},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0130\u015Faretlemeyi
+    Gezgin\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-338,\"yPos\":848},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0130\u015Faretlemeyi
     sak\u0131n unutma e\u011Fer kirli oday\u0131 m\xFC\u015Fteriye verirsen m\xFC\u015Fteri
     bizden \u015Fikayet\xE7i olur tamam m\u0131 can\u0131m.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Zebercet
+    Gezgin\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":211,\"yPos\":241},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"(Bo\u011Fuk
+    ve ana\u015F\u0131lma g\xFC\xE7 bir ses) Oktay \u0130\u015F\xE7inin kald\u0131\u011F\u0131
+    odadan bir \u015Feyler buldum al belki laz\u0131m olur.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Zebercet
     Gezgin\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: Zebercet Gezgin
@@ -1480,14 +1484,16 @@ MonoBehaviour:
   - {fileID: 2039034251}
   - {fileID: 2039034250}
   - {fileID: 2039034249}
+  - {fileID: 2039034256}
+  - {fileID: 2039034255}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 327961568}
-        m_TargetAssemblyTypeName: DS.ButtonManager, Assembly-CSharp
-        m_MethodName: Dialog2
+      - m_Target: {fileID: 195525926}
+        m_TargetAssemblyTypeName: DS.StoryManager, Assembly-CSharp
+        m_MethodName: bomb
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5821,7 +5827,7 @@ Transform:
   m_GameObject: {fileID: 799716930}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -110.88691, y: 1271.6388, z: -0.88815784}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5916,6 +5922,8 @@ MonoBehaviour:
   - {fileID: 4074201776929516155, guid: a7b9057e8b0c0a547a1dcc81992543cf, type: 3}
   - {fileID: 6144962008363602252, guid: 686ed72b16d38514d883b7a49e17a51f, type: 3}
   - {fileID: 7047018723116060933, guid: 30968683af3989b4783e41f777050910, type: 3}
+  inventory: []
+  slot: {fileID: 1476547240069994314}
   loadedCharactersNames: []
   loadedCharactersBackPrefabNames: []
   loadedCharactersBackNames: []
@@ -5923,7 +5931,7 @@ MonoBehaviour:
   loadedInventoryItemNames: []
   loadedOtelinSahibiNames: []
   inventoryItems:
-  - {fileID: 6237363602486116218, guid: b0e7f0ad4f61faf4e846bb450ec8ad6c, type: 3}
+  - {fileID: 376689727705387837, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
   otelinSahibi:
   - {fileID: 6508489909213102728, guid: 58acf9cefe5cf8f45a22177039188c3b, type: 3}
   - {fileID: 3959227041649209907, guid: 7f725dbcf2ebed64f9ea102c4dd5b55b, type: 3}
@@ -8160,6 +8168,7 @@ RectTransform:
   - {fileID: 3857918985458541749}
   - {fileID: 277090324271834313}
   - {fileID: 4228905915276701257}
+  - {fileID: 1818046872}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9412,6 +9421,7 @@ GameObject:
   - component: {fileID: 1225101064}
   - component: {fileID: 1225101066}
   - component: {fileID: 1225101065}
+  - component: {fileID: 1225101067}
   m_Layer: 5
   m_Name: Zemin
   m_TagString: Untagged
@@ -9429,7 +9439,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2016324853}
   - {fileID: 540461718}
@@ -9458,7 +9468,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.74535215}
-  m_AnchoredPosition: {x: 0, y: -1.9018555}
+  m_AnchoredPosition: {x: -7, y: -1.9018555}
   m_SizeDelta: {x: 0, y: -1.6219482}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1225101065
@@ -9499,6 +9509,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225101063}
   m_CullTransparentMesh: 1
+--- !u!95 &1225101067
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225101063}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2fb53b5b4902c3242b3170a53ccb77d9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1247997787
 GameObject:
   m_ObjectHideFlags: 0
@@ -11615,7 +11646,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492256260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -22788}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11623,7 +11654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115629.5, y: -133559.45}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1492256262
@@ -12518,7 +12549,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 542139014}
   - {fileID: 419954144}
@@ -12537,7 +12568,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.7267899}
   m_AnchorMax: {x: 0.99059826, y: 0.96300006}
-  m_AnchoredPosition: {x: 5.5, y: -3.1450195}
+  m_AnchoredPosition: {x: -1.5, y: -3.1450195}
   m_SizeDelta: {x: 11, y: -3.1450958}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1597767592
@@ -13359,6 +13390,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811095416}
   m_CullTransparentMesh: 1
+--- !u!224 &1818046872 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+  m_PrefabInstance: {fileID: 1765974141077329317}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1821932266
 GameObject:
   m_ObjectHideFlags: 0
@@ -15526,6 +15562,8 @@ GameObject:
   - component: {fileID: 2039034251}
   - component: {fileID: 2039034250}
   - component: {fileID: 2039034249}
+  - component: {fileID: 2039034256}
+  - component: {fileID: 2039034255}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -15690,6 +15728,56 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 1
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 4e9b8b8dcce2a9a469596142f4a1ce77, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &2039034255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039034246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 195525926}
+        m_TargetAssemblyTypeName: DS.StoryManager, Assembly-CSharp
+        m_MethodName: bomb
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 10
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &2039034256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039034246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 9
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 4e9b8b8dcce2a9a469596142f4a1ce77, type: 3}
   Audio: {fileID: 0}
@@ -16540,7 +16628,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.30742025}
-  m_AnchoredPosition: {x: 0.018798828, y: -3}
+  m_AnchoredPosition: {x: 0.018798828, y: -20}
   m_SizeDelta: {x: 0.037598, y: 66.506836}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &79492369050697440
@@ -16973,7 +17061,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 183.18, y: -25.457611}
+  m_AnchoredPosition: {x: 183.17993, y: -25.457642}
   m_SizeDelta: {x: 26.43, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &389322044118642722
@@ -17167,7 +17255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 130.31999, y: -25.457611}
+  m_AnchoredPosition: {x: 130.31995, y: -25.457642}
   m_SizeDelta: {x: 26.43, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &578572633578163982
@@ -18740,6 +18828,103 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
+--- !u!1001 &1765974141077329317
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1064257443}
+    m_Modifications:
+    - target: {fileID: 376689727705387837, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_Name
+      value: Bomb
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359689925971744963, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0af276dbebb030a428a083b1ddbafade, type: 3}
 --- !u!224 &1772934986036538631 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 445630050636985438, guid: 09674ec51267d3f40833abd05cf9e284, type: 3}
@@ -19421,7 +19606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 24.59999, y: -25.457611}
+  m_AnchoredPosition: {x: 24.599976, y: -25.457642}
   m_SizeDelta: {x: 26.43, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &2322153407657913973
@@ -19492,7 +19677,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 51.03, y: -25.457611}
+  m_AnchoredPosition: {x: 51.03003, y: -25.457642}
   m_SizeDelta: {x: 26.43, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2420320716573487305
@@ -21460,7 +21645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1804839755291917033, guid: b6ac083ae4ead104287b35f69249fac1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 124.195015
+      value: 124.19507
       objectReference: {fileID: 0}
     - target: {fileID: 1804839755291917033, guid: b6ac083ae4ead104287b35f69249fac1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22257,7 +22442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2674097919871169041, guid: 2b23578740bdc684990f4dd1eb3ea81a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 124.381
+      value: 124.38098
       objectReference: {fileID: 0}
     - target: {fileID: 2674097919871169041, guid: 2b23578740bdc684990f4dd1eb3ea81a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22859,7 +23044,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 77.45999, y: -25.457611}
+  m_AnchoredPosition: {x: 77.45996, y: -25.457642}
   m_SizeDelta: {x: 26.43, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4567428351162038420
@@ -24556,7 +24741,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 156.75, y: -25.457611}
+  m_AnchoredPosition: {x: 156.75, y: -25.457642}
   m_SizeDelta: {x: 26.43, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &5312106040813736471
@@ -24831,7 +25016,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 262.47, y: -25.457611}
+  m_AnchoredPosition: {x: 262.46997, y: -25.457642}
   m_SizeDelta: {x: 26.43, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5443312170755310116
@@ -26003,7 +26188,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 236.03998, y: -25.457611}
+  m_AnchoredPosition: {x: 236.04004, y: -25.457642}
   m_SizeDelta: {x: 26.43, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &6220293838078423776
@@ -27194,7 +27379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103.89, y: -25.457611}
+  m_AnchoredPosition: {x: 103.890015, y: -25.457642}
   m_SizeDelta: {x: 26.43, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6892562233031552395
@@ -27275,6 +27460,7 @@ GameObject:
   - component: {fileID: 66749169676751261}
   - component: {fileID: 3672767519192328856}
   - component: {fileID: 7127706661624338857}
+  - component: {fileID: 7127706661624338858}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -27736,6 +27922,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7127706661624338858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6935763223342375669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fdfa74836f1ef44289bc10da2c4112f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &7128209537859914008
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29665,7 +29863,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 288.9, y: -25.457611}
+  m_AnchoredPosition: {x: 288.90002, y: -25.457642}
   m_SizeDelta: {x: 26.43, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &8225264318939930900
@@ -29722,7 +29920,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 209.60999, y: -25.457611}
+  m_AnchoredPosition: {x: 209.60999, y: -25.457642}
   m_SizeDelta: {x: 26.43, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8284588614719104104

@@ -19,7 +19,7 @@ namespace DS
         private float timerLocal;
         public GameObject conversationManager;
         bool basla = true;
-
+        bool bomba = false;
         private int[] gun = { 6, 8, 9, 10 };
         private int[] gun1 = { 2, 3, 4, 21 };
         private int[] gun2 = { 19, 8, 9, 10 };
@@ -28,9 +28,10 @@ namespace DS
         private int[] gun5 = { 1, 22, 2, 16 };
         private int[] gun6 = { 2, 9, 14, 4, 22 };
 
-
+        private Animator shake;
         void Start()
         {
+            shake = GameObject.Find("Zemin").GetComponent<Animator>();
             if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
             {
                 _myConvarsation = GetComponent<NPCConversation>();
@@ -80,7 +81,7 @@ namespace DS
 
         void Update()
         {
-            if (timerLocal>=70)
+            if (timerLocal >= 70)
             {
                 timerLocal = 70;
             }
@@ -118,10 +119,10 @@ namespace DS
                 currentCallCountLocal = 0;
                 if (currentCallCountLocal < maxCalls)
                 {
-                    timerLocal = interval - timerLocal; 
+                    timerLocal = interval - timerLocal;
                 }
             }
-            
+
             //Burada dialogları başlatıyorum 
             if (gameManager.story.dialog2 == false)
             {
@@ -170,13 +171,50 @@ namespace DS
                             }
                         }
                     }
-                   
+
 
                 }
 
 
             }
+            if (gameManager.story.gun[6] == true)
+            {
+                if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) == 0.3)
+                {
+                    if (GameObject.Find("Zemin").TryGetComponent<Animator>(out Animator ani))
+                    {
+                        shake.SetTrigger("shake");
+                        Destroy(shake, shake.GetCurrentAnimatorStateInfo(0).length);
+                    }
 
+                }
+
+            }
+            if (gameManager.story.dialog3 == false)
+            {
+                if (gameManager.story.gun[0] == true)
+                {
+                    if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) == 0.2)
+                    {
+                        if (bomba == false)
+                        {
+                            ConversationManager.Instance.StartConversation(_myConvarsation);
+                            ConversationManager.Instance.SetInt("story", 2);
+                            bomba = true;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+
+        public void bomb()
+        {
+            Inventory halı = new Inventory(gameManager, gameManager.inventoryItems[0]);
+            gameManager.InventorySaveGame();
+            gameManager.story.dialog3 = true;
         }
         public void misafirSpawn()
         {
@@ -220,67 +258,13 @@ namespace DS
 
 
         }
-        //public int GenerateUniqueRandomNumber()
-        //{
-        //    // 1-30 arası sayılardan henüz üretilmemiş olanları bul
-        //    List<int> availableNumbers = new List<int>();
 
-        //    for (int i = 0; i <= 22; i++)
-        //    {
-        //        if (!generatedNumbers.Contains(i))
-        //        {
-        //            availableNumbers.Add(i);
-
-        //        }
-        //    }
-
-        //    // Eğer üretilecek sayı kalmadıysa, -1 döndür
-        //    if (availableNumbers.Count == 1)
-        //    {
-        //        Debug.Log("Tüm sayılar üretildi.");
-
-        //        return -1;
-        //    }
-
-        //    Debug.Log(availableNumbers.Count);
-        //    // Rastgele bir sayı seç
-        //    int randomIndex = UnityEngine.Random.Range(0, availableNumbers.Count);
-        //    int randomNumber = availableNumbers[randomIndex];
-
-        //    // Sayıyı listeye ekle
-        //    generatedNumbers.Add(randomNumber);
-
-        //    // Üretilen sayıları kaydet
-        //    SaveGeneratedNumbers();
-
-        //    return randomNumber;
-        //}
-        //private void SaveGeneratedNumbers()
-        //{
-        //    // Listeyi JSON formatında kaydet
-        //    string json = JsonUtility.ToJson(new SerializableList<int>(generatedNumbers));
-        //    File.WriteAllText(savePath, json);
-        //    Debug.Log("Generated numbers saved.");
-        //}
         void SaveProgress()
         {
             gameManager.story.currentCallCount = currentCallCountLocal;
             gameManager.story.timer = timerLocal;
         }
-        //private void LoadGeneratedNumbers()
-        //{
-        //    if (File.Exists(savePath))
-        //    {
-        //        string json = File.ReadAllText(savePath);
-        //        SerializableList<int> data = JsonUtility.FromJson<SerializableList<int>>(json);
-        //        generatedNumbers = data.List;
-        //        Debug.Log("Generated numbers loaded.");
-        //    }
-        //    else
-        //    {
-        //        Debug.Log("No save file found.");
-        //    }
-        //}
+
         void LoadProgress()
         {
             currentCallCountLocal = gameManager.story.currentCallCount;

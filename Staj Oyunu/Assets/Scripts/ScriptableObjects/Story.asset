@@ -28,7 +28,7 @@ MonoBehaviour:
   currentCallCount: 0
   timer: 0
   dialog2: 0
-  dialog3: 0
+  dialog3: 1
   dialog4: 0
   dialog5: 0
   dialog6: 0
