@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &392722113107913554
+--- !u!1 &1997644336891286645
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,19 +8,239 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8461604215698507811}
-  - component: {fileID: 9120555135910324841}
-  - component: {fileID: 6843411653165390863}
-  - component: {fileID: 1516725041737269833}
-  - component: {fileID: 3289509586616295253}
-  - component: {fileID: 3247119671442307842}
-  - component: {fileID: 523083342479757581}
-  - component: {fileID: 9034981911602567400}
-  - component: {fileID: 8402959542293089993}
-  - component: {fileID: 4355204813240464653}
-  - component: {fileID: 8628390238774462092}
-  - component: {fileID: 5120284773631958702}
-  - component: {fileID: 1084588148627956135}
+  - component: {fileID: 7082135484253020863}
+  - component: {fileID: 7893232360959856315}
+  - component: {fileID: 4082571099016915896}
+  - component: {fileID: 121917300687466808}
+  - component: {fileID: 7927489188187103033}
+  - component: {fileID: 3892460232071349948}
+  - component: {fileID: 8427087857154446321}
+  m_Layer: 6
+  m_Name: Misafirlerb10
+  m_TagString: 10
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7082135484253020863
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997644336891286645}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -22788}
+  m_LocalScale: {x: 0.0015797791, y: 0.0015797791, z: 0.0015797791}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 4193274188248838468}
+  - {fileID: 7997440241810936832}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -797.5, y: 124.339966}
+  m_SizeDelta: {x: -619.8, y: -1429.4}
+  m_Pivot: {x: 0.49999994, y: 0.4999999}
+--- !u!222 &7893232360959856315
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997644336891286645}
+  m_CullTransparentMesh: 1
+--- !u!61 &4082571099016915896
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997644336891286645}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 10.851288, y: -153.41068}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 160.15155, y: 743.13116}
+  m_EdgeRadius: 0
+--- !u!114 &121917300687466808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997644336891286645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42fe11e1da69b1c4d98fce7145530a1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _skeletonGraphic: []
+--- !u!50 &7927489188187103033
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997644336891286645}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
+--- !u!114 &3892460232071349948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997644336891286645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentIDCounter: 16
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-358,\"yPos\":485},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
+    yatakl\u0131(1000)\",\"parentUIDs\":[1,6],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-80,\"yPos\":327},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ift
+    yatakl\u0131(1500)\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-384,\"yPos\":747},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tabi
+    ki\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-423,\"yPos\":1131},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Kimli\u011Finizi
+    alabilir miyim?\",\"parentUIDs\":[9],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-457,\"yPos\":1400},\"ID\":12,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"Value\":20}],\"TMPFontGUID\":null,\"Text\":\"\u0130\u015Flemleriniz
+    tamamland\u0131 bu da odan\u0131z\u0131n anahtar\u0131.\",\"parentUIDs\":[11],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":187,\"yPos\":482},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0130yice
+    dinlenin\",\"parentUIDs\":[14],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"stori\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":0}],\"NodeUID\":1},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":1}],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-111,\"yPos\":35},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ho\u015F
+    geldiniz!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-212,\"yPos\":200},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Merhaba.
+    Haftaya b\xFCy\xFCk bir protesto var, \xE7ift\xE7iler olarak sesimizi duyurmak
+    i\xE7in buraday\u0131z. Bir hafta kalabilece\u011Fim bir oda istiyorum.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Rahmi
+    Duman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-365,\"yPos\":614},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Evet,
+    l\xFCtfen. Sessiz bir yer olursa iyi olur, Haftaya yap\u0131lacak protesto i\xE7in
+    planlar toplamal\u0131y\u0131m.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Rahmi
+    Duman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-75,\"yPos\":469},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Benim
+    i\xE7in fazla olur sanki\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Rahmi
+    Duman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-387,\"yPos\":858},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Son
+    zamanlarda burada bir\xE7ok etkinlik oluyor. Ge\xE7enlerde bir misafirimiz de
+    haftaya yap\u0131lacak ba\u015Fka bir protestodan bahsetmi\u015Fti. Bu d\xF6nemde
+    \u015Fehir olduk\xE7a hareketli olacak.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-401,\"yPos\":1013},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Evet,
+    duydum. Ama biz kendi davam\u0131zday\u0131z. Bu \u015Fehirde sesimizi duyurmak
+    i\xE7in buraday\u0131z.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Rahmi
+    Duman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-446,\"yPos\":1233},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tabi
+    ki buyur\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Rahmi
+    Duman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":196,\"yPos\":178},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"D\u0131\u015Far\u0131da
+    \xE7ok insan \xF6ld\xFC bu kadar b\xFCy\xFCk bir olay olamamal\u0131yd\u0131.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Rahmi
+    Duman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":192,\"yPos\":320},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Zaten
+    o kad\u0131n y\xFCr\xFCy\xFC\u015F\xFC mahfediyordu ama bu kadar\u0131 bana \xE7ok
+    fazla ben bir an \xF6nce odama gitmek istiyorum.\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Rahmi
+    Duman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  saveVersion: 110
+  DefaultName: 
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 0}
+  NodeSerializedDataList:
+  - {fileID: 507272486528284747}
+  - {fileID: 90736176558335534}
+  - {fileID: 3663893962181998741}
+  - {fileID: 7872038823992506885}
+  - {fileID: 3901568124694211336}
+  - {fileID: 3315922797204564448}
+  - {fileID: 3636967556435008789}
+  - {fileID: 1644611567204175570}
+  - {fileID: 4207040106102853507}
+  - {fileID: 5254493351726145676}
+  - {fileID: 128302264741706902}
+  - {fileID: 8403356469200972720}
+  - {fileID: 3196761882549751535}
+  - {fileID: 4160629087882482544}
+  - {fileID: 5517874364657665652}
+  ContinueFont: {fileID: 0}
+  EndConversationFont: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8427087857154446321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997644336891286645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0eced54864325e4b8a8991ffcebba0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5754379469114730398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7997440241810936832}
+  - component: {fileID: 507272486528284747}
+  - component: {fileID: 90736176558335534}
+  - component: {fileID: 3663893962181998741}
+  - component: {fileID: 7872038823992506885}
+  - component: {fileID: 3901568124694211336}
+  - component: {fileID: 3315922797204564448}
+  - component: {fileID: 3636967556435008789}
+  - component: {fileID: 1644611567204175570}
+  - component: {fileID: 4207040106102853507}
+  - component: {fileID: 5254493351726145676}
+  - component: {fileID: 128302264741706902}
+  - component: {fileID: 8403356469200972720}
+  - component: {fileID: 3196761882549751535}
+  - component: {fileID: 4160629087882482544}
+  - component: {fileID: 5517874364657665652}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -28,28 +248,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8461604215698507811
+--- !u!4 &7997440241810936832
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 504817.44, y: -78707.03, z: 0}
   m_LocalScale: {x: 160275.58, y: 160275.58, z: 160275.58}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8659604116884442044}
+  m_Father: {fileID: 7082135484253020863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9120555135910324841
+--- !u!114 &507272486528284747
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -62,13 +282,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
   Audio: {fileID: 0}
---- !u!114 &6843411653165390863
+--- !u!114 &90736176558335534
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -81,13 +301,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 5609e332eaa256c4e834daa5efe84be6, type: 3}
   Audio: {fileID: 0}
---- !u!114 &1516725041737269833
+--- !u!114 &3663893962181998741
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -96,7 +316,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6214865847812671491}
+      - m_Target: {fileID: 121917300687466808}
         m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
         m_MethodName: ParaEkleT
         m_Mode: 1
@@ -112,13 +332,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &3289509586616295253
+--- !u!114 &7872038823992506885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -131,13 +351,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &3247119671442307842
+--- !u!114 &3901568124694211336
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -150,13 +370,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 5609e332eaa256c4e834daa5efe84be6, type: 3}
   Audio: {fileID: 0}
---- !u!114 &523083342479757581
+--- !u!114 &3315922797204564448
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -169,13 +389,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 5609e332eaa256c4e834daa5efe84be6, type: 3}
   Audio: {fileID: 0}
---- !u!114 &9034981911602567400
+--- !u!114 &3636967556435008789
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -188,13 +408,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &8402959542293089993
+--- !u!114 &1644611567204175570
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -207,13 +427,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
   Audio: {fileID: 0}
---- !u!114 &4355204813240464653
+--- !u!114 &4207040106102853507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -226,13 +446,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 5609e332eaa256c4e834daa5efe84be6, type: 3}
   Audio: {fileID: 0}
---- !u!114 &8628390238774462092
+--- !u!114 &5254493351726145676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -245,13 +465,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &5120284773631958702
+--- !u!114 &128302264741706902
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -264,13 +484,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 5609e332eaa256c4e834daa5efe84be6, type: 3}
   Audio: {fileID: 0}
---- !u!114 &1084588148627956135
+--- !u!114 &8403356469200972720
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 392722113107913554}
+  m_GameObject: {fileID: 5754379469114730398}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -279,7 +499,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6214865847812671491}
+      - m_Target: {fileID: 121917300687466808}
         m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
         m_MethodName: "anahtarA\xE7"
         m_Mode: 1
@@ -295,7 +515,64 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!1 &404182301694793755
+--- !u!114 &3196761882549751535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5754379469114730398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 13
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 5609e332eaa256c4e834daa5efe84be6, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &4160629087882482544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5754379469114730398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 14
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 5609e332eaa256c4e834daa5efe84be6, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &5517874364657665652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5754379469114730398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 15
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!1 &8717269520396339380
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -303,9 +580,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7606664537628492932}
-  - component: {fileID: 10380256572699798}
-  - component: {fileID: 4188940520589272209}
+  - component: {fileID: 4193274188248838468}
+  - component: {fileID: 8295575296025755384}
+  - component: {fileID: 1268922675391571413}
   m_Layer: 0
   m_Name: SkeletonGraphic (skeleton)
   m_TagString: Untagged
@@ -313,40 +590,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7606664537628492932
+--- !u!224 &4193274188248838468
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 404182301694793755}
+  m_GameObject: {fileID: 8717269520396339380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8659604116884442044}
+  m_Father: {fileID: 7082135484253020863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -232, y: 434}
   m_SizeDelta: {x: 255.69815, y: 969.44116}
   m_Pivot: {x: -0.36882293, y: 0.9873694}
---- !u!222 &10380256572699798
+--- !u!222 &8295575296025755384
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 404182301694793755}
+  m_GameObject: {fileID: 8717269520396339380}
   m_CullTransparentMesh: 1
---- !u!114 &4188940520589272209
+--- !u!114 &1268922675391571413
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 404182301694793755}
+  m_GameObject: {fileID: 8717269520396339380}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
@@ -386,211 +663,3 @@ MonoBehaviour:
       calculateTangents: 0
       addNormals: 0
       immutableTriangles: 0
---- !u!1 &575999506830018074
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8659604116884442044}
-  - component: {fileID: 2810519030887497030}
-  - component: {fileID: 7420619499866342614}
-  - component: {fileID: 6214865847812671491}
-  - component: {fileID: 3270518818855435911}
-  - component: {fileID: 473814127134922609}
-  - component: {fileID: 2003770510010092622}
-  m_Layer: 6
-  m_Name: Misafirlerb10
-  m_TagString: 10
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &8659604116884442044
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575999506830018074}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -22788}
-  m_LocalScale: {x: 0.0015797791, y: 0.0015797791, z: 0.0015797791}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 7606664537628492932}
-  - {fileID: 8461604215698507811}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -797.5, y: 124.339966}
-  m_SizeDelta: {x: -619.8, y: -1429.4}
-  m_Pivot: {x: 0.49999994, y: 0.4999999}
---- !u!222 &2810519030887497030
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575999506830018074}
-  m_CullTransparentMesh: 1
---- !u!61 &7420619499866342614
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575999506830018074}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 10.851288, y: -153.41068}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 160.15155, y: 743.13116}
-  m_EdgeRadius: 0
---- !u!114 &6214865847812671491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575999506830018074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42fe11e1da69b1c4d98fce7145530a1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _skeletonGraphic: []
---- !u!50 &3270518818855435911
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575999506830018074}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 6
---- !u!114 &473814127134922609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575999506830018074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentIDCounter: 13
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-4.5,\"yPos\":471},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
-    yatakl\u0131(1000)\",\"parentUIDs\":[1,6],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":273.5,\"yPos\":313},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ift
-    yatakl\u0131(1500)\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-30.5,\"yPos\":733},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tabi
-    ki\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-69.5,\"yPos\":1117},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Kimli\u011Finizi
-    alabilir miyim?\",\"parentUIDs\":[9],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-103.5,\"yPos\":1386},\"ID\":12,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"Value\":20}],\"TMPFontGUID\":null,\"Text\":\"\u0130\u015Flemleriniz
-    tamamland\u0131 bu da odan\u0131z\u0131n anahtar\u0131.\",\"parentUIDs\":[11],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":242.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ho\u015F
-    geldiniz! Size nas\u0131l yard\u0131mc\u0131 olabilirim?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":140.5,\"yPos\":187},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Merhaba.
-    Haftaya b\xFCy\xFCk bir protesto var, \xE7ift\xE7iler olarak sesimizi duyurmak
-    i\xE7in buraday\u0131z. Bir hafta kalabilece\u011Fim bir oda istiyorum.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Rahmi
-    Duman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-11.5,\"yPos\":600},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Evet,
-    l\xFCtfen. Sessiz bir yer olursa iyi olur, Haftaya yap\u0131lacak protesto i\xE7in
-    planlar toplamal\u0131y\u0131m.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Rahmi
-    Duman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":278.5,\"yPos\":457},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Benim
-    i\xE7in fazla olur sanki\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Rahmi
-    Duman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-33.5,\"yPos\":844},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Son
-    zamanlarda burada bir\xE7ok etkinlik oluyor. Ge\xE7enlerde bir misafirimiz de
-    haftaya yap\u0131lacak ba\u015Fka bir protestodan bahsetmi\u015Fti. Bu d\xF6nemde
-    \u015Fehir olduk\xE7a hareketli olacak.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-47.5,\"yPos\":999},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Evet,
-    duydum. Ama biz kendi davam\u0131zday\u0131z. Bu \u015Fehirde sesimizi duyurmak
-    i\xE7in buraday\u0131z.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Rahmi
-    Duman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-92.5,\"yPos\":1219},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tabi
-    ki buyur\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Rahmi
-    Duman\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
-  saveVersion: 110
-  DefaultName: 
-  DefaultSprite: {fileID: 0}
-  DefaultFont: {fileID: 0}
-  NodeSerializedDataList:
-  - {fileID: 9120555135910324841}
-  - {fileID: 6843411653165390863}
-  - {fileID: 1516725041737269833}
-  - {fileID: 3289509586616295253}
-  - {fileID: 3247119671442307842}
-  - {fileID: 523083342479757581}
-  - {fileID: 9034981911602567400}
-  - {fileID: 8402959542293089993}
-  - {fileID: 4355204813240464653}
-  - {fileID: 8628390238774462092}
-  - {fileID: 5120284773631958702}
-  - {fileID: 1084588148627956135}
-  ContinueFont: {fileID: 0}
-  EndConversationFont: {fileID: 0}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &2003770510010092622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575999506830018074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0eced54864325e4b8a8991ffcebba0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

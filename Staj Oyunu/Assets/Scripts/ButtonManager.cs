@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DialogueEditor;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -8,13 +9,26 @@ namespace DS
     public class ButtonManager : MonoBehaviour
     {
         GameManager gameManager;
-         
+        private NPCConversation _myConvarsation;
 
         void Start()
         {
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             
             
+        }
+
+        public void MektupKapat()
+        {
+            
+            Destroy(GameObject.Find("NotePlace").transform.GetChild(0).gameObject);
+            GameObject.Find("Container").transform.GetChild(1).gameObject.SetActive(false);
+            if (gameManager.sıradaki.name == "Misafirlerb23(Clone)")
+            {
+                _myConvarsation = gameManager.sıradaki.GetComponent<NPCConversation>();
+                ConversationManager.Instance.StartConversation(_myConvarsation);
+                ConversationManager.Instance.SetInt("sira", 2);
+            }
         }
         public void Dialog1()
         {

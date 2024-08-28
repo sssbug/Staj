@@ -13,7 +13,7 @@ namespace DS
         private List<int> generatedNumbers = new List<int>();
         private string savePath;
         bool bitti = true;
-        public float interval;  // Her 20 saniyede bir çalışacak
+        private float interval = 70;  // Her 20 saniyede bir çalışacak
         private int maxCalls;     // Fonksiyon toplamda 23 kere çalışacak
         private int currentCallCountLocal;
         private float timerLocal;
@@ -81,10 +81,24 @@ namespace DS
 
         void Update()
         {
-            if (timerLocal >= 70)
+            
+            if (gameManager.story.gun[6] == true)
             {
-                timerLocal = 70;
+                
+                if (timerLocal >= 1 || timerLocal < 0)
+                {
+                    timerLocal = 1;
+                }
             }
+            else
+            {
+                
+                if (timerLocal >= 70 || timerLocal < 0)
+                {
+                    timerLocal = 70;
+                }
+            }
+            Debug.Log(interval);
             if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) < 0.1)
             {
 
@@ -121,6 +135,19 @@ namespace DS
                 {
                     timerLocal = interval - timerLocal;
                 }
+
+
+                if (gameManager.story.gun[6])
+                {
+                    interval = 1;
+                    
+                }
+                else
+                {
+                    interval = 70;
+                }
+
+
             }
 
             //Burada dialogları başlatıyorum 
@@ -192,7 +219,7 @@ namespace DS
             }
             if (gameManager.story.dialog3 == false)
             {
-                if (gameManager.story.gun[0] == true)
+                if (gameManager.story.gun[4] == true)
                 {
                     if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) == 0.2)
                     {
@@ -212,7 +239,7 @@ namespace DS
 
         public void bomb()
         {
-            Inventory halı = new Inventory(gameManager, gameManager.inventoryItems[0]);
+            Inventory halı = new Inventory(gameManager, gameManager.inventoryItems[0],"bomb");
             gameManager.InventorySaveGame();
             gameManager.story.dialog3 = true;
         }

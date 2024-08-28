@@ -15,14 +15,15 @@ namespace DS
         private GameObject _prefab;
 
         private GameManager _gameManeger;
+        string _tag;
         
-        
-        public Inventory(GameManager gm ,GameObject prefab)
+        public Inventory(GameManager gm ,GameObject prefab, string tag)
         {
             
             
             _prefab = prefab;
             _gameManeger = gm;
+            _tag = tag;
             Spawner();
             
             
@@ -33,6 +34,7 @@ namespace DS
 
             _myObject = Instantiate(_prefab);
             _myObject.transform.rotation = Quaternion.identity;
+            _myObject.tag = _tag.ToString();
             _gameManeger.inventory.Add(_myObject);
 
         }

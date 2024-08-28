@@ -12,6 +12,7 @@ namespace DS
     {
         GameManager gameManager;
         private int _characterCount;
+        private int _characterPrefabCount;
         private int _characterBackCount;
         private Vector2[] points = { new Vector3(-0.4f, 0f, 0), new Vector3(-0.6f, 2.3f, 0) };
         private int pointCount = 0;
@@ -24,6 +25,7 @@ namespace DS
         TMP_Text myText;
         private void Awake()
         {
+           
             // for çalışmıyor
             if (transform.childCount == 2)
             {
@@ -51,6 +53,7 @@ namespace DS
 
             gameManager = GameObject.Find("GameManager").transform.GetComponent<GameManager>();
             myText = gameManager.myText;
+            
         }
         private void Update()
         {
@@ -288,7 +291,54 @@ namespace DS
                             {
                                 _myConvarsation = GetComponent<NPCConversation>();
                             }
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
+                            if (gameObject.name == "Misafirlerb23(Clone)" || gameObject.name == "Misafirlerb5(Clone)" || gameObject.name == "Misafirlerb3(Clone)" ||
+                                gameObject.name == "Misafirlerb10(Clone)" || gameObject.name == "Misafirlerb15(Clone)" || gameObject.name == "Misafirlerb20(Clone)")
+                            {
+                                if (gameManager.story.dialog5 == true)
+                                {
+
+                                }
+                                else
+                                {
+                                    for (int i = 0; i <= gameManager.charactersBackPrefab.Count - 1; i++)
+                                    {
+
+                                        if (this.gameObject.name.Replace("(Clone)", "").Trim() == gameManager.charactersBackPrefab[i].name)
+                                        {
+
+                                            _characterPrefabCount = i;
+                                            gameManager.sıradakiCount = i;
+                                            break;
+                                        }
+
+
+                                    }
+                                    ConversationManager.Instance.StartConversation(_myConvarsation);
+                                    ConversationManager.Instance.SetInt("stori", gameManager.story.dialogSayac[_characterPrefabCount]);
+                                    gameManager.sayac = ConversationManager.Instance.GetInt("stori");
+
+                                }
+
+                            }
+                            else
+                            {
+                                for (int i = 0; i <= gameManager.charactersBackPrefab.Count - 1; i++)
+                                {
+
+                                    if (this.gameObject.name.Replace("(Clone)", "").Trim() == gameManager.charactersBackPrefab[i].name)
+                                    {
+
+                                        _characterPrefabCount = i;
+                                        gameManager.sıradakiCount = i;
+                                        break;
+                                    }
+
+
+                                }
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+
+                            }
+
                             foreach (var item in _skeletonGraphic)
                             {
                                 item.freeze = true;
@@ -324,10 +374,10 @@ namespace DS
                     }
                     else
                     {
-                        transform.position = Vector3.MoveTowards(transform.position, gameManager.charactersBack[_characterBackCount - 1].transform.position + new Vector3(0, -0.4f, 0), speed * Time.deltaTime);
+                        transform.position = Vector3.MoveTowards(transform.position, gameManager.charactersBack[_characterBackCount - 1].transform.position + new Vector3(0, -0.6f, 0), speed * Time.deltaTime);
                         if (gameManager.charactersBack[_characterBackCount - 1].GetComponent<Rigidbody2D>().velocity == Vector2.zero)
                         {
-                            Vector2 direction = new Vector2(this.gameObject.transform.position.x, gameManager.charactersBack[_characterBackCount - 1].transform.position.y + -0.4f) - GetComponent<Rigidbody2D>().position;
+                            Vector2 direction = new Vector2(this.gameObject.transform.position.x, gameManager.charactersBack[_characterBackCount - 1].transform.position.y + -0.6f) - GetComponent<Rigidbody2D>().position;
 
 
                             if (direction.magnitude > 0.01f)
@@ -402,6 +452,10 @@ namespace DS
         }
         public void yokOl()
         {
+            int sayac;
+            sayac = ConversationManager.Instance.GetInt("stori");
+            gameManager.story.dialogSayac[_characterPrefabCount] = sayac + 1;
+            gameManager.charactersBack.Remove(gameObject);
             Destroy(gameObject);
         }
         public void anahtarAç()
@@ -435,6 +489,12 @@ namespace DS
         {
             gameManager.story.para = int.Parse(myText.text) + 1500;
             myText.text = gameManager.story.para.ToString();
+        }
+        public void MektupEkle()
+        {
+            Inventory halı = new Inventory(gameManager, gameManager.inventoryItems[1], "mektup");
+            gameManager.InventorySaveGame();
+            gameManager.story.dialog5 = true;
         }
     }
 }

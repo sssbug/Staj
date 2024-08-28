@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2853958677204962173
+--- !u!1 &2753139038535935623
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,336 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5268551644016007038}
-  - component: {fileID: 1971229643996720927}
-  - component: {fileID: 7575901894877371615}
-  - component: {fileID: 3742870041386226958}
-  - component: {fileID: 2918379385083310717}
-  - component: {fileID: 2178911452699788743}
-  - component: {fileID: 6255170225507512787}
-  - component: {fileID: 3625858890688562499}
-  - component: {fileID: 8205801478655220785}
-  - component: {fileID: 5146473538131583705}
-  - component: {fileID: 1853104264172598417}
-  - component: {fileID: 947089499901712054}
-  - component: {fileID: 8778221750447014395}
-  - component: {fileID: 7164100892910687347}
-  m_Layer: 0
-  m_Name: ConversationEventInfo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5268551644016007038
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 510811.94, y: -77225.83, z: 0}
-  m_LocalScale: {x: 160275.58, y: 160275.58, z: 160275.58}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1713851152570553499}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1971229643996720927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 0
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &7575901894877371615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 1
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 574a15e752e781b4487adcaedc614516, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &3742870041386226958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 2
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &2918379385083310717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8726247243442869119}
-        m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
-        m_MethodName: ParaEkleC
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  NodeID: 3
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &2178911452699788743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8726247243442869119}
-        m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
-        m_MethodName: ParaEkleT
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  NodeID: 4
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &6255170225507512787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 5
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 574a15e752e781b4487adcaedc614516, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &3625858890688562499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 6
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &8205801478655220785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 7
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 574a15e752e781b4487adcaedc614516, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &5146473538131583705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 8
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 574a15e752e781b4487adcaedc614516, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1853104264172598417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 9
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &947089499901712054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 10
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 574a15e752e781b4487adcaedc614516, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &8778221750447014395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 11
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &7164100892910687347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853958677204962173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8726247243442869119}
-        m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
-        m_MethodName: "anahtarA\xE7"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  NodeID: 12
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!1 &3497153565071197480
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2296727648906637575}
-  - component: {fileID: 4110396137013525390}
-  - component: {fileID: 2559624216216157207}
+  - component: {fileID: 4178642719597885209}
+  - component: {fileID: 1060111412029132601}
+  - component: {fileID: 4455891319737443984}
   m_Layer: 0
   m_Name: SkeletonGraphic (skeleton)
   m_TagString: Untagged
@@ -345,40 +18,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2296727648906637575
+--- !u!224 &4178642719597885209
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3497153565071197480}
+  m_GameObject: {fileID: 2753139038535935623}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1713851152570553499}
+  m_Father: {fileID: 5997005600617233383}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -316.77042, y: 533.54785}
   m_SizeDelta: {x: 255.69815, y: 969.44116}
   m_Pivot: {x: -0.7, y: 1.09}
---- !u!222 &4110396137013525390
+--- !u!222 &1060111412029132601
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3497153565071197480}
+  m_GameObject: {fileID: 2753139038535935623}
   m_CullTransparentMesh: 1
---- !u!114 &2559624216216157207
+--- !u!114 &4455891319737443984
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3497153565071197480}
+  m_GameObject: {fileID: 2753139038535935623}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
@@ -418,7 +91,7 @@ MonoBehaviour:
       calculateTangents: 0
       addNormals: 0
       immutableTriangles: 0
---- !u!1 &5807119037781568019
+--- !u!1 &4185260250556621881
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -426,13 +99,136 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1713851152570553499}
-  - component: {fileID: 1341189507365248242}
-  - component: {fileID: 1437011828865989644}
-  - component: {fileID: 8726247243442869119}
-  - component: {fileID: 5087130567742877071}
-  - component: {fileID: 5164341163929202764}
-  - component: {fileID: -6027953419012358839}
+  - component: {fileID: 8623901306009759240}
+  - component: {fileID: 8104869070424455648}
+  - component: {fileID: 6925559608976746656}
+  - component: {fileID: 5276515852596391880}
+  - component: {fileID: 3539587504937797054}
+  m_Layer: 0
+  m_Name: ConversationEventInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8623901306009759240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4185260250556621881}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 510811.94, y: -77225.83, z: 0}
+  m_LocalScale: {x: 160275.58, y: 160275.58, z: 160275.58}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5997005600617233383}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8104869070424455648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4185260250556621881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &6925559608976746656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4185260250556621881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 14
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 574a15e752e781b4487adcaedc614516, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &5276515852596391880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4185260250556621881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 15
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 574a15e752e781b4487adcaedc614516, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &3539587504937797054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4185260250556621881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7201455551350072373}
+        m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
+        m_MethodName: yokOl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 16
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!1 &8344599693734401711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5997005600617233383}
+  - component: {fileID: 6974159484153260417}
+  - component: {fileID: 4422902072204592136}
+  - component: {fileID: 7201455551350072373}
+  - component: {fileID: 8420098549863694803}
+  - component: {fileID: 1753006742644386987}
+  - component: {fileID: 2146452001705367050}
   m_Layer: 6
   m_Name: Misafirlerb21
   m_TagString: 21
@@ -440,20 +236,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1713851152570553499
+--- !u!224 &5997005600617233383
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5807119037781568019}
+  m_GameObject: {fileID: 8344599693734401711}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -22788}
   m_LocalScale: {x: 0.0015797791, y: 0.0015797791, z: 0.0015797791}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 2296727648906637575}
-  - {fileID: 5268551644016007038}
+  - {fileID: 4178642719597885209}
+  - {fileID: 8623901306009759240}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -461,21 +257,21 @@ RectTransform:
   m_AnchoredPosition: {x: -806.97, y: 122}
   m_SizeDelta: {x: -619.8, y: -1429.4}
   m_Pivot: {x: 0.49999994, y: 0.4999999}
---- !u!222 &1341189507365248242
+--- !u!222 &6974159484153260417
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5807119037781568019}
+  m_GameObject: {fileID: 8344599693734401711}
   m_CullTransparentMesh: 1
---- !u!61 &1437011828865989644
+--- !u!61 &4422902072204592136
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5807119037781568019}
+  m_GameObject: {fileID: 8344599693734401711}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -514,27 +310,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 160.15155, y: 743.13116}
   m_EdgeRadius: 0
---- !u!114 &8726247243442869119
+--- !u!114 &7201455551350072373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5807119037781568019}
+  m_GameObject: {fileID: 8344599693734401711}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42fe11e1da69b1c4d98fce7145530a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _skeletonGraphic: []
---- !u!50 &5087130567742877071
+--- !u!50 &8420098549863694803
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5807119037781568019}
+  m_GameObject: {fileID: 8344599693734401711}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -554,75 +350,60 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
---- !u!114 &5164341163929202764
+--- !u!114 &1753006742644386987
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5807119037781568019}
+  m_GameObject: {fileID: 8344599693734401711}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 13
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":249,\"yPos\":-231},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ift
-    yatakl\u0131(1500)\",\"parentUIDs\":[2],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-52,\"yPos\":-241},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
-    yatakl\u0131(1000)\",\"parentUIDs\":[2],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":105,\"yPos\":94},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Kimli\u011Finizi
-    alabilir miyim\",\"parentUIDs\":[5],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":87,\"yPos\":911},\"ID\":12,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"Value\":20}],\"TMPFontGUID\":null,\"Text\":\"\u0130\u015Flemleriniz
-    tamamd\u0131r bu da odan\u0131z.\",\"parentUIDs\":[11],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":124,\"yPos\":-697},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ho\u015F
-    geldiniz! Size nas\u0131l yard\u0131mc\u0131 olabilirim?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":126,\"yPos\":-547},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Merhaba.
-    Haberin mutlaka vard\u0131r d\u0131\u015Far\u0131daki \xF6l\xFCmleri incelemek
-    i\xE7in  \u0130stanbul Anadolu Adliyesinden gelsim. Bir hafta kalaca\u011F\u0131m.
-    Sessiz bir oda istiyorum.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nergis
-    G\xFCm\xFC\u015Fok\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":121,\"yPos\":-404},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Elbette,
-    hemen yard\u0131mc\u0131 oluyorum.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":102,\"yPos\":-68},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Fark
-    etmez\",\"parentUIDs\":[3,4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nergis
-    G\xFCm\xFC\u015Fok\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":108,\"yPos\":219},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tabiki
-    al\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nergis
-    G\xFCm\xFC\u015Fok\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":109,\"yPos\":369},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bu
-    arada polis memuru cumhur akarca senin bir \u015Feyler  g\xF6rm\xFC\u015F olabilece\u011Finden
-    bahsetti.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nergis
-    G\xFCm\xFC\u015Fok\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":101,\"yPos\":515},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u015Eey
-    evet belediye i\u015F\xE7isi gibi giyinmi\u015Fti burada bir gece kald\u0131
-    ismi de Cemal Kara'yd\u0131.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":95,\"yPos\":647},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Anl\u0131yorum
-    bu bilgi aram\u0131zda kals\u0131n ben bizzat ilgilenicem.\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nergis
-    G\xFCm\xFC\u015Fok\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":92,\"yPos\":780},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamamd\u0131r\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  CurrentIDCounter: 17
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":189,\"yPos\":548},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Emredersiniz.\",\"parentUIDs\":[15],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":185,\"yPos\":27},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ho\u015F
+    geldiniz!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":185,\"yPos\":197},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Merhabalar
+    ben \u0130stanbul Anadolu Adliyesi Cumhuriyet Savc\u0131s\u0131 Nergis G\xFCm\xFC\u015Fok\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nergis
+    G\xFCm\xFC\u015Fok\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":189,\"yPos\":379},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0130\u015Flenen
+    gazeteci Timur A\u011F\u0131rel cinayeti nedeniyle soru\u015Fturma bitene kadar
+    otele giri\u015F ve \xE7\u0131k\u0131\u015Flar\u0131 yasakl\u0131yorum.\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nergis
+    G\xFCm\xFC\u015Fok\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
-  DefaultName: 
-  DefaultSprite: {fileID: 0}
+  DefaultName: "Nergis G\xFCm\xFC\u015Fok"
+  DefaultSprite: {fileID: 21300000, guid: 574a15e752e781b4487adcaedc614516, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
-  - {fileID: 1971229643996720927}
-  - {fileID: 7575901894877371615}
-  - {fileID: 3742870041386226958}
-  - {fileID: 2918379385083310717}
-  - {fileID: 2178911452699788743}
-  - {fileID: 6255170225507512787}
-  - {fileID: 3625858890688562499}
-  - {fileID: 8205801478655220785}
-  - {fileID: 5146473538131583705}
-  - {fileID: 1853104264172598417}
-  - {fileID: 947089499901712054}
-  - {fileID: 8778221750447014395}
-  - {fileID: 7164100892910687347}
+  - {fileID: 8104869070424455648}
+  - {fileID: 6925559608976746656}
+  - {fileID: 5276515852596391880}
+  - {fileID: 3539587504937797054}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &-6027953419012358839
+      m_Calls:
+      - m_Target: {fileID: 7201455551350072373}
+        m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
+        m_MethodName: yokOl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2146452001705367050
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5807119037781568019}
+  m_GameObject: {fileID: 8344599693734401711}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0eced54864325e4b8a8991ffcebba0e, type: 3}

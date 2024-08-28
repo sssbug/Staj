@@ -16,10 +16,7 @@ namespace DS
 
         private void Start()
         {
-            if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
-            {
-                _myConvarsation = GetComponent<NPCConversation>();
-            }
+            
             gameManager = GameObject.Find("GameManager").transform.GetComponent<GameManager>();
 
         }
@@ -27,12 +24,24 @@ namespace DS
         public void OnPointerClick(PointerEventData eventData)
         {
 
-
+            Debug.Log("sdfsf");
             
             GameObject clickedObject = eventData.pointerPress;
+            if (clickedObject != null && clickedObject.tag == "bomb")
+            {
 
-            
-            if (clickedObject != null && clickedObject.name == "Anahtar")
+            }
+            else if (clickedObject != null && clickedObject.tag == "mektup")
+            {
+                GameObject slot = GameObject.Find("NotePlace");
+                GameObject _myObject;
+                _myObject = Instantiate(gameManager.Notlar[0]);
+                
+                _myObject.transform.parent = slot.transform;
+                Debug.Log("sdfsf");
+                GameObject.Find("Container").transform.GetChild(1).gameObject.SetActive(true);
+            }
+            else if (clickedObject != null && clickedObject.name == "Anahtar")
             {
 
                 
@@ -40,8 +49,14 @@ namespace DS
                 gameManager.odaVeriTabanıı.odaData();
                 gameManager.keys.SetActive(false);
                 gameManager.cikis();
+                _myConvarsation = gameManager.sıradaki.GetComponent<NPCConversation>();
                 
-                
+                gameManager.story.dialogSayac[gameManager.sıradakiCount] = gameManager.sayac + 1;
+
+                if (gameManager.sıradaki.name == "Misafirlerb23(Clone)")
+                {
+                    gameManager.story.dialog5 = false;
+                }
 
             }
           

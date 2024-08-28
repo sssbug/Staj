@@ -44,6 +44,8 @@ TagManager:
   - 34
   - Asansor
   - temizlik
+  - bomb
+  - mektup
   layers:
   - Default
   - TransparentFX

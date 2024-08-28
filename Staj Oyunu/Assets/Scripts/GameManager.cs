@@ -32,15 +32,18 @@ namespace DS
         public List<string> loadedCharactersReversePrefabNames;
         public List<string> loadedInventoryItemNames;
         public List<string> loadedOtelinSahibiNames;
-
+        
 
         public List<GameObject> inventoryItems = new List<GameObject>();
+        public List<GameObject> Notlar = new List<GameObject>();
         public List<GameObject> otelinSahibi = new List<GameObject>();
         public GameObject lamba;
         public GameObject keys;
         public GameObject InventoryObject;
         public GameObject sıradaki;
+        public int sıradakiCount;
         public int spawnlanacak;
+        public int sayac;
         public Light2D gunes;
 
         public GameObject conversationManager;
@@ -74,7 +77,7 @@ namespace DS
 
         private void Update()
         {
-
+            
             float timePercent = TimeManager.Instance.timePercent;
             if (conversationManager.activeSelf == false)
             {

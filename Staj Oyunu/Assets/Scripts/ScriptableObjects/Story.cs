@@ -9,7 +9,7 @@ namespace DS
     [CreateAssetMenu(fileName = "Story", menuName = "Persistence")]
     public class Story : ScriptableObject
     {
-
+        public int[] dialogSayac;
         public int para;
         public bool müşteriBasla;
         public bool basla;
