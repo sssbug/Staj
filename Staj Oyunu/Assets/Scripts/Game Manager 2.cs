@@ -10,6 +10,8 @@ namespace DS
     {
         [SerializeField]
         public odaVeriTabanı odaVeriTabanıı;
+        [SerializeField]
+        public Story story;
         public GameObject liftButton;
         public List<GameObject> odalar = new List<GameObject>();
         public List<GameObject> Characters = new List<GameObject>();

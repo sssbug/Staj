@@ -17,12 +17,13 @@ namespace DS
         private const string TimePercentKey = "TimePercent";
         private const string LastSavedTimeKey = "LastSavedTime";
         public int basla = 1;
-        private int gunSayacı = 0;
+        public int gunSayacı = 0;
         public bool isWork;
+        public bool isTime;
         private void Awake()
         {
-            
-            
+
+
             if (Instance == null)
             {
                 Instance = this;
@@ -41,7 +42,7 @@ namespace DS
 
         private void Update()
         {
-           
+
             if (isWork == false)
             {
                 timePercent += (Time.deltaTime / (24f * 60f)) * speedFactor;
@@ -56,6 +57,7 @@ namespace DS
                         story.gun[gunSayacı + 1] = true;
                         gunSayacı += 1;
                         basla = 0;
+                        isTime = false;
                     }
 
                 }
@@ -64,8 +66,8 @@ namespace DS
                     basla = 1;
                 }
             }
-            
-            
+           
+
         }
 
         private void OnApplicationQuit()

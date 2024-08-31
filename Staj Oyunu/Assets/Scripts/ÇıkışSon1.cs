@@ -45,7 +45,7 @@ namespace DS
 
                 if (basla == 1)
                 {
-                    _skeletonGraphic.AnimationState.SetAnimation(1, "İdle", true);
+                    _skeletonGraphic.freeze = true;
                     basla = 0;
                     GameObject.Find("Asansor").GetComponent<SkeletonGraphic>().AnimationState.SetAnimation(1, "Close", false);
                     StartCoroutine(run(3));

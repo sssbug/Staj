@@ -20,11 +20,11 @@ namespace DS
         public GameObject conversationManager;
         bool basla = true;
         bool bomba = false;
-        private int[] gun = { 6, 8, 9, 10 };
+        private int[] gun = { 6, 8, 9, 14 };
         private int[] gun1 = { 2, 3, 4, 21 };
-        private int[] gun2 = { 19, 8, 9, 10 };
+        private int[] gun2 = { 19, 11, 5, 17 };
         private int[] gun3 = { 2, 0, 13, 12 };
-        private int[] gun4 = { 19, 14, 18, 7 };
+        private int[] gun4 = { 19, 10, 18, 7 };
         private int[] gun5 = { 1, 22, 2, 16 };
         private int[] gun6 = { 2, 9, 14, 4, 22 };
 
@@ -75,7 +75,14 @@ namespace DS
             {
                 timerLocal = interval - timerLocal; // Kaldığı yerden devam edebilmesi için kalan süreyi hesapla
             }
-
+            if (gameManager.story.gun[6])
+            {
+                interval = 1;
+            }
+            else
+            {
+                interval = 70;
+            }
         }
 
 
@@ -98,8 +105,8 @@ namespace DS
                     timerLocal = 70;
                 }
             }
-            Debug.Log(interval);
-            if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) < 0.1)
+            
+            if (TimeManager.Instance.isTime == false)
             {
 
                 if (gameManager.story.gun[0] == true)
@@ -147,7 +154,7 @@ namespace DS
                     interval = 70;
                 }
 
-
+                TimeManager.Instance.isTime = true;
             }
 
             //Burada dialogları başlatıyorum 
@@ -189,20 +196,13 @@ namespace DS
                                 misafirSpawn();
 
                                 currentCallCountLocal++;
-                                timerLocal = 0f; // Zamanlayıcıyı sıfırla
+                                timerLocal = 0f; 
 
-                                SaveProgress(); // Her işlemde ilerlemeyi kaydet
-
-
-
+                                SaveProgress();
                             }
                         }
                     }
-
-
                 }
-
-
             }
             if (gameManager.story.gun[6] == true)
             {
@@ -281,9 +281,6 @@ namespace DS
                 CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), gun6[gameManager.story.generated6]);
                 gameManager.story.generated6 += 1;
             }
-
-
-
         }
 
         void SaveProgress()

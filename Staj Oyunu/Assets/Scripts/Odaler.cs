@@ -27,18 +27,31 @@ namespace DS
 
             if (clickedObject != null && clickedObject.tag == "1")
             {
-                //Debug.Log("sefsf");
-                //for (int i = 0; i < gameManager.Characters.Count; i++)
-                //{
-                //    if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
-                //    {
-                //        ConversationManager.Instance.StartConversation(_myConvarsation);
-                //        ConversationManager.Instance.SetInt("misafir", i);
+                if (gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)] != null)
+                {
+                    for (int i = 1; i < gameManager.Characters.Count; i++)
+                    {
+                        
+                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        {
+                            ConversationManager.Instance.StartConversation(_myConvarsation);
+                            if (TimeManager.Instance.gunSayacı == 0)
+                            {
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.gunSayacı);
+                            }
+                            else
+                            {
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.gunSayacı + 1); 
+                            }
+                            
+                            ConversationManager.Instance.SetInt("misafir", i);
+                            break;
+                        }
 
-                //    }
-
-                //}
+                    }
+                }
                 
+
             }
             if (clickedObject != null && clickedObject.tag == "2")
             {

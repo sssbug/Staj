@@ -11753,11 +11753,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timePercent: 0
-  speedFactor: 1
+  speedFactor: 1.5
   "odaVeriTaban\u0131\u0131": {fileID: 11400000, guid: f1a0ce1395d2bb64a98517f1e5556efa, type: 2}
   story: {fileID: 11400000, guid: 06fabdb9dfbf8374982d80542c6ce198, type: 2}
   basla: 0
   isWork: 0
+  isTime: 0
 --- !u!4 &1489122508
 Transform:
   m_ObjectHideFlags: 0

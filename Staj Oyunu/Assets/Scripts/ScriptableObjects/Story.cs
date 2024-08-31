@@ -53,5 +53,7 @@ namespace DS
         public bool dialog26;
         public bool dialog27;
         public bool dialog28;
+
+
     }
 }
