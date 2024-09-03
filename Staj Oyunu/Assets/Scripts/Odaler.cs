@@ -35,15 +35,15 @@ namespace DS
                         if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                         {
                             ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.gunSayacı == 0)
+                            if (TimeManager.Instance.story.gunSayacı == 0)
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.gunSayacı);
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                             }
                             else
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.gunSayacı + 1);
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
                             }
-
+                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                             ConversationManager.Instance.SetInt("misafir", i);
                             break;
                         }
@@ -156,13 +156,13 @@ namespace DS
             {
 
                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                if (TimeManager.Instance.gunSayacı == 0)
+                if (TimeManager.Instance.story.gunSayacı == 0)
                 {
-                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.gunSayacı);
+                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                 }
                 else
                 {
-                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.gunSayacı + 1);
+                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
                 }
 
                 ConversationManager.Instance.SetInt("misafir", 25);

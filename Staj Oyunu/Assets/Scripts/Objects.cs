@@ -41,6 +41,16 @@ namespace DS
                 Debug.Log("sdfsf");
                 GameObject.Find("Container").transform.GetChild(1).gameObject.SetActive(true);
             }
+            else if (clickedObject != null && clickedObject.tag == "mektup1")
+            {
+                GameObject slot = GameObject.Find("NotePlace");
+                GameObject _myObject;
+                _myObject = Instantiate(gameManager.Notlar[1]);
+
+                _myObject.transform.parent = slot.transform;
+                Debug.Log("sdfsf");
+                GameObject.Find("Container").transform.GetChild(1).gameObject.SetActive(true);
+            }
             else if (clickedObject != null && clickedObject.name == "Anahtar")
             {
 

@@ -15,7 +15,7 @@ namespace DS
         bool bitti = true;
         private float interval = 70;  // Her 20 saniyede bir çalışacak
         private int maxCalls;     // Fonksiyon toplamda 23 kere çalışacak
-        private int currentCallCountLocal;
+        
         private float timerLocal;
         public GameObject conversationManager;
         bool basla = true;
@@ -71,7 +71,7 @@ namespace DS
             {
                 maxCalls = gun6.Length;
             }
-            if (currentCallCountLocal < maxCalls)
+            if (gameManager.story.currentCallCount < maxCalls)
             {
                 timerLocal = interval - timerLocal; // Kaldığı yerden devam edebilmesi için kalan süreyi hesapla
             }
@@ -106,7 +106,7 @@ namespace DS
                 }
             }
             
-            if (TimeManager.Instance.isTime == false)
+            if (TimeManager.Instance.story.isTime == false)
             {
 
                 if (gameManager.story.gun[0] == true)
@@ -137,8 +137,8 @@ namespace DS
                 {
                     maxCalls = gun6.Length;
                 }
-                currentCallCountLocal = 0;
-                if (currentCallCountLocal < maxCalls)
+                gameManager.story.currentCallCount = 0;
+                if (gameManager.story.currentCallCount < maxCalls)
                 {
                     timerLocal = interval - timerLocal;
                 }
@@ -154,7 +154,7 @@ namespace DS
                     interval = 70;
                 }
 
-                TimeManager.Instance.isTime = true;
+                TimeManager.Instance.story.isTime = true;
             }
 
             //Burada dialogları başlatıyorum 
@@ -183,7 +183,7 @@ namespace DS
 
                 if ((Math.Floor(TimeManager.Instance.timePercent * 10) / 10) > 0.2 && (Math.Floor(TimeManager.Instance.timePercent * 10) / 10) < 0.7)
                 {
-                    if (currentCallCountLocal < maxCalls)
+                    if (gameManager.story.currentCallCount < maxCalls)
                     {
                         if (conversationManager.activeSelf == false)
                         {
@@ -195,7 +195,7 @@ namespace DS
 
                                 misafirSpawn();
 
-                                currentCallCountLocal++;
+                                gameManager.story.currentCallCount++;
                                 timerLocal = 0f; 
 
                                 SaveProgress();
@@ -233,7 +233,19 @@ namespace DS
                     }
                 }
             }
+            if (gameManager.story.gunSayacı == 9)
+            {
+                if (gameManager.story.eşyalar == false)
+                {
+                    Inventory halı = new Inventory(gameManager, gameManager.inventoryItems[3], "Untagged");
+                    Inventory halı2 = new Inventory(gameManager, gameManager.inventoryItems[4], "Untagged");
+                    Inventory halı3 = new Inventory(gameManager, gameManager.inventoryItems[5], "Untagged");
+                    Inventory halı4 = new Inventory(gameManager, gameManager.inventoryItems[6], "Untagged");
+                    Inventory halı5 = new Inventory(gameManager, gameManager.inventoryItems[7], "Untagged");
+                    gameManager.story.eşyalar = true;
+                }
 
+            }
         }
 
 
@@ -285,13 +297,13 @@ namespace DS
 
         void SaveProgress()
         {
-            gameManager.story.currentCallCount = currentCallCountLocal;
+            
             gameManager.story.timer = timerLocal;
         }
 
         void LoadProgress()
         {
-            currentCallCountLocal = gameManager.story.currentCallCount;
+            
             timerLocal = gameManager.story.timer;
         }
         [System.Serializable]

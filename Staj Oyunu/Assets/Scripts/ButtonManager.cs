@@ -14,22 +14,22 @@ namespace DS
         void Start()
         {
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-            
-            
+
+
         }
 
         public void MektupKapat()
         {
-            
+
             Destroy(GameObject.Find("NotePlace").transform.GetChild(0).gameObject);
             GameObject.Find("Container").transform.GetChild(1).gameObject.SetActive(false);
-            if (gameManager.sıradaki.name == "Misafirlerb23(Clone)")
-            {
-                _myConvarsation = gameManager.sıradaki.GetComponent<NPCConversation>();
-                ConversationManager.Instance.StartConversation(_myConvarsation);
-                ConversationManager.Instance.SetInt("sira", 2);
-            }
+
+            _myConvarsation = gameManager.sıradaki.GetComponent<NPCConversation>();
+            ConversationManager.Instance.StartConversation(_myConvarsation);
+            ConversationManager.Instance.SetInt("sira", 2);
+
         }
+
         public void Dialog1()
         {
             gameManager.story.dialog1 = true;
@@ -139,7 +139,7 @@ namespace DS
         }
 
 
-        
+
 
     }
 }

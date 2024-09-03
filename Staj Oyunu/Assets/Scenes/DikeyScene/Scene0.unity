@@ -211,11 +211,7 @@ GameObject:
   - component: {fileID: 408378169}
   - component: {fileID: 408378168}
   - component: {fileID: 408378176}
-  - component: {fileID: 408378175}
-  - component: {fileID: 408378174}
   - component: {fileID: 408378173}
-  - component: {fileID: 408378172}
-  - component: {fileID: 408378171}
   - component: {fileID: 408378170}
   - component: {fileID: 408378177}
   m_Layer: 0
@@ -316,44 +312,6 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
   Audio: {fileID: 0}
---- !u!114 &408378171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408378165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 8
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &408378172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408378165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 7
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 4424bfeec93e0d6449517e453577e4c1, type: 3}
-  Audio: {fileID: 0}
 --- !u!114 &408378173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,44 +328,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 6
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 4424bfeec93e0d6449517e453577e4c1, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &408378174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408378165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 5
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &408378175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408378165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 4
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 4424bfeec93e0d6449517e453577e4c1, type: 3}
   Audio: {fileID: 0}
@@ -610,18 +530,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 13
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":233,\"yPos\":-549},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Do\u011Fru\",\"parentUIDs\":[2],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":163,\"yPos\":-247},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ederim\",\"parentUIDs\":[4],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":101,\"yPos\":40},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Evet\",\"parentUIDs\":[7],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":92,\"yPos\":540},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Otel
-    sahibiyle konu\u015Fak i\xE7in i\xE7eri girdim\",\"parentUIDs\":[10],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":249,\"yPos\":-981},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tan\u0131\u011F\u0131
-    Alal\u0131m\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hakim\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":256,\"yPos\":-855},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tan\u0131k
-    Oktay Hal\u0131g\xFCr\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"M\xFCba\u015Fir\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":250,\"yPos\":-696},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oktay
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":167,\"yPos\":689},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Do\u011Fru\",\"parentUIDs\":[2],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":174,\"yPos\":1224},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Otel
+    sahibiyle konu\u015Fak i\xE7in i\xE7eri girdim\",\"parentUIDs\":[10],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":193,\"yPos\":252},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tan\u0131\u011F\u0131
+    Alal\u0131m\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hakim\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":177,\"yPos\":382},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tan\u0131k
+    Oktay Hal\u0131g\xFCr\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"M\xFCba\u015Fir\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":173,\"yPos\":533},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oktay
     Hal\u0131g\xFCr Mustafa o\u011Flu 1999 do\u011Fumlu \u0130stanbul Ata\u015Fehir
-    il\xE7esine muhkim san\u0131\u011Fa tan\u0131k engel hali yoktur do\u011Fru mu?\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hakim\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":190,\"yPos\":-433},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tan\u0131k
-    Oktay Hal\u0131g\xFCr do\u011Fruyu s\xF6yleyece\u011Finden namusun, \u015Ferefin
-    ve kutsal \u015Fahid \xFCzerine yemin eder misin?\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hakim\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":92,\"yPos\":156},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dinliyoruz\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hakim\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":95,\"yPos\":-126},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oktay
-    Hal\u0131g\xFCr ceza mahkemeleri kanunu 53.maddesi uyar\u0131nca ger\xE7e\u011Fi
-    s\xF6ylemen gerekti\u011Fi s\xF6ylememen halinde yalanc\u0131 tan\u0131kl\u0131ktan
-    cezaland\u0131ralaca\u011F\u0131n\u0131 ibraz ediyorum tan\u0131kl\u0131k yap\u0131cak
-    m\u0131s\u0131n?\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hakim\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":93,\"yPos\":315},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Olay\u0131
+    il\xE7esine muhkim san\u0131\u011Fa tan\u0131k engel hali yoktur do\u011Fru mu?\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hakim\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":165,\"yPos\":823},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dinliyoruz\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Hakim\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":174,\"yPos\":1058},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Olay\u0131
     do\u011Frudan g\xF6rmesem de olay\u0131n do\u011Frudan i\xE7indeydim yani her
     \u015Fey i\u015Fe al\u0131nmamla birlikte ba\u015Flad\u0131.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
     Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
@@ -634,11 +548,7 @@ MonoBehaviour:
   - {fileID: 408378169}
   - {fileID: 408378168}
   - {fileID: 408378176}
-  - {fileID: 408378175}
-  - {fileID: 408378174}
   - {fileID: 408378173}
-  - {fileID: 408378172}
-  - {fileID: 408378171}
   - {fileID: 408378170}
   - {fileID: 408378177}
   ContinueFont: {fileID: 0}
@@ -658,6 +568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb93cf9436611784fba2821559e7c2c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  story: {fileID: 11400000, guid: 06fabdb9dfbf8374982d80542c6ce198, type: 2}
 --- !u!1 &757481353
 GameObject:
   m_ObjectHideFlags: 0

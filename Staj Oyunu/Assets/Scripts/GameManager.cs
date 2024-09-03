@@ -69,7 +69,7 @@ namespace DS
             destroySavePath = Path.Combine(Application.persistentDataPath, "destroyedObjects.json");
             LoadDestroyedObjects();
             RemoveDestroyedObjectsFromScene();
-
+            
             myText.text = (story.para).ToString();
             InventoryLoadGame();
         }
@@ -101,7 +101,7 @@ namespace DS
                 lamba.SetActive(true);
 
             }
-
+            
         }
         void UpdateLighting(float timePercent)
         {
@@ -220,6 +220,10 @@ namespace DS
 
                 // JSON'dan gelen verileri public listelere kaydet
                 loadedInventoryItemNames = data.itemsName;
+                if (story.sil == true)
+                {
+                    loadedInventoryItemNames.RemoveAt(0);
+                }
                 foreach (var item in inventoryItems)
                 {
                     if (loadedInventoryItemNames.Contains(item.name) )

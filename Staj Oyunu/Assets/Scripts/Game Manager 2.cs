@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DialogueEditor;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,8 +29,14 @@ namespace DS
         int basla = 1;
         public GameObject conversationManager;
         public List<Sprite> sprites = new List<Sprite>();
-
-
+        private NPCConversation _myConvarsation;
+        private void Start()
+        {
+            if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
+            {
+                _myConvarsation = GetComponent<NPCConversation>();
+            }
+        }
 
         private void Update()
         {
@@ -89,6 +96,25 @@ namespace DS
                     lamba[i].SetActive(true);
                 }
             }
+
+
+
+            if (story.gunSayacı == 9)
+            {
+                if (story.ölümHaberi == false)
+                {
+                    
+                    ConversationManager.Instance.StartConversation(_myConvarsation);
+                    ConversationManager.Instance.SetInt("story", 1);
+                    story.ölümHaberi = true;
+                }
+                if (story.itiraf == false)
+                {
+                    ConversationManager.Instance.StartConversation(_myConvarsation);
+                    ConversationManager.Instance.SetInt("story", 2);
+                    story.itiraf = true;
+                }
+            }
         }
         void UpdateLighting(float timePercent)
         {
@@ -108,6 +134,22 @@ namespace DS
                 gunes.intensity = Mathf.Lerp(1f, 0.1f, (timePercent - 0.75f) / 0.25f);
                 gunes.color = Color.Lerp(new Color(1f, 0.95f, 0.8f), new Color(0.1f, 0.1f, 0.4f), (timePercent - 0.75f) / 0.25f);
             }
+        }
+
+        public void globalArttırıcı()
+        {
+            story.globalGorev += 1;
+
+        }
+        public void siraArttırıcı()
+        {
+            story.sira += 1;
+
+        }
+        public void bombasil()
+        {
+            story.sil = true;
+
         }
     }
 }

@@ -17,9 +17,10 @@ namespace DS
         private const string TimePercentKey = "TimePercent";
         private const string LastSavedTimeKey = "LastSavedTime";
         public int basla = 1;
-        public int gunSayacı = 0;
+        public int dokuz = 1;
+        public int itiraf = 1;
         public bool isWork;
-        public bool isTime;
+        
         private void Awake()
         {
 
@@ -53,17 +54,36 @@ namespace DS
                     if (basla == 1)
                     {
                         odaVeriTabanıı.odalar();
-                        story.gun[gunSayacı] = false;
-                        story.gun[gunSayacı + 1] = true;
-                        gunSayacı += 1;
+                        story.gun[story.gunSayacı] = false;
+                        story.gun[story.gunSayacı + 1] = true;
+                        story.gunSayacı += 1;
                         basla = 0;
-                        isTime = false;
+                        story.isTime = false;
                     }
 
                 }
                 else
                 {
                     basla = 1;
+                }
+                if ((Math.Floor(timePercent * 10) / 10) == 0.2)
+                {
+                    if (dokuz == 1)
+                    {
+                        story.ölümHaberi = false;
+                        dokuz = 0;
+                    }
+
+                }
+                if ((Math.Floor(timePercent * 10) / 10) == 0.3)
+                {
+                    if (itiraf == 1)
+                    {
+                        story.itiraf = false;
+                        itiraf = 0;
+
+                    }
+
                 }
             }
            

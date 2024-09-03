@@ -46,6 +46,7 @@ TagManager:
   - temizlik
   - bomb
   - mektup
+  - mektup1
   layers:
   - Default
   - TransparentFX

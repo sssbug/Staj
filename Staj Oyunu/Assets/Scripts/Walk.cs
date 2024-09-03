@@ -496,5 +496,11 @@ namespace DS
             gameManager.InventorySaveGame();
             gameManager.story.dialog5 = true;
         }
+        public void MektupEkle2()
+        {
+            Inventory halı = new Inventory(gameManager, gameManager.inventoryItems[2], "mektup1");
+            gameManager.InventorySaveGame();
+            gameManager.story.dialog6 = true;
+        }
     }
 }

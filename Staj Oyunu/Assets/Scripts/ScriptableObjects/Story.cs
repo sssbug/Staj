@@ -9,10 +9,28 @@ namespace DS
     [CreateAssetMenu(fileName = "Story", menuName = "Persistence")]
     public class Story : ScriptableObject
     {
+        public bool Play;
         public int[] dialogSayac;
         public int para;
         public bool müşteriBasla;
         public bool basla;
+
+
+        public int sira;
+        public int gunSayacı;
+        public int globalGorev;
+        
+
+        public List<string> loadedInventoryItemNames;
+        public bool sil;
+
+        public int dokuzuncuGün;
+        public bool ölümHaberi;
+        public bool itiraf;
+        public bool eşyalar;
+
+
+
         public bool[] gun;
         public int generated;
         public int generated1;
@@ -21,10 +39,12 @@ namespace DS
         public int generated4;
         public int generated5;
         public int generated6;
-        public int generated7;
+        
+        
         //burası liste olabilir ama değil
         public bool dialog1;
         public int currentCallCount;
+        public bool isTime = true;
         public float timer;
         public bool dialog2;
         public bool dialog3;
