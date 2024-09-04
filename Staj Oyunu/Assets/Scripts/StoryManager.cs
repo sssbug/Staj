@@ -235,7 +235,7 @@ namespace DS
             }
             if (gameManager.story.gunSayacı == 9)
             {
-                if (gameManager.story.eşyalar == false)
+                if (gameManager.story.eşyalar == true)
                 {
                     Inventory halı = new Inventory(gameManager, gameManager.inventoryItems[3], "Untagged");
                     Inventory halı2 = new Inventory(gameManager, gameManager.inventoryItems[4], "Untagged");

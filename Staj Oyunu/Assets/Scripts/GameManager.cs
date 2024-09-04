@@ -58,7 +58,7 @@ namespace DS
 
         private string savePath;
         private string itemSavePath;
-        public TMP_Text myText;
+        
 
         private void Start()
         {
@@ -70,7 +70,7 @@ namespace DS
             LoadDestroyedObjects();
             RemoveDestroyedObjectsFromScene();
             
-            myText.text = (story.para).ToString();
+            
             InventoryLoadGame();
         }
 

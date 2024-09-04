@@ -74,6 +74,68 @@ namespace DS
         public bool dialog27;
         public bool dialog28;
 
+        public void ResetData()
+        {
+            Play = true;
+            dialogSayac = new int[40]; // 40 elemanlı bir dizi olarak sıfırlanır
+            para = 0;
+            müşteriBasla = false;
+            basla = false;
 
+            sira = 0;
+            gunSayacı = 0;
+            globalGorev = 0;
+
+            loadedInventoryItemNames = new List<string>(new string[40]); // 40 elemanlı bir liste olarak sıfırlanır
+            sil = false;
+
+            dokuzuncuGün = 0;
+            ölümHaberi = false;
+            itiraf = false;
+            eşyalar = false;
+
+            gun = new bool[40];
+            gun[0] = true;
+            generated = 0;
+            generated1 = 0;
+            generated2 = 0;
+            generated3 = 0;
+            generated4 = 0;
+            generated5 = 0;
+            generated6 = 0;
+
+            dialog1 = false;
+            currentCallCount = 0;
+            isTime = true;
+            timer = 0f;
+
+            dialog2 = false;
+            dialog3 = false;
+            dialog4 = false;
+            dialog5 = false;
+            dialog6 = false;
+            dialog7 = false;
+            dialog8 = false;
+            dialog9 = false;
+            dialog10 = false;
+            dialog11 = false;
+            dialog12 = false;
+            dialog13 = false;
+            dialog14 = false;
+            dialog15 = false;
+            dialog16 = false;
+            dialog17 = false;
+            dialog18 = false;
+            dialog19 = false;
+            dialog20 = false;
+            dialog21 = false;
+            dialog22 = false;
+            dialog23 = false;
+            dialog24 = false;
+            dialog25 = false;
+            dialog26 = false;
+            dialog27 = false;
+            dialog28 = false;
+        }
     }
 }

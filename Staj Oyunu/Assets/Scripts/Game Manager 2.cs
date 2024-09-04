@@ -1,9 +1,11 @@
 ﻿using DialogueEditor;
+using Spine.Unity;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 namespace DS
 {
@@ -30,6 +32,9 @@ namespace DS
         public GameObject conversationManager;
         public List<Sprite> sprites = new List<Sprite>();
         private NPCConversation _myConvarsation;
+        public GameObject closePlease;
+        private SkeletonGraphic _skeletonGraphic;
+        private bool baslaa =  false;
         private void Start()
         {
             if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
@@ -44,10 +49,23 @@ namespace DS
             if (conversationManager.activeSelf == false)
             {
                 TimeManager.Instance.isWork = false;
+                if (closePlease != null)
+                {
+                    if (baslaa == false)
+                    {
+                        _skeletonGraphic = closePlease.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                        _skeletonGraphic.AnimationState.SetAnimation(1, "Close", false);
+                        baslaa = true;
+                    }
+
+                }
+                
+
             }
             else
             {
                 TimeManager.Instance.isWork = true;
+                baslaa = false;
             }
             UpdateLighting(timePercent);
             for (int i = 1; i < odalar.Count; i++)
@@ -150,6 +168,15 @@ namespace DS
         {
             story.sil = true;
 
+        }
+        public void Esyalar()
+        {
+            story.globalGorev += 1;
+            story.eşyalar = true;
+        }
+        public void Elendin()
+        {
+            SceneManager.LoadScene("Scene3");
         }
     }
 }

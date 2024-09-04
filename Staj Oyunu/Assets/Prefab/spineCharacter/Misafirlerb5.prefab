@@ -331,7 +331,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4323610500508411310}
         m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
-        m_MethodName: yokOl
+        m_MethodName: Elendin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -851,7 +851,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4323610500508411310}
         m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
-        m_MethodName: yokOl
+        m_MethodName: Elendin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -882,7 +882,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4323610500508411310}
         m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
-        m_MethodName: yokOl
+        m_MethodName: Elendin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

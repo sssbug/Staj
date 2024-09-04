@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DS
 {
@@ -52,7 +53,7 @@ namespace DS
 
 
             gameManager = GameObject.Find("GameManager").transform.GetComponent<GameManager>();
-            myText = gameManager.myText;
+            
             
         }
         private void Update()
@@ -450,6 +451,7 @@ namespace DS
             }
 
         }
+
         public void yokOl()
         {
             int sayac;
@@ -468,28 +470,7 @@ namespace DS
             gameManager.keys.SetActive(false);
         }
 
-        public void ParaEkleT()
-        {
-            gameManager.story.para = int.Parse(myText.text) + (7 * 1000);
-            myText.text = gameManager.story.para.ToString();
-        }
-
-        public void ParaEkleC()
-        {
-            gameManager.story.para = int.Parse(myText.text) + (7 * 1500);
-            myText.text = gameManager.story.para.ToString();
-        }
-        public void ParaEkleTek()
-        {
-            gameManager.story.para = int.Parse(myText.text) + 1000;
-            myText.text = gameManager.story.para.ToString();
-        }
-
-        public void ParaEkleCok()
-        {
-            gameManager.story.para = int.Parse(myText.text) + 1500;
-            myText.text = gameManager.story.para.ToString();
-        }
+        
         public void MektupEkle()
         {
             Inventory halı = new Inventory(gameManager, gameManager.inventoryItems[1], "mektup");
@@ -501,6 +482,10 @@ namespace DS
             Inventory halı = new Inventory(gameManager, gameManager.inventoryItems[2], "mektup1");
             gameManager.InventorySaveGame();
             gameManager.story.dialog6 = true;
+        }
+        public void Elendin()
+        {
+            SceneManager.LoadScene("Scene3");
         }
     }
 }

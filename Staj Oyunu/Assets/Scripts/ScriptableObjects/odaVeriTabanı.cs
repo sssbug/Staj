@@ -67,7 +67,25 @@ namespace DS
 
             }
             
+        }
 
+        public void ResetData()
+        {
+            isim = "";
+            gün = 0;
+            oda = 0;
+            storyCount = 0;
+
+            for (int i = 0; i < 40; i++)
+            {
+                isimdata[i] = "";
+                gündata[i] = 0;
+                odadata[i] = 0;
+                temizlikOdalar[i] = false;
+            }
+            isimdata[25] = "Misafirlerb25";
+            gündata[25] = 100;
+            odadata[25] = 25;
         }
     }
 }
