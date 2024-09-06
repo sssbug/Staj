@@ -11,7 +11,7 @@ namespace DS
     {
         GameManager gameManager;
         private NPCConversation _myConvarsation;
-
+        bool acıldı = true;
         void Start()
         {
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
@@ -24,10 +24,18 @@ namespace DS
 
             Destroy(GameObject.Find("NotePlace").transform.GetChild(0).gameObject);
             GameObject.Find("Container").transform.GetChild(1).gameObject.SetActive(false);
-
-            _myConvarsation = gameManager.sıradaki.GetComponent<NPCConversation>();
-            ConversationManager.Instance.StartConversation(_myConvarsation);
-            ConversationManager.Instance.SetInt("sira", 2);
+            if ((gameManager.sıradaki != null))
+            {
+                if (gameManager.sıradaki.name == "Misafirlerb23(Clone)" || gameManager.sıradaki.name == "Misafirlerb19(Clone)")
+                {
+                    _myConvarsation = gameManager.sıradaki.GetComponent<NPCConversation>();
+                    ConversationManager.Instance.StartConversation(_myConvarsation);
+                    ConversationManager.Instance.SetInt("sira", 2);
+                }
+            }
+            
+            
+            
 
         }
 

@@ -59,14 +59,11 @@ namespace DS
                 gameManager.odaVeriTabanıı.odaData();
                 gameManager.keys.SetActive(false);
                 gameManager.cikis();
-                _myConvarsation = gameManager.sıradaki.GetComponent<NPCConversation>();
+                
                 
                 gameManager.story.dialogSayac[gameManager.sıradakiCount] = gameManager.sayac + 1;
 
-                if (gameManager.sıradaki.name == "Misafirlerb23(Clone)")
-                {
-                    gameManager.story.dialog5 = false;
-                }
+                
 
             }
           

@@ -136,7 +136,12 @@ namespace DS
 
                     spawn.transform.parent = GameObject.Find("Canvas").transform;
                     charactersBack.Remove(sıradaki);
+                    if (sıradaki.name == "Misafirlerb23(Clone)")
+                    {
+                        story.dialog5 = false;
+                    }
                     Destroy(sıradaki);
+                    sıradaki = null;
                 }
             }
 
