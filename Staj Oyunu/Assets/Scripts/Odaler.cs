@@ -13,7 +13,7 @@ namespace DS
         GameManager2 gameManager;
         private NPCConversation _myConvarsation;
         private SkeletonGraphic _skeletonGraphic;
-        
+
         void Start()
         {
             if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
@@ -31,31 +31,37 @@ namespace DS
 
             if (clickedObject != null && clickedObject.tag == "1")
             {
-                 
+
                 if (gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)] != null)
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -68,26 +74,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -98,26 +109,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -128,26 +144,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -158,26 +179,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -188,26 +214,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -218,26 +249,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -248,26 +284,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -278,26 +319,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -308,26 +354,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -338,26 +389,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -368,26 +424,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -398,26 +459,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -428,26 +494,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -458,56 +529,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
 
-                    }
-                }
-            }
-            if (clickedObject != null && clickedObject.tag == "16")
-            {
-                if (gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)] != null)
-                {
-                    for (int i = 1; i < gameManager.Characters.Count; i++)
-                    {
 
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
-                        {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                            }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
-                        }
 
                     }
                 }
@@ -518,26 +564,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -548,26 +599,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -578,116 +634,103 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
             }
+
             if (clickedObject != null && clickedObject.tag == "20")
             {
                 if (gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)] != null)
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
             }
-            if (clickedObject != null && clickedObject.tag == "21")
-            {
-                if (gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)] != null)
-                {
-                    for (int i = 1; i < gameManager.Characters.Count; i++)
-                    {
 
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
-                        {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                            }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
-                        }
-
-                    }
-                }
-            }
             if (clickedObject != null && clickedObject.tag == "22")
             {
                 if (gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)] != null)
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -698,26 +741,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -728,26 +776,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -775,26 +828,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -805,26 +863,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -835,26 +898,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -865,26 +933,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -895,26 +968,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -925,26 +1003,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -955,26 +1038,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -985,26 +1073,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -1015,26 +1108,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -1045,26 +1143,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }
@@ -1075,26 +1178,31 @@ namespace DS
                 {
                     for (int i = 1; i < gameManager.Characters.Count; i++)
                     {
-
-                        if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                        if (gameManager.Characters[i] != null)
                         {
-                            ConversationManager.Instance.StartConversation(_myConvarsation);
-                            if (TimeManager.Instance.story.gunSayacı == 0)
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                if (TimeManager.Instance.story.gunSayacı == 0)
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                }
+                                else
+                                {
+                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
+                                }
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
                             }
-                            else
-                            {
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                            }
-                            clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                            ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                            ConversationManager.Instance.SetInt("misafir", i);
-                            _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                            _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            gameManager.closePlease = clickedObject;
-                            break;
                         }
+
+
 
                     }
                 }

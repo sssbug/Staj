@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DS
 {
@@ -59,6 +60,36 @@ namespace DS
                         story.gunSayacı += 1;
                         basla = 0;
                         story.isTime = false;
+                        
+                        if (story.gunSayacı == 2 && story.globalGorev >= 1)
+                        {
+                            story.globalGorev = 0;
+                        }
+                        else if(story.gunSayacı == 3 && story.globalGorev >= 1)
+                        {
+                            story.globalGorev = 0;
+                        }
+                        else if (story.gunSayacı == 5 && story.globalGorev >= 1)
+                        {
+                            story.globalGorev = 0;
+                        }
+                        else if (story.gunSayacı == 8 && story.globalGorev >= 5)
+                        {
+                            story.globalGorev = 0;
+                        }
+                        else if (story.gunSayacı == 9 && story.globalGorev >= 4)
+                        {
+                            story.globalGorev = 0;
+                        }
+                        else if (story.gunSayacı == 10 && story.globalGorev >= 2)
+                        {
+                            story.globalGorev = 0;
+                        }
+                        else
+                        {
+                            SceneManager.LoadScene("Scene3");
+                        }
+
                     }
 
                 }
@@ -84,6 +115,10 @@ namespace DS
 
                     }
 
+                }
+                if (story.gunSayacı == 10 && story.bitti == true)
+                {
+                    SceneManager.LoadScene("Scene4");
                 }
             }
            

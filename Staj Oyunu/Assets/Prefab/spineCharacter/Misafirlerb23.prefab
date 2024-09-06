@@ -939,7 +939,7 @@ GameObject:
   - component: {fileID: 7339668710920406674}
   m_Layer: 6
   m_Name: Misafirlerb23
-  m_TagString: 1
+  m_TagString: 23
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

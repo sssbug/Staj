@@ -159,6 +159,14 @@ namespace DS
             story.globalGorev += 1;
 
         }
+        public void Sorgulama()
+        {
+            story.sorgulama += 1;
+            if (story.sorgulama == 3)
+            {
+                story.globalGorev += 1;
+            }
+        }
         public void siraArttırıcı()
         {
             story.sira += 1;
@@ -167,6 +175,11 @@ namespace DS
         public void bombasil()
         {
             story.sil = true;
+
+        }
+        public void Final()
+        {
+            story.bitti = true;
 
         }
         public void Esyalar()

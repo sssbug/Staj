@@ -19,8 +19,8 @@ namespace DS
         public int sira;
         public int gunSayacı;
         public int globalGorev;
-        
-
+        public int sorgulama;
+        public bool bitti = false;
         public List<string> loadedInventoryItemNames;
         public bool sil;
 
@@ -39,8 +39,8 @@ namespace DS
         public int generated4;
         public int generated5;
         public int generated6;
-        
-        
+
+
         //burası liste olabilir ama değil
         public bool dialog1;
         public int currentCallCount;
@@ -85,7 +85,8 @@ namespace DS
             sira = 0;
             gunSayacı = 0;
             globalGorev = 0;
-
+            sorgulama = 0;
+            bitti = false;
             loadedInventoryItemNames = new List<string>(new string[40]); // 40 elemanlı bir liste olarak sıfırlanır
             sil = false;
 
