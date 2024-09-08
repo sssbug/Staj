@@ -9,8 +9,7 @@ using UnityEngine.SceneManagement;
 namespace DS
 {
     //new Vector2(-110.886909f, 1271.63879f)
-
-
+    
     public class GameManager : MonoBehaviour
     {
         [SerializeField]
@@ -247,11 +246,14 @@ namespace DS
             if (InventoryObject.activeSelf == false)
             {
                 InventoryObject.SetActive(true);
+                
             }
             else
             {
                 InventoryObject.SetActive(false);
+                
             }
+            
         }
         public void LoadGame()
         {

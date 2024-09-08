@@ -42,7 +42,17 @@ namespace DS
             odaVeri.ResetData();
             SceneManager.LoadScene("Scene1");
             TimeManager.Instance.timePercent = 0.2f;
-        }
 
+        }
+        public void ExitApplication()
+        {
+#if UNITY_EDITOR
+            // Unity Editor'de oyunu durdurur.
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+        // Derlenmiş oyunda uygulamayı kapatır.
+        Application.Quit();
+#endif
+        }
     }
 }
