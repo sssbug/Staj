@@ -40,6 +40,8 @@ namespace DS
         private void Start()
         {
             LoadTime();
+            story.LoadStory();
+            odaVeriTabanıı.LoadData();
         }
 
         private void Update()
@@ -61,34 +63,80 @@ namespace DS
                         basla = 0;
                         story.isTime = false;
                         
-                        if (story.gunSayacı == 2 && story.globalGorev >= 1)
+                        if (story.gunSayacı == 2)
                         {
-                            story.globalGorev = 0;
+                            if (story.globalGorev >= 1)
+                            {
+                                story.globalGorev = 0;
+                            }
+                            else
+                            {
+                                SceneManager.LoadScene("Scene3");
+                            }
+                            
                         }
-                        else if(story.gunSayacı == 3 && story.globalGorev >= 1)
+                        else if (story.gunSayacı == 3)
                         {
-                            story.globalGorev = 0;
+                            if (story.globalGorev >= 1)
+                            {
+                                story.globalGorev = 0;
+                            }
+                            else
+                            {
+                                SceneManager.LoadScene("Scene3");
+                            }
+
                         }
-                        else if (story.gunSayacı == 5 && story.globalGorev >= 1)
+                        else if (story.gunSayacı == 5)
                         {
-                            story.globalGorev = 0;
+                            if (story.globalGorev >= 1)
+                            {
+                                story.globalGorev = 0;
+                            }
+                            else
+                            {
+                                SceneManager.LoadScene("Scene3");
+                            }
+
                         }
-                        else if (story.gunSayacı == 8 && story.globalGorev >= 5)
+                        else if (story.gunSayacı == 8)
                         {
-                            story.globalGorev = 0;
+                            if (story.globalGorev >= 5)
+                            {
+                                story.globalGorev = 0;
+                            }
+                            else
+                            {
+                                SceneManager.LoadScene("Scene3");
+                            }
+
                         }
-                        else if (story.gunSayacı == 9 && story.globalGorev >= 4)
+                        else if (story.gunSayacı == 9)
                         {
-                            story.globalGorev = 0;
+                            if (story.globalGorev >= 4)
+                            {
+                                story.globalGorev = 0;
+                            }
+                            else
+                            {
+                                SceneManager.LoadScene("Scene3");
+                            }
+
                         }
-                        else if (story.gunSayacı == 10 && story.globalGorev >= 2)
+                        else if (story.gunSayacı == 10)
                         {
-                            story.globalGorev = 0;
+                            if (story.globalGorev >= 3)
+                            {
+                                story.globalGorev = 0;
+                            }
+                            else
+                            {
+                                SceneManager.LoadScene("Scene3");
+                            }
+
                         }
-                        else
-                        {
-                            SceneManager.LoadScene("Scene3");
-                        }
+                        
+                        
 
                     }
 
@@ -128,6 +176,8 @@ namespace DS
         private void OnApplicationQuit()
         {
             SaveTime();
+            story.SaveStory();
+            odaVeriTabanıı.SaveData();
         }
 
         private void OnApplicationPause(bool pauseStatus)
@@ -135,6 +185,8 @@ namespace DS
             if (pauseStatus)
             {
                 SaveTime();
+                story.SaveStory();
+                odaVeriTabanıı.SaveData();
             }
         }
 

@@ -29,7 +29,9 @@ public class PlayButton : MonoBehaviour
     }
     public void Başla()
     {
-        SceneManager.LoadScene("Scene1");
         story.Play = true;
+        TimeManager.Instance.timePercent = 0.2f;
+        SceneManager.LoadScene("Scene1");
+        
     }
 }

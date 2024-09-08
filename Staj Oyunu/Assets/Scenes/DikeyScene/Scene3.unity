@@ -751,10 +751,10 @@ MonoBehaviour:
   speedFactor: 1.5
   "odaVeriTaban\u0131\u0131": {fileID: 11400000, guid: f1a0ce1395d2bb64a98517f1e5556efa, type: 2}
   story: {fileID: 11400000, guid: 06fabdb9dfbf8374982d80542c6ce198, type: 2}
-  basla: 1
+  basla: 0
   dokuz: 1
   itiraf: 1
-  isWork: 1
+  isWork: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

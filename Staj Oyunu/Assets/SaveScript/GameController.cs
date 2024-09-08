@@ -13,6 +13,7 @@ namespace DS
             // Sahne yüklendiğinde objeleri yükle
             manager.LoadGame();
             objectManager.LoadObjects();
+
             //CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), 1);
         }
 

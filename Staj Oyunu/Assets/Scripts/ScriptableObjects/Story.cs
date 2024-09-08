@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.IO;
 
 namespace DS
 {
@@ -15,6 +15,7 @@ namespace DS
         public bool müşteriBasla;
         public bool basla;
 
+        public List<bool> isRun = new List<bool>(new bool[22]);
 
         public int sira;
         public int gunSayacı;
@@ -73,7 +74,35 @@ namespace DS
         public bool dialog26;
         public bool dialog27;
         public bool dialog28;
+        private string filePath;
+        public void SaveStory()
+        {
+            filePath = Application.persistentDataPath + "/storyData.json";
 
+            // ScriptableObject'i JSON formatına dönüştür
+            string jsonData = JsonUtility.ToJson(this);
+            File.WriteAllText(filePath, jsonData);
+            Debug.Log("Veriler kaydedildi: " + filePath);
+        }
+
+        // JSON formatındaki verileri geri yüklemek için bir method
+        public void LoadStory()
+        {
+            filePath = Application.persistentDataPath + "/storyData.json";
+
+            if (File.Exists(filePath))
+            {
+                // Dosyadan JSON verisini oku
+                string jsonData = File.ReadAllText(filePath);
+                // JSON verisini mevcut ScriptableObject'e uygula
+                JsonUtility.FromJsonOverwrite(jsonData, this);
+                Debug.Log("Veriler yüklendi.");
+            }
+            else
+            {
+                Debug.LogWarning("Kayıt dosyası bulunamadı!");
+            }
+        }
         public void ResetData()
         {
             Play = true;
@@ -94,7 +123,7 @@ namespace DS
             ölümHaberi = false;
             itiraf = false;
             eşyalar = false;
-
+            isRun = new List<bool>(new bool[22]);
             gun = new bool[40];
             gun[0] = true;
             generated = 0;

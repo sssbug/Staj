@@ -1,5 +1,6 @@
 
 using System;
+using System.IO;
 using UnityEngine;
 
 
@@ -21,8 +22,33 @@ namespace DS
         public int[] odadata = new int[40];
 
         public bool[] temizlikOdalar = new bool[40];
+        private string filePath;
+        public void SaveData()
+        {
+            filePath = Application.persistentDataPath + "/odaVeriTabanıData.json";
 
+            // ScriptableObject'i JSON formatına dönüştür
+            string jsonData = JsonUtility.ToJson(this);
+            File.WriteAllText(filePath, jsonData);
+            Debug.Log("Oda verileri kaydedildi: " + filePath);
+        }
+        public void LoadData()
+        {
+            filePath = Application.persistentDataPath + "/odaVeriTabanıData.json";
 
+            if (File.Exists(filePath))
+            {
+                // Dosyadan JSON verisini oku
+                string jsonData = File.ReadAllText(filePath);
+                // JSON verisini mevcut ScriptableObject'e uygula
+                JsonUtility.FromJsonOverwrite(jsonData, this);
+                Debug.Log("Oda verileri yüklendi.");
+            }
+            else
+            {
+                Debug.LogWarning("Kayıt dosyası bulunamadı!");
+            }
+        }
         public void odaData()
         {
             if (isim != null && oda != 0 && gün != 0)
