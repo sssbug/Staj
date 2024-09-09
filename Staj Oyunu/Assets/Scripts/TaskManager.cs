@@ -75,6 +75,16 @@ namespace DS
                 }
                 
             }
+            else if (story.gunSayacı == 3 && story.globalGorev == 0)
+            {
+                if (story.isRun[23] == false)
+                {
+                    GorevSil(1);
+                    
+                    story.isRun[23] = true;
+                }
+
+            }
             else if (story.gunSayacı == 4 && story.globalGorev == 0)
             {
                 if (story.isRun[3] == false)
@@ -84,6 +94,15 @@ namespace DS
                     story.isRun[3] = true;
                 }
                 
+            }
+            else if (story.gunSayacı == 5 && story.globalGorev == 0)
+            {
+                if (story.isRun[22] == false)
+                {
+                    GorevSil(1);
+                    story.isRun[22] = true;
+                }
+
             }
             else if (story.gunSayacı == 6 && story.globalGorev == 0)
             {

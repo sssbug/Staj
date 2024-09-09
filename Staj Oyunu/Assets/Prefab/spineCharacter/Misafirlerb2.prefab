@@ -241,33 +241,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 32
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":41.5,\"yPos\":-781},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Malesef
-    bo\u015F odam\u0131z bulunmamakta.\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":348.5,\"yPos\":-779},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
-    Tabii, hemen kontrol ediyorum. \",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":172.5,\"yPos\":-221},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
-    yatakl\u0131(1000)\",\"parentUIDs\":[12,16],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":471.5,\"yPos\":-477},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ift
-    yatakl\u0131(1500)\",\"parentUIDs\":[12],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":100.5,\"yPos\":203},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ocu\u011Fun
-    kimli\u011Fi peki\",\"parentUIDs\":[22],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":418.5,\"yPos\":205},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamamd\u0131r
-    i\u015Flemleriniz bitti.\",\"parentUIDs\":[22],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":199.5,\"yPos\":435},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bu
-    seferlik bir istisna yapabilirim.\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":249.5,\"yPos\":664},\"ID\":31,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"Value\":20}],\"TMPFontGUID\":null,\"Text\":\"Buyrun
-    odan\u0131z.\",\"parentUIDs\":[29],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":255.5,\"yPos\":-1054},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ho\u015F
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":363.5,\"yPos\":-720},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Malesef
+    bo\u015F odam\u0131z bulunmamakta.\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":670.5,\"yPos\":-718},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
+    Tabii, hemen kontrol ediyorum. \",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":494.5,\"yPos\":-160},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
+    yatakl\u0131(1000)\",\"parentUIDs\":[12,16],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":793.5,\"yPos\":-416},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ift
+    yatakl\u0131(1500)\",\"parentUIDs\":[12],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":422.5,\"yPos\":264},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ocu\u011Fun
+    kimli\u011Fi peki\",\"parentUIDs\":[22],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":740.5,\"yPos\":266},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamamd\u0131r
+    i\u015Flemleriniz bitti.\",\"parentUIDs\":[22],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":521.5,\"yPos\":496},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bu
+    seferlik bir istisna yapabilirim.\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":571.5,\"yPos\":725},\"ID\":31,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"Value\":20}],\"TMPFontGUID\":null,\"Text\":\"Buyrun
+    odan\u0131z.\",\"parentUIDs\":[29],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":577.5,\"yPos\":-993},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ho\u015F
     geldiniz! Size nas\u0131l yard\u0131mc\u0131 olabilirim?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":200.5,\"yPos\":-917},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0130yi
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":520.5,\"yPos\":-855},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u0130yi
     ak\u015Famlar. Torunumla birlikte bir gece kalmak istiyoruz.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"S\xFCleyman
-    I\u015F\u0131m\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":347.5,\"yPos\":-702},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
+    I\u015F\u0131m\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":669.5,\"yPos\":-641},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
     Yatakl\u0131 m\u0131 olsun \xE7ift yatakl\u0131 m\u0131\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":347.5,\"yPos\":-592},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hangisi
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":669.5,\"yPos\":-531},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hangisi
     daha ucuzsa\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"S\xFCleyman
-    I\u015F\u0131m\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":473.5,\"yPos\":-350},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"En
+    I\u015F\u0131m\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":795.5,\"yPos\":-289},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"En
     ucuzunu istemi\u015Ftim galiba kar\u0131\u015Ft\u0131rd\u0131n\u0131z.\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"S\xFCleyman
-    I\u015F\u0131m\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":320.5,\"yPos\":-71},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
+    I\u015F\u0131m\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":642.5,\"yPos\":-10},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
     Kimliklerinizi alabilir miyim?\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":322.5,\"yPos\":59},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tabii,
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":644.5,\"yPos\":120},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tabii,
     i\u015Fte benim kimli\u011Fim.\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"S\xFCleyman
-    I\u015F\u0131m\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":97.5,\"yPos\":309},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yan\u0131mda
+    I\u015F\u0131m\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":419.5,\"yPos\":370},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yan\u0131mda
     de\u011Fil, sadece bir gece kalaca\u011F\u0131z. Bu bir sorun olur mu?\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"S\xFCleyman
-    I\u015F\u0131m\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":247.5,\"yPos\":540},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ok
+    I\u015F\u0131m\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":569.5,\"yPos\":601},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ok
     te\u015Fekk\xFCr ederim.\",\"parentUIDs\":[24,27],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"S\xFCleyman
-    I\u015F\u0131m\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    I\u015F\u0131m\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -294,19 +294,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3149311480804217606}
-        m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
-        m_MethodName: Elendin
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &-5553542587766758668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,7 +464,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 40e304bba7030b7438654df59bec02ad, type: 3}
 --- !u!114 &712220206339282401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,7 +483,7 @@ MonoBehaviour:
   NodeID: 1
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 98b13b3bafae81e41a3c76c36fb78530, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 31316bc862df6634ea15398a91d21869, type: 3}
 --- !u!114 &2846923759044166264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,7 +552,7 @@ MonoBehaviour:
   NodeID: 11
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 40e304bba7030b7438654df59bec02ad, type: 3}
 --- !u!114 &2761022465217109789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,7 +571,7 @@ MonoBehaviour:
   NodeID: 12
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 98b13b3bafae81e41a3c76c36fb78530, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 31316bc862df6634ea15398a91d21869, type: 3}
 --- !u!114 &3088682419480851572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,7 +640,7 @@ MonoBehaviour:
   NodeID: 16
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 98b13b3bafae81e41a3c76c36fb78530, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 31316bc862df6634ea15398a91d21869, type: 3}
 --- !u!114 &919174455651857281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,7 +659,7 @@ MonoBehaviour:
   NodeID: 18
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 40e304bba7030b7438654df59bec02ad, type: 3}
 --- !u!114 &3425011178926223371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,7 +678,7 @@ MonoBehaviour:
   NodeID: 22
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 98b13b3bafae81e41a3c76c36fb78530, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 31316bc862df6634ea15398a91d21869, type: 3}
 --- !u!114 &5719582809699240405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,7 +735,7 @@ MonoBehaviour:
   NodeID: 25
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 98b13b3bafae81e41a3c76c36fb78530, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 31316bc862df6634ea15398a91d21869, type: 3}
 --- !u!114 &5077923812767091403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -785,7 +773,7 @@ MonoBehaviour:
   NodeID: 29
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 98b13b3bafae81e41a3c76c36fb78530, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 31316bc862df6634ea15398a91d21869, type: 3}
 --- !u!114 &6742985228050579645
 MonoBehaviour:
   m_ObjectHideFlags: 0

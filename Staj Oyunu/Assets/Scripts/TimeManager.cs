@@ -21,7 +21,7 @@ namespace DS
         public int dokuz = 1;
         public int itiraf = 1;
         public bool isWork;
-        
+
         private void Awake()
         {
 
@@ -46,130 +46,134 @@ namespace DS
 
         private void Update()
         {
-
-            if (isWork == false)
+            if (SceneManager.GetActiveScene().name != "Scene0")
             {
-                timePercent += (Time.deltaTime / (24f * 60f)) * speedFactor;
-                if (timePercent >= 1f) timePercent = 0f;
 
-                if ((Math.Floor(timePercent * 10) / 10) == 0)
+
+                if (isWork == false)
                 {
-                    if (basla == 1)
+                    timePercent += (Time.deltaTime / (24f * 60f)) * speedFactor;
+                    if (timePercent >= 1f) timePercent = 0f;
+
+                    if ((Math.Floor(timePercent * 10) / 10) == 0)
                     {
-                        odaVeriTabanıı.odalar();
-                        story.gun[story.gunSayacı] = false;
-                        story.gun[story.gunSayacı + 1] = true;
-                        story.gunSayacı += 1;
-                        basla = 0;
-                        story.isTime = false;
-                        
-                        if (story.gunSayacı == 2)
+                        if (basla == 1)
                         {
-                            if (story.globalGorev >= 1)
+                            odaVeriTabanıı.odalar();
+                            story.gun[story.gunSayacı] = false;
+                            story.gun[story.gunSayacı + 1] = true;
+                            story.gunSayacı += 1;
+                            basla = 0;
+                            story.isTime = false;
+
+                            if (story.gunSayacı == 2)
                             {
-                                story.globalGorev = 0;
+                                if (story.globalGorev >= 1)
+                                {
+                                    story.globalGorev = 0;
+                                }
+                                else
+                                {
+                                    SceneManager.LoadScene("Scene3");
+                                }
+
                             }
-                            else
+                            else if (story.gunSayacı == 4)
                             {
-                                SceneManager.LoadScene("Scene3");
+                                if (story.globalGorev >= 1)
+                                {
+                                    story.globalGorev = 0;
+                                }
+                                else
+                                {
+                                    SceneManager.LoadScene("Scene3");
+                                }
+
                             }
-                            
-                        }
-                        else if (story.gunSayacı == 3)
-                        {
-                            if (story.globalGorev >= 1)
+                            else if (story.gunSayacı == 5)
                             {
-                                story.globalGorev = 0;
+                                if (story.globalGorev >= 1)
+                                {
+                                    story.globalGorev = 0;
+                                }
+                                else
+                                {
+                                    SceneManager.LoadScene("Scene3");
+                                }
+
                             }
-                            else
+                            else if (story.gunSayacı == 8)
                             {
-                                SceneManager.LoadScene("Scene3");
+                                if (story.globalGorev >= 5)
+                                {
+                                    story.globalGorev = 0;
+                                }
+                                else
+                                {
+                                    SceneManager.LoadScene("Scene3");
+                                }
+
+                            }
+                            else if (story.gunSayacı == 9)
+                            {
+                                if (story.globalGorev >= 4)
+                                {
+                                    story.globalGorev = 0;
+                                }
+                                else
+                                {
+                                    SceneManager.LoadScene("Scene3");
+                                }
+
+                            }
+                            else if (story.gunSayacı == 10)
+                            {
+                                if (story.globalGorev >= 3)
+                                {
+                                    story.globalGorev = 0;
+                                }
+                                else
+                                {
+                                    SceneManager.LoadScene("Scene3");
+                                }
+
                             }
 
-                        }
-                        else if (story.gunSayacı == 5)
-                        {
-                            if (story.globalGorev >= 1)
-                            {
-                                story.globalGorev = 0;
-                            }
-                            else
-                            {
-                                SceneManager.LoadScene("Scene3");
-                            }
+
 
                         }
-                        else if (story.gunSayacı == 8)
-                        {
-                            if (story.globalGorev >= 5)
-                            {
-                                story.globalGorev = 0;
-                            }
-                            else
-                            {
-                                SceneManager.LoadScene("Scene3");
-                            }
-
-                        }
-                        else if (story.gunSayacı == 9)
-                        {
-                            if (story.globalGorev >= 4)
-                            {
-                                story.globalGorev = 0;
-                            }
-                            else
-                            {
-                                SceneManager.LoadScene("Scene3");
-                            }
-
-                        }
-                        else if (story.gunSayacı == 10)
-                        {
-                            if (story.globalGorev >= 3)
-                            {
-                                story.globalGorev = 0;
-                            }
-                            else
-                            {
-                                SceneManager.LoadScene("Scene3");
-                            }
-
-                        }
-                        
-                        
 
                     }
-
-                }
-                else
-                {
-                    basla = 1;
-                }
-                if ((Math.Floor(timePercent * 10) / 10) == 0.2)
-                {
-                    if (dokuz == 1)
+                    else
                     {
-                        story.ölümHaberi = false;
-                        dokuz = 0;
+                        basla = 1;
                     }
-
-                }
-                if ((Math.Floor(timePercent * 10) / 10) == 0.3)
-                {
-                    if (itiraf == 1)
+                    if ((Math.Floor(timePercent * 10) / 10) == 0.2)
                     {
-                        story.itiraf = false;
-                        itiraf = 0;
+                        if (dokuz == 1)
+                        {
+                            story.ölümHaberi = false;
+                            dokuz = 0;
+                        }
 
                     }
+                    if ((Math.Floor(timePercent * 10) / 10) == 0.3)
+                    {
+                        if (itiraf == 1)
+                        {
+                            story.itiraf = false;
+                            itiraf = 0;
 
-                }
-                if (story.gunSayacı == 10 && story.bitti == true)
-                {
-                    SceneManager.LoadScene("Scene4");
+                        }
+
+                    }
+                    if (story.gunSayacı == 10 && story.bitti == true)
+                    {
+                        SceneManager.LoadScene("Scene4");
+                    }
                 }
             }
-           
+
 
         }
 

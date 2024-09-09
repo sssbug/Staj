@@ -10,8 +10,11 @@ public class PlayButton : MonoBehaviour
     private NPCConversation _myConvarsation;
     [SerializeField]
     public Story story;
-
-
+    AudioSource audioSource;
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     public void Play()
     {
         if (story.Play == false)
@@ -21,10 +24,12 @@ public class PlayButton : MonoBehaviour
                 _myConvarsation = GetComponent<NPCConversation>();
             }
             ConversationManager.Instance.StartConversation(_myConvarsation);
+            audioSource.Play();
         }
         else
         {
             SceneManager.LoadScene("Scene1");
+            audioSource.Play();
         }
     }
     public void Başla()

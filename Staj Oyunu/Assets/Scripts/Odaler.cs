@@ -41,14 +41,10 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                               
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                
+                                
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -79,14 +75,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -114,14 +103,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -149,14 +131,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -184,14 +159,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -219,14 +187,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -254,14 +215,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -289,14 +243,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -324,14 +271,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -359,14 +299,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -394,14 +327,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -429,14 +355,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -464,14 +383,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -499,14 +411,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -534,14 +439,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -569,14 +467,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -604,14 +495,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -639,14 +523,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -675,14 +552,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -711,14 +581,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -746,14 +609,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -781,14 +637,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -809,14 +658,7 @@ namespace DS
             {
 
                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                if (TimeManager.Instance.story.gunSayacı == 0)
-                {
-                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                }
-                else
-                {
-                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                }
+                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
 
                 ConversationManager.Instance.SetInt("misafir", 25);
 
@@ -833,14 +675,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -868,14 +703,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -903,14 +731,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -938,14 +759,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -973,14 +787,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -1008,14 +815,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -1043,14 +843,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -1078,14 +871,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -1113,14 +899,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -1148,14 +927,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -1183,14 +955,7 @@ namespace DS
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
-                                if (TimeManager.Instance.story.gunSayacı == 0)
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                }
-                                else
-                                {
-                                    ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı + 1);
-                                }
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);

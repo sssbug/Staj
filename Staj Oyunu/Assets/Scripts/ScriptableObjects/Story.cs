@@ -15,7 +15,7 @@ namespace DS
         public bool müşteriBasla;
         public bool basla;
 
-        public List<bool> isRun = new List<bool>(new bool[22]);
+        public List<bool> isRun = new List<bool>(new bool[24]);
 
         public int sira;
         public int gunSayacı;
@@ -123,7 +123,7 @@ namespace DS
             ölümHaberi = false;
             itiraf = false;
             eşyalar = false;
-            isRun = new List<bool>(new bool[22]);
+            isRun = new List<bool>(new bool[24]);
             gun = new bool[40];
             gun[0] = true;
             generated = 0;
