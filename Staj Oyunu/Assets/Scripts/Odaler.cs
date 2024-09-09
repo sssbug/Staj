@@ -13,7 +13,7 @@ namespace DS
         GameManager2 gameManager;
         private NPCConversation _myConvarsation;
         private SkeletonGraphic _skeletonGraphic;
-
+        private AudioSource audioSource;
         void Start()
         {
             if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
@@ -21,6 +21,7 @@ namespace DS
                 _myConvarsation = GetComponent<NPCConversation>();
             }
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager2>();
+           
         }
 
 
@@ -44,7 +45,7 @@ namespace DS
                                
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 
-                                
+
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
                                 ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
                                 ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
@@ -53,6 +54,8 @@ namespace DS
                                 _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
                                 _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
                                 gameManager.closePlease = clickedObject;
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 break;
                             }
                         }
@@ -74,6 +77,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -102,6 +107,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -130,6 +137,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -158,6 +167,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -186,6 +197,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -214,6 +227,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -242,6 +257,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -270,6 +287,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -298,6 +317,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -326,6 +347,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -354,6 +377,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -382,6 +407,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -410,6 +437,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -438,6 +467,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -466,6 +497,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -494,6 +527,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -522,6 +557,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -551,6 +588,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -580,6 +619,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -608,6 +649,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -636,6 +679,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -674,6 +719,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -702,6 +749,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -730,6 +779,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -758,6 +809,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -786,6 +839,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -814,6 +869,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -842,6 +899,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -870,6 +929,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -898,6 +959,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -926,6 +989,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
@@ -954,6 +1019,8 @@ namespace DS
                         {
                             if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
                             {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
                                 ConversationManager.Instance.StartConversation(_myConvarsation);
                                 ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
                                 clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];

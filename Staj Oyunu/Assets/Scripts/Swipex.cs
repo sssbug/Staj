@@ -18,9 +18,10 @@ namespace DS
         public int totalPages = 9;
         public int currentPage = 5;
         SkeletonGraphic _skeletonGraphic;
-
+        AudioSource audioSource;
         private void Start()
         {
+            audioSource = transform.GetChild(1).transform.GetComponent<AudioSource>();
             _skeletonGraphic = transform.GetChild(1).transform.GetComponent<SkeletonGraphic>();
             gameManager2 = GameObject.Find("GameManager").GetComponent<GameManager2>();
 
@@ -141,11 +142,12 @@ namespace DS
                         {
 
                             _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                            audioSource.Play();
                         }
                         else
                         {
                             _skeletonGraphic.AnimationState.SetAnimation(1, "Close", false);
-
+                            audioSource.Play();
                         }
                     }
                     else
@@ -153,12 +155,12 @@ namespace DS
                         if (currentPage == 5)
                         {
                             _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-
+                            audioSource.Play();
                         }
                         else
                         {
                             _skeletonGraphic.AnimationState.SetAnimation(1, "Close", false);
-
+                            
                         }
                     }
                     StartCoroutine(SmoothMove(transform.position, newLocation, easing));

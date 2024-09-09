@@ -22,6 +22,8 @@ namespace DS
         SkeletonGraphic[] _skeletonGraphic;
         GameObject[] sakınsilme;
         private float speed = 1;
+        private AudioSource audioSource;
+        private AudioSource audioSources;
         private void Start()
         {
             if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
@@ -48,6 +50,7 @@ namespace DS
 
                     direction.Normalize();
                     bina.transform.GetComponent<Rigidbody2D>().velocity = new Vector2(0.001f, 0);
+                    
 
 
                 }
@@ -59,8 +62,6 @@ namespace DS
                     gameManager2.isLiftOut3 = true;
                     gameManager2.isLiftOut4 = true;
                     bina.transform.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-
-
                 }
 
 
@@ -77,10 +78,14 @@ namespace DS
                         _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
                         foreach (var items in _skeletonGraphic)
                         {
+                            audioSource = item.GetComponent<AudioSource>();
+                            audioSource.Play();
                             items.AnimationState.SetAnimation(1, "Open", false);
                         }
 
                     }
+                    audioSources = bina.transform.GetComponent<AudioSource>();
+                    audioSources.Stop();
                 }
 
             }
@@ -114,12 +119,15 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.AnimationState.SetAnimation(1, "Close", false);
-
+                        audioSource = item.GetComponent<AudioSource>();
+                        audioSource.Play();
                     }
 
                 }
 
                 isLift = true;
+                audioSources = bina.transform.GetComponent<AudioSource>();
+                audioSources.Play();
                 _endPos = new Vector3(0f, -5.25f, 0);
             }
             if (clickedObject != null && clickedObject.name == "ikinciKat")
@@ -134,12 +142,15 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.AnimationState.SetAnimation(1, "Close", false);
-
+                        audioSource = item.GetComponent<AudioSource>();
+                        audioSource.Play();
                     }
 
                 }
 
                 isLift = true;
+                audioSources = bina.transform.GetComponent<AudioSource>();
+                audioSources.Play();
                 _endPos = new Vector3(0f, 5.25f, 0);
             }
             if (clickedObject != null && clickedObject.name == "üçüncüKat")
@@ -153,12 +164,15 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.AnimationState.SetAnimation(1, "Close", false);
-
+                        audioSource = item.GetComponent<AudioSource>();
+                        audioSource.Play();
                     }
 
                 }
 
                 isLift = true;
+                audioSources = bina.transform.GetComponent<AudioSource>();
+                audioSources.Play();
                 _endPos = new Vector3(0f, 16f, 0);
             }
             if (clickedObject != null && clickedObject.name == "dördüncüKat")
@@ -172,12 +186,15 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.AnimationState.SetAnimation(1, "Close", false);
-
+                        audioSource = item.GetComponent<AudioSource>();
+                        audioSource.Play();
                     }
 
                 }
 
                 isLift = true;
+                audioSources = bina.transform.GetComponent<AudioSource>();
+                audioSources.Play();
                 _endPos = new Vector3(0f, 26.60f, 0);
             }
             if (clickedObject != null && clickedObject.name == "beşinciKat")
@@ -185,6 +202,8 @@ namespace DS
                 gameManager2.liftButton.transform.position = new Vector3(100587, 100045, 0);
                 gameManager2.isLifter = false;
                 _endPos = new Vector3(0f, 37.30f, 0);
+                audioSources = bina.transform.GetComponent<AudioSource>();
+                audioSources.Play();
                 isLift = true;
                 foreach (var item in sakınsilme)
                 {
@@ -192,7 +211,8 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.AnimationState.SetAnimation(1, "Close", false);
-
+                        audioSource = item.GetComponent<AudioSource>();
+                        audioSource.Play();
                     }
 
                 }
