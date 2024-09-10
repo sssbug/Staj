@@ -12,7 +12,7 @@ namespace DS
         public int görevId;  // Serileştirilebilir int değer
         public string görevMetin;  // Serileştirilebilir string değer
     }
- 
+
     public class TaskManager : MonoBehaviour
     {
         public static TaskManager Instance { get; private set; }
@@ -23,8 +23,8 @@ namespace DS
         public Story story;
         public bool taskBasla;
         private string saveFilePath;
-        
-        
+        public bool isRun;
+
         private void Awake()
         {
             if (Instance == null)
@@ -43,250 +43,255 @@ namespace DS
             if (taskBasla == true)
             {
                 LoadTasks();
+
                 taskBasla = false;
             }
 
-            if (story.gunSayacı == 0 && story.globalGorev == 0)
+            if (missionContainer != null)
             {
-                if (story.isRun[0] == false)
-                {
 
-                    GorevEkle(0);
-                    story.isRun[0] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 1 && story.globalGorev == 0)
-            {
-                if (story.isRun[1] == false)
+                if (story.gunSayacı == 0 && story.globalGorev == 0)
                 {
-                    GorevEkle(1);
-                    story.isRun[1] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 2 && story.globalGorev == 0)
-            {
-                if (story.isRun[2] == false)
-                {
-                    GorevSil(1);
-                    GorevEkle(2);
-                    story.isRun[2] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 3 && story.globalGorev == 0)
-            {
-                if (story.isRun[23] == false)
-                {
-                    GorevSil(1);
-                    
-                    story.isRun[23] = true;
-                }
+                    if (story.isRun[0] == false)
+                    {
 
-            }
-            else if (story.gunSayacı == 4 && story.globalGorev == 0)
-            {
-                if (story.isRun[3] == false)
-                {
-                    GorevSil(1);
-                    GorevEkle(3);
-                    story.isRun[3] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 5 && story.globalGorev == 0)
-            {
-                if (story.isRun[22] == false)
-                {
-                    GorevSil(1);
-                    story.isRun[22] = true;
-                }
+                        GorevEkle(0);
+                        story.isRun[0] = true;
+                    }
 
-            }
-            else if (story.gunSayacı == 6 && story.globalGorev == 0)
-            {
-                if (story.isRun[4] == false)
-                {
-                    GorevSil(1);
-                    GorevSil(0);
-                    GorevEkle(4);
-                    story.isRun[4] = true;
                 }
-                
-            }
-            else if (story.gunSayacı == 7 && story.globalGorev == 0)
-            {
-                if (story.isRun[5] == false)
+                else if (story.gunSayacı == 1 && story.globalGorev == 0)
                 {
-                    GorevSil(0);
-                    GorevEkle(5);
-                    story.isRun[5] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 7 && story.globalGorev == 1)
-            {
-                if (story.isRun[6] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(6);
-                    story.isRun[6] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 7 && story.globalGorev == 2)
-            {
-                if (story.isRun[7] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(7);
-                    story.isRun[7] = true;
-                }
-                 
-            }
-            else if (story.gunSayacı == 7 && story.globalGorev == 3)
-            {
-                if (story.isRun[8] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(8);
-                    story.isRun[8] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 7 && story.globalGorev == 4)
-            {
-                if (story.isRun[9] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(9);
-                    story.isRun[9] = true;
-                }
-                
+                    if (story.isRun[1] == false)
+                    {
+                        GorevEkle(1);
+                        story.isRun[1] = true;
+                    }
 
-            }
-            else if (story.gunSayacı == 8 && story.globalGorev == 0)
-            {
-                if (story.isRun[10] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(10);
-                    story.isRun[10] = true;
                 }
-                
-            }
-            else if (story.gunSayacı == 8 && story.globalGorev == 1)
-            {
-                if (story.isRun[11] == false)
+                else if (story.gunSayacı == 2 && story.globalGorev == 0)
                 {
-                    GorevSil(0);
-                    GorevEkle(11);
-                    story.isRun[11] = true;
-                }
-                 
-            }
-            else if (story.gunSayacı == 8 && story.sorgulama == 2)
-            {
-                if (story.isRun[12] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(12);
-                    story.isRun[12] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 8 && story.globalGorev == 3)
-            {
-                if (story.isRun[13] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(13);
-                    story.isRun[13] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 9 && story.globalGorev == 1)
-            {
-                if (story.isRun[14] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(14);
-                    story.isRun[14] = true;
-                }
-                 
-            }
-            else if (story.gunSayacı == 9 && story.globalGorev == 2)
-            {
-                if (story.isRun[15] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(15);
-                    story.isRun[15] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 10 && story.globalGorev == 0)
-            {
-                if (story.isRun[16] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(16);
-                    story.isRun[16] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 10 && story.globalGorev == 1)
-            {
-                if (story.isRun[17] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(17);
-                    story.isRun[17] = true;
-                }
-                 
-            }
-            else if (story.gunSayacı == 10 && story.globalGorev == 2)
-            {
-                if (story.isRun[18] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(18);
-                    story.isRun[18] = true;
-                }
-                 
-            }
-            else if (story.gunSayacı == 10 && story.globalGorev == 3)
-            {
-                if (story.isRun[19] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(19);
-                    story.isRun[19] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 10 && story.globalGorev == 4)
-            {
-                if (story.isRun[20] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(20);
-                    story.isRun[20] = true;
-                }
-                
-            }
-            else if (story.gunSayacı == 10 && story.globalGorev == 5)
-            {
-                if (story.isRun[21] == false)
-                {
-                    GorevSil(0);
-                    GorevEkle(21);
-                    story.isRun[21] = true;
-                }
-                
-            }
+                    if (story.isRun[2] == false)
+                    {
+                        GorevSil(1);
+                        GorevEkle(2);
+                        story.isRun[2] = true;
+                    }
 
+                }
+                else if (story.gunSayacı == 3 && story.globalGorev == 0)
+                {
+                    if (story.isRun[23] == false)
+                    {
+                        GorevSil(1);
+
+                        story.isRun[23] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 4 && story.globalGorev == 0)
+                {
+                    if (story.isRun[3] == false)
+                    {
+                        GorevSil(1);
+                        GorevEkle(3);
+                        story.isRun[3] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 5 && story.globalGorev == 0)
+                {
+                    if (story.isRun[22] == false)
+                    {
+                        GorevSil(1);
+                        story.isRun[22] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 6 && story.globalGorev == 0)
+                {
+                    if (story.isRun[4] == false)
+                    {
+                        GorevSil(1);
+                        GorevSil(0);
+                        GorevEkle(4);
+                        story.isRun[4] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 7 && story.globalGorev == 0)
+                {
+                    if (story.isRun[5] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(5);
+                        story.isRun[5] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 7 && story.globalGorev == 1)
+                {
+                    if (story.isRun[6] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(6);
+                        story.isRun[6] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 7 && story.globalGorev == 2)
+                {
+                    if (story.isRun[7] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(7);
+                        story.isRun[7] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 7 && story.globalGorev == 3)
+                {
+                    if (story.isRun[8] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(8);
+                        story.isRun[8] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 7 && story.globalGorev == 4)
+                {
+                    if (story.isRun[9] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(9);
+                        story.isRun[9] = true;
+                    }
+
+
+                }
+                else if (story.gunSayacı == 8 && story.globalGorev == 0)
+                {
+                    if (story.isRun[10] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(10);
+                        story.isRun[10] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 8 && story.globalGorev == 1)
+                {
+                    if (story.isRun[11] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(11);
+                        story.isRun[11] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 8 && story.sorgulama == 2)
+                {
+                    if (story.isRun[12] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(12);
+                        story.isRun[12] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 8 && story.globalGorev == 3)
+                {
+                    if (story.isRun[13] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(13);
+                        story.isRun[13] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 9 && story.globalGorev == 1)
+                {
+                    if (story.isRun[14] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(14);
+                        story.isRun[14] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 9 && story.globalGorev == 2)
+                {
+                    if (story.isRun[15] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(15);
+                        story.isRun[15] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 10 && story.globalGorev == 0)
+                {
+                    if (story.isRun[16] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(16);
+                        story.isRun[16] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 10 && story.globalGorev == 1)
+                {
+                    if (story.isRun[17] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(17);
+                        story.isRun[17] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 10 && story.globalGorev == 2)
+                {
+                    if (story.isRun[18] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(18);
+                        story.isRun[18] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 10 && story.globalGorev == 3)
+                {
+                    if (story.isRun[19] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(19);
+                        story.isRun[19] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 10 && story.globalGorev == 4)
+                {
+                    if (story.isRun[20] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(20);
+                        story.isRun[20] = true;
+                    }
+
+                }
+                else if (story.gunSayacı == 10 && story.globalGorev == 5)
+                {
+                    if (story.isRun[21] == false)
+                    {
+                        GorevSil(0);
+                        GorevEkle(21);
+                        story.isRun[21] = true;
+                    }
+
+                }
+                
+            }
 
         }
 
@@ -358,5 +363,5 @@ namespace DS
             public List<TaskData> tasklar;
         }
     }
-    
+
 }

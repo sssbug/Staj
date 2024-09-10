@@ -40,8 +40,10 @@ namespace DS
             }
             story.ResetData();
             odaVeri.ResetData();
-            SceneManager.LoadScene("Scene1");
+            
             TimeManager.Instance.timePercent = 0.2f;
+            TaskManager.Instance.taskData = new List<TaskData>();
+            SceneManager.LoadScene("Scene1");
 
         }
         public void ExitApplication()

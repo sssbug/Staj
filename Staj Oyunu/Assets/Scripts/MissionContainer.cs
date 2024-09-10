@@ -9,8 +9,10 @@ namespace DS
        
         void Start()
         {
+            
             TaskManager.Instance.taskBasla = true;
             TaskManager.Instance.missionContainer = gameObject;
+            
         }
 
     }

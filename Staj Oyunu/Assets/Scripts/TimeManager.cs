@@ -74,6 +74,7 @@ namespace DS
                                 }
                                 else
                                 {
+                                    TaskManager.Instance.taskData = new List<TaskData>();
                                     SceneManager.LoadScene("Scene3");
                                 }
 
@@ -86,6 +87,7 @@ namespace DS
                                 }
                                 else
                                 {
+                                    TaskManager.Instance.taskData = new List<TaskData>();
                                     SceneManager.LoadScene("Scene3");
                                 }
 
@@ -98,6 +100,7 @@ namespace DS
                                 }
                                 else
                                 {
+                                    TaskManager.Instance.taskData = new List<TaskData>();
                                     SceneManager.LoadScene("Scene3");
                                 }
 
@@ -110,6 +113,7 @@ namespace DS
                                 }
                                 else
                                 {
+                                    TaskManager.Instance.taskData = new List<TaskData>();
                                     SceneManager.LoadScene("Scene3");
                                 }
 
@@ -122,6 +126,7 @@ namespace DS
                                 }
                                 else
                                 {
+                                    TaskManager.Instance.taskData = new List<TaskData>();
                                     SceneManager.LoadScene("Scene3");
                                 }
 
@@ -134,6 +139,7 @@ namespace DS
                                 }
                                 else
                                 {
+                                    TaskManager.Instance.taskData = new List<TaskData>();
                                     SceneManager.LoadScene("Scene3");
                                 }
 
@@ -182,6 +188,7 @@ namespace DS
             SaveTime();
             story.SaveStory();
             odaVeriTabanıı.SaveData();
+            
         }
 
         private void OnApplicationPause(bool pauseStatus)
@@ -191,6 +198,7 @@ namespace DS
                 SaveTime();
                 story.SaveStory();
                 odaVeriTabanıı.SaveData();
+                
             }
         }
 
