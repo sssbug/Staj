@@ -21,7 +21,7 @@ namespace DS
         AudioSource audioSource;
         private void Start()
         {
-            audioSource = transform.GetChild(1).transform.GetComponent<AudioSource>();
+            
             _skeletonGraphic = transform.GetChild(1).transform.GetComponent<SkeletonGraphic>();
             gameManager2 = GameObject.Find("GameManager").GetComponent<GameManager2>();
 
@@ -125,14 +125,14 @@ namespace DS
 
                         currentPage++;
                         Debug.Log(currentPage);
-                        newLocation += new Vector3(-4.65f, 0, 0);
+                        newLocation += new Vector3(-5f, 0, 0);
                     }
                     else if (percentage < 0 && currentPage > 1)
                     {
 
                         currentPage--;
                         Debug.Log(currentPage);
-                        newLocation += new Vector3(4.65f, 0, 0);
+                        newLocation += new Vector3(5f, 0, 0);
                     }
                     
 
@@ -140,14 +140,14 @@ namespace DS
                     {
                         if (currentPage == 1)
                         {
-
+                            
                             _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            audioSource.Play();
+                            
                         }
                         else
                         {
                             _skeletonGraphic.AnimationState.SetAnimation(1, "Close", false);
-                            audioSource.Play();
+                            
                         }
                     }
                     else
@@ -155,7 +155,7 @@ namespace DS
                         if (currentPage == 5)
                         {
                             _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            audioSource.Play();
+                            
                         }
                         else
                         {

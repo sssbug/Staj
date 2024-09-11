@@ -241,28 +241,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 11
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":290.5,\"yPos\":718},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
-    yatakl\u0131(1000)\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-11.5,\"yPos\":854},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ift
-    yatakl\u0131(1500)\",\"parentUIDs\":[3,7],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-11.5,\"yPos\":1118},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Kimli\u011Finizi
-    alabilir miyim?\",\"parentUIDs\":[6],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-12.5,\"yPos\":1389},\"ID\":10,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"Value\":20}],\"TMPFontGUID\":null,\"Text\":\"\u0130\u015Fleminiz
-    tamamd\u0131r buyrun odan\u0131z.\",\"parentUIDs\":[9],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":242.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
-    Ho\u015F geldiniz! Size nas\u0131l yard\u0131mc\u0131 olabilirim?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":114.5,\"yPos\":187},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Merhaba,
-    yeni ta\u015F\u0131n\u0131yoruz ve kocam i\u015F gezisinde oldu\u011Fu i\xE7in
-    bir s\xFCre burada kalmam\u0131z gerekecek. K\u0131z\u0131m\u0131 da okula yazd\u0131rd\u0131m,
-    bug\xFCn biraz yo\u011Fundu. Birka\xE7 g\xFCn i\xE7in bir oda tutmak istiyorum.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elif
-    Sanl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":113.5,\"yPos\":341},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Anlad\u0131m,
-    ta\u015F\u0131nmak her zaman streslidir. Size ve k\u0131z\u0131n\u0131za rahat
-    bir oda ayarlayal\u0131m. Ka\xE7 gece kalmay\u0131 planl\u0131yorsunuz?\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":128.5,\"yPos\":499},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"San\u0131r\u0131m
-    bir hafta yeterli olur. bir hafta zarf\u0131nda evimiz haz\u0131r olacak. Sessiz
-    ve rahat bir oda iyi olur.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elif
-    Sanl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-16.5,\"yPos\":967},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Gayet
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":392,\"yPos\":-454},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
+    yatakl\u0131(1000)\",\"parentUIDs\":[3],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":106,\"yPos\":-295},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ift
+    yatakl\u0131(1500)\",\"parentUIDs\":[3,7],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":106,\"yPos\":-31},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Kimli\u011Finizi
+    alabilir miyim?\",\"parentUIDs\":[6],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":105,\"yPos\":240},\"ID\":10,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"Value\":20}],\"TMPFontGUID\":null,\"Text\":\"\u0130\u015Fleminiz
+    tamamd\u0131r buyrun odan\u0131z.\",\"parentUIDs\":[9],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":362,\"yPos\":-1127},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
+    Ho\u015F geldiniz!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":232,\"yPos\":-961},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Merhaba,
+    yeni ta\u015F\u0131nd\u0131k ve kocam i\u015F gezisinde oldu\u011Fu i\xE7in bir
+    s\xFCre burada kalmam\u0131z gerekecek. K\u0131z\u0131m\u0131 bug\xFCn okula
+    kaydettirdim, olduk\xE7a yo\u011Fundu. Birka\xE7 g\xFCnl\xFC\u011F\xFCne bir
+    oda ay\u0131rtmak istiyorum.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elif
+    Sanl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":231,\"yPos\":-808},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Anl\u0131yorum,
+    ta\u015F\u0131nmak her zaman zorlay\u0131c\u0131d\u0131r. Size ve k\u0131z\u0131n\u0131za
+    rahat bir oda haz\u0131rlayal\u0131m. Ka\xE7 gece kalmay\u0131 d\xFC\u015F\xFCn\xFCyorsunuz?\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":246,\"yPos\":-650},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"San\u0131r\u0131m
+    bir hafta yeterli olacak. Bu s\xFCre zarf\u0131nda evimiz haz\u0131r olur. Sessiz
+    ve rahat bir oda tercih ederiz.\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elif
+    Sanl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":101,\"yPos\":-181},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Gayet
     yeterli\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elif
-    Sanl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":283.5,\"yPos\":851},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Biraz
-    daha geni\u015F bir oda olabilir mi\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elif
-    Sanl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-12.5,\"yPos\":1250},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Buyrun\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elif
-    Sanl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+    Sanl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":396,\"yPos\":-311},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Acaba
+    biraz daha geni\u015F bir oda m\xFCmk\xFCn m\xFC? K\u0131z\u0131mla rahat edebilmemiz
+    i\xE7in ekstra alan faydal\u0131 olur.\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elif
+    Sanl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":105,\"yPos\":101},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Buyrun\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elif
+    Sanl\u0131\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -283,7 +285,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4355354366036395035}
+        m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
+        m_MethodName: "anahtarA\xE7"
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &-1515407975910767359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,7 +461,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 24d0c6786de5be44fb06b1ab91059191, type: 3}
 --- !u!114 &4103816735158671628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,7 +480,7 @@ MonoBehaviour:
   NodeID: 1
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: d5018cafb8883654eb96af8bcac74a39, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e8c744c6e3eac0a4b92993f8c366256f, type: 3}
 --- !u!114 &7305069498736461170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,7 +499,7 @@ MonoBehaviour:
   NodeID: 2
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 40e304bba7030b7438654df59bec02ad, type: 3}
 --- !u!114 &8543600765739579270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,7 +518,7 @@ MonoBehaviour:
   NodeID: 3
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: d5018cafb8883654eb96af8bcac74a39, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e8c744c6e3eac0a4b92993f8c366256f, type: 3}
 --- !u!114 &809117724296533384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,7 +587,7 @@ MonoBehaviour:
   NodeID: 6
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: d5018cafb8883654eb96af8bcac74a39, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7260425ff3517604ebf6a0802a77de08, type: 3}
 --- !u!114 &1653573298790947966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,7 +606,7 @@ MonoBehaviour:
   NodeID: 7
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: d5018cafb8883654eb96af8bcac74a39, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7260425ff3517604ebf6a0802a77de08, type: 3}
 --- !u!114 &8280923216039265617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,7 +644,7 @@ MonoBehaviour:
   NodeID: 9
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: d5018cafb8883654eb96af8bcac74a39, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7260425ff3517604ebf6a0802a77de08, type: 3}
 --- !u!114 &3094103640539322908
 MonoBehaviour:
   m_ObjectHideFlags: 0

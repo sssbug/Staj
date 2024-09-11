@@ -128,7 +128,7 @@ namespace DS
                 isLift = true;
                 audioSources = bina.transform.GetComponent<AudioSource>();
                 audioSources.Play();
-                _endPos = new Vector3(0f, -5.25f, 0);
+                _endPos = new Vector3(0f, -5.5f, 0);
             }
             if (clickedObject != null && clickedObject.name == "ikinciKat")
             {
@@ -151,7 +151,7 @@ namespace DS
                 isLift = true;
                 audioSources = bina.transform.GetComponent<AudioSource>();
                 audioSources.Play();
-                _endPos = new Vector3(0f, 5.25f, 0);
+                _endPos = new Vector3(0f, 6f, 0);
             }
             if (clickedObject != null && clickedObject.name == "üçüncüKat")
             {
@@ -173,7 +173,7 @@ namespace DS
                 isLift = true;
                 audioSources = bina.transform.GetComponent<AudioSource>();
                 audioSources.Play();
-                _endPos = new Vector3(0f, 16f, 0);
+                _endPos = new Vector3(0f, 17f, 0);
             }
             if (clickedObject != null && clickedObject.name == "dördüncüKat")
             {
@@ -195,13 +195,13 @@ namespace DS
                 isLift = true;
                 audioSources = bina.transform.GetComponent<AudioSource>();
                 audioSources.Play();
-                _endPos = new Vector3(0f, 26.60f, 0);
+                _endPos = new Vector3(0f, 28.3f, 0);
             }
             if (clickedObject != null && clickedObject.name == "beşinciKat")
             {
                 gameManager2.liftButton.transform.position = new Vector3(100587, 100045, 0);
                 gameManager2.isLifter = false;
-                _endPos = new Vector3(0f, 37.30f, 0);
+                _endPos = new Vector3(0f, 39.6f, 0);
                 audioSources = bina.transform.GetComponent<AudioSource>();
                 audioSources.Play();
                 isLift = true;
