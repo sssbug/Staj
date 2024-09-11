@@ -16,7 +16,11 @@ namespace DS
 
             //CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), 1);
         }
-
+        public void sahnegecis() 
+        {
+            
+            objectManager.SaveObjects();
+        }
         private void OnApplicationQuit()
         {
             // Oyun kapanırken objeleri kaydet

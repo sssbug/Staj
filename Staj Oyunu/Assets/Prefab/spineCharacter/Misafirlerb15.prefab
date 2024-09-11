@@ -106,7 +106,6 @@ GameObject:
   - component: {fileID: 8484734824355606353}
   - component: {fileID: 2017215096193294143}
   - component: {fileID: 3978412132468582865}
-  - component: {fileID: 7657995142341300626}
   - component: {fileID: 1161299431863425565}
   - component: {fileID: 7880367954837232607}
   - component: {fileID: 6417466933537427682}
@@ -261,25 +260,6 @@ MonoBehaviour:
   NodeID: 6
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 6c5fdd0b42bb46e449e69e7c1d08a21d, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &7657995142341300626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1944235658543720853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 7
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 411f7ad00815a9a4eb266ce03aa9ac69, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1161299431863425565
 MonoBehaviour:
@@ -587,33 +567,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 18
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":206,\"yPos\":311},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ift
-    Yatakl\u0131(1500)\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-55,\"yPos\":603},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
-    Yatakl\u0131(1000)\",\"parentUIDs\":[1,4],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-79,\"yPos\":1016},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Kimli\u011Finizi
-    alabilir miyim\",\"parentUIDs\":[7],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-96,\"yPos\":1234},\"ID\":10,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"Value\":20}],\"TMPFontGUID\":null,\"Text\":\"\u0130\u015Flemleriniz
-    tamamland\u0131 bu da anahtar\u0131n\u0131z.\",\"parentUIDs\":[9],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":528,\"yPos\":646},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"O
-    zaman dinlenin \u015Fimdi.\",\"parentUIDs\":[16],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"stori\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":0}],\"NodeUID\":1},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":1}],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":159,\"yPos\":5},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ho\u015F
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-51,\"yPos\":64},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xC7ift
+    Yatakl\u0131(1500)\",\"parentUIDs\":[1],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-312,\"yPos\":356},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
+    Yatakl\u0131(1000)\",\"parentUIDs\":[1,4],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-330,\"yPos\":669},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Kimli\u011Finizi
+    alabilir miyim?\",\"parentUIDs\":[6],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-346,\"yPos\":982},\"ID\":10,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"Value\":20}],\"TMPFontGUID\":null,\"Text\":\"\u0130\u015Flemleriniz
+    tamamland\u0131 bu da anahtar\u0131n\u0131z.\",\"parentUIDs\":[9],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":271,\"yPos\":399},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"O
+    zaman dinlenin \u015Fimdi.\",\"parentUIDs\":[16],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"stori\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":0}],\"NodeUID\":1},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":1}],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-98,\"yPos\":-242},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ho\u015F
     geldiniz! \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":25,\"yPos\":185},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
-    \u015Eehirde tar\u0131m politikalar\u0131na kar\u015F\u0131 d\xFCzenlenecek protesto
-    i\xE7in buraday\u0131m. Bir haftal\u0131k bir oda laz\u0131m.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ali
-    Kaval\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":208,\"yPos\":445},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-232,\"yPos\":-62},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\u015Eehirde
+    tar\u0131m politikalar\u0131na kar\u015F\u0131 d\xFCzenlenecek protesto i\xE7in
+    buraday\u0131m. Bir hafta s\xFCresince bir odaya ihtiyac\u0131m var.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ali
+    Kaval\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-49,\"yPos\":198},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tek
     ba\u015F\u0131ma kal\u0131yorum\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ali
-    Kaval\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-56,\"yPos\":722},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Te\u015Fekk\xFCr
-    ederim. \u0130yi bir uyku \xE7ekmek laz\u0131m, yar\u0131n b\xFCy\xFCk bir g\xFCn
-    olacak. Buraya kadar geldik, hakk\u0131m\u0131z\u0131 savunmak i\xE7in buraday\u0131z.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ali
-    Kaval\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-66,\"yPos\":867},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"
-    Anlad\u0131m. Sizi destekliyorum, umar\u0131m her \u015Fey yolunda gider.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-87,\"yPos\":1105},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tabi
-    buyur\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ali
-    Kaval\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":510,\"yPos\":190},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"O
-    kad\u0131n b\xFCt\xFCn i\u015Fi mahfetti \xFCst\xFCne bu patlama tamamen bizim
-    i\u015F \xE7amura sapland\u0131 birdaha da \xE7\u0131kmaz.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ali
-    Kaval\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":519,\"yPos\":360},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xD6yle
-    g\xF6z\xFCk\xFCyor buolaylardan \xF6t\xFCr\xFC olaylar durulana kadar otelde
-    \xE7\u0131kamamn\u0131z daha iyi olur.\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr \",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":521,\"yPos\":506},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Biliyorum
-    polis s\xF6yledi. Zaten memlekete gitmem zor olacak bu durumda.\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ali
+    Kaval\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-313,\"yPos\":475},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Te\u015Fekk\xFCr
+    ederim.\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ali
+    Kaval\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-344,\"yPos\":813},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tabi
+    buyur.\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ali
+    Kaval\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":253,\"yPos\":-57},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"O
+    kad\u0131n b\xFCt\xFCn i\u015Fi mahvetti, \xFCst\xFCne bir de bu patlama olunca
+    i\u015Fimiz tamamen \xE7amura sapland\u0131 ve bir daha \xE7\u0131kma ihtimali
+    yok gibi g\xF6r\xFCn\xFCyor.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ali
+    Kaval\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":262,\"yPos\":113},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Evet,
+    olaylar\u0131n yat\u0131\u015Fmas\u0131 i\xE7in otelden \xE7\u0131kmaman\u0131z
+    en iyisi olacakt\u0131r.\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
+    Hal\u0131g\xFCr \",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":264,\"yPos\":259},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Anlad\u0131m,
+    bu durumda en iyisi burada kalmak ve olaylar\u0131n sakinle\u015Fmesini beklemek
+    olacak. E\u011Fer ba\u015Fka bir \u015Feye ihtiyac\u0131n\u0131z olursa, l\xFCtfen
+    bana bildirin.\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Ali
     Kaval\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: Ali Kaval
@@ -626,7 +606,6 @@ MonoBehaviour:
   - {fileID: 8484734824355606353}
   - {fileID: 2017215096193294143}
   - {fileID: 3978412132468582865}
-  - {fileID: 7657995142341300626}
   - {fileID: 1161299431863425565}
   - {fileID: 7880367954837232607}
   - {fileID: 6417466933537427682}
@@ -638,7 +617,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 638971737262237536}
+        m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
+        m_MethodName: yokOl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2111999256807370427
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,6 +24,7 @@ namespace DS
         private float speed = 1;
         private AudioSource audioSource;
         private AudioSource audioSources;
+        GameObject[] asıl = new GameObject[8];
         private void Start()
         {
             if (TryGetComponent<NPCConversation>(out NPCConversation nPC))
@@ -78,12 +79,43 @@ namespace DS
                         _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
                         foreach (var items in _skeletonGraphic)
                         {
-                            audioSource = item.GetComponent<AudioSource>();
-                            audioSource.Play();
+                            
                             items.AnimationState.SetAnimation(1, "Open", false);
+                            asıl[0] = items.gameObject;
                         }
 
                     }
+                    if (gameObject.name == "ilkKat")
+                    {
+                        audioSource = asıl[0].transform.GetComponent<AudioSource>();
+                        audioSource.Play();
+                        
+                    }
+                    if (gameObject.name == "ikinciKat")
+                    {
+                        audioSource = asıl[0].transform.GetComponent<AudioSource>();
+                        audioSource.Play();
+
+                    }
+                    if (gameObject.name == "üçüncüKat")
+                    {
+                        audioSource = asıl[0].transform.GetComponent<AudioSource>();
+                        audioSource.Play();
+
+                    }
+                    if (gameObject.name == "dördüncüKat")
+                    {
+                        audioSource = asıl[0].transform.GetComponent<AudioSource>();
+                        audioSource.Play();
+
+                    }
+                    if (gameObject.name == "beşinciKat")
+                    {
+                        audioSource = asıl[0].transform.GetComponent<AudioSource>();
+                        audioSource.Play();
+
+                    }
+                    
                     audioSources = bina.transform.GetComponent<AudioSource>();
                     audioSources.Stop();
                 }
@@ -112,19 +144,23 @@ namespace DS
 
 
                 gameManager2.isLifter = false;
-
+                
                 foreach (var item in sakınsilme)
                 {
                     _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
                     foreach (var items in _skeletonGraphic)
                     {
                         items.AnimationState.SetAnimation(1, "Close", false);
-                        audioSource = item.GetComponent<AudioSource>();
-                        audioSource.Play();
+                        asıl[1] = items.gameObject;
                     }
 
                 }
+                if (gameObject.name == "ilkKat")
+                {
+                    audioSource = asıl[1].transform.GetComponent<AudioSource>();
+                    audioSource.Play();
 
+                }
                 isLift = true;
                 audioSources = bina.transform.GetComponent<AudioSource>();
                 audioSources.Play();
@@ -142,12 +178,16 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.AnimationState.SetAnimation(1, "Close", false);
-                        audioSource = item.GetComponent<AudioSource>();
-                        audioSource.Play();
+                        asıl[2] = items.gameObject;
                     }
 
                 }
+                if (gameObject.name == "ikinciKat")
+                {
+                    audioSource = asıl[2].transform.GetComponent<AudioSource>();
+                    audioSource.Play();
 
+                }
                 isLift = true;
                 audioSources = bina.transform.GetComponent<AudioSource>();
                 audioSources.Play();
@@ -164,12 +204,16 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.AnimationState.SetAnimation(1, "Close", false);
-                        audioSource = item.GetComponent<AudioSource>();
-                        audioSource.Play();
+                        asıl[3] = items.gameObject;
                     }
 
                 }
+                if (gameObject.name == "üçüncüKat")
+                {
+                    audioSource = asıl[3].transform.GetComponent<AudioSource>();
+                    audioSource.Play();
 
+                }
                 isLift = true;
                 audioSources = bina.transform.GetComponent<AudioSource>();
                 audioSources.Play();
@@ -179,19 +223,23 @@ namespace DS
             {
                 gameManager2.liftButton.transform.position = new Vector3(100587, 100045, 0);
                 gameManager2.isLifter = false;
-
+                
                 foreach (var item in sakınsilme)
                 {
                     _skeletonGraphic = item.transform.GetComponents<SkeletonGraphic>();
                     foreach (var items in _skeletonGraphic)
                     {
                         items.AnimationState.SetAnimation(1, "Close", false);
-                        audioSource = item.GetComponent<AudioSource>();
-                        audioSource.Play();
+                        asıl[4] = items.gameObject;
                     }
 
                 }
+                if (gameObject.name == "dördüncüKat")
+                {
+                    audioSource = asıl[4].transform.GetComponent<AudioSource>();
+                    audioSource.Play();
 
+                }
                 isLift = true;
                 audioSources = bina.transform.GetComponent<AudioSource>();
                 audioSources.Play();
@@ -211,9 +259,14 @@ namespace DS
                     foreach (var items in _skeletonGraphic)
                     {
                         items.AnimationState.SetAnimation(1, "Close", false);
-                        audioSource = item.GetComponent<AudioSource>();
-                        audioSource.Play();
+                        asıl[5] = items.gameObject;
                     }
+
+                }
+                if (gameObject.name == "beşinciKat")
+                {
+                    audioSource = asıl[5].GetComponent<AudioSource>();
+                    audioSource.Play();
 
                 }
             }

@@ -72,7 +72,7 @@ namespace DS
             
             InventoryLoadGame();
         }
-
+       
 
         private void Update()
         {
@@ -152,7 +152,13 @@ namespace DS
 
 
 
-        public void sahne2() { SceneManager.LoadScene("Scene2"); }
+        public void sahne2() 
+        {
+            SaveGame();
+            SaveDestroyedObjects();
+            InventorySaveGame();
+            SceneManager.LoadScene("Scene2"); 
+        }
 
 
         public void SaveGame()

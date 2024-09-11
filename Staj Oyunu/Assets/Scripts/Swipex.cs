@@ -140,12 +140,13 @@ namespace DS
                     {
                         if (currentPage == 1)
                         {
-                            
+                            audioSource = transform.GetChild(1).transform.GetComponent<AudioSource>();
                             _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            
+                            audioSource.Play();
                         }
                         else
                         {
+                           
                             _skeletonGraphic.AnimationState.SetAnimation(1, "Close", false);
                             
                         }
@@ -154,11 +155,13 @@ namespace DS
                     {
                         if (currentPage == 5)
                         {
+                            audioSource = transform.GetChild(1).transform.GetComponent<AudioSource>();
                             _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                            
+                            audioSource.Play();
                         }
                         else
                         {
+                            
                             _skeletonGraphic.AnimationState.SetAnimation(1, "Close", false);
                             
                         }
