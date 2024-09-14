@@ -27,7 +27,7 @@ namespace DS
 
         public int dokuzuncuGün;
         public bool ölümHaberi;
-        public bool itiraf;
+        public bool itiraf = true;
         public bool eşyalar;
 
 
@@ -121,7 +121,7 @@ namespace DS
 
             dokuzuncuGün = 0;
             ölümHaberi = false;
-            itiraf = false;
+            itiraf = true;
             eşyalar = false;
             isRun = new List<bool>(new bool[24]);
             gun = new bool[40];

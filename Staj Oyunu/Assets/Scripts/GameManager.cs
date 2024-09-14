@@ -232,7 +232,12 @@ namespace DS
                 loadedInventoryItemNames = data.itemsName;
                 if (story.sil == true)
                 {
-                    loadedInventoryItemNames.RemoveAt(0);
+                    if (loadedInventoryItemNames.Count != 0)
+                    {
+                        loadedInventoryItemNames.RemoveAt(0);
+                    }
+                    
+                    
                 }
                 foreach (var item in inventoryItems)
                 {

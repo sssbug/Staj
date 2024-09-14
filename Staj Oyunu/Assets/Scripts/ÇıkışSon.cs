@@ -32,12 +32,12 @@ namespace DS
 
                 direction.Normalize();
 
-                if (yuru==1)
+                if (yuru == 1)
                 {
                     _skeletonGraphic.AnimationState.SetAnimation(1, "Walk", true);
                     yuru = 0;
                 }
-                
+
 
             }
             else
@@ -46,23 +46,26 @@ namespace DS
                 if (basla == 1)
                 {
                     _skeletonGraphic.AnimationState.SetAnimation(1, "İdle", true);
-                        basla = 0;
-                        GameObject.Find("Asansor").GetComponent<SkeletonGraphic>().AnimationState.SetAnimation(1, "Close", false);
+                    basla = 0;
+                    
+                    GameObject.Find("Asansor").GetComponent<SkeletonGraphic>().AnimationState.SetAnimation(1, "Close", false);
+                    
                     StartCoroutine(run(3));
-                    Destroy(gameObject,4);
+                    Destroy(gameObject, 4);
                 }
-               
+
 
 
 
             }
             IEnumerator run(float waitTime)
             {
-                
-                    
-                yield return new WaitForSeconds(waitTime);
-                GameObject.Find("Asansor").GetComponent<SkeletonGraphic>().AnimationState.SetAnimation(1, "Open", false);
 
+
+                yield return new WaitForSeconds(waitTime);
+               
+                GameObject.Find("Asansor").GetComponent<SkeletonGraphic>().AnimationState.SetAnimation(1, "Open", false);
+                
             }
         }
     }

@@ -46,7 +46,7 @@ namespace DS
 
         private void Update()
         {
-            if (SceneManager.GetActiveScene().name != "Scene0")
+            if (SceneManager.GetActiveScene().name != "Scene0" && SceneManager.GetActiveScene().name != "Scene4")
             {
 
 
@@ -65,7 +65,7 @@ namespace DS
                             story.gunSayacı += 1;
                             basla = 0;
                             story.isTime = false;
-
+                            
                             if (story.gunSayacı == 2)
                             {
                                 if (story.globalGorev >= 1)
@@ -79,7 +79,7 @@ namespace DS
                                 }
 
                             }
-                            else if (story.gunSayacı == 4)
+                            else if (story.gunSayacı == 3)
                             {
                                 if (story.globalGorev >= 1)
                                 {
@@ -133,7 +133,7 @@ namespace DS
                             }
                             else if (story.gunSayacı == 10)
                             {
-                                if (story.globalGorev >= 3)
+                                if (story.globalGorev >= 2)
                                 {
                                     story.globalGorev = 0;
                                 }
@@ -145,7 +145,7 @@ namespace DS
 
                             }
 
-
+                            story.SaveStory();
 
                         }
 

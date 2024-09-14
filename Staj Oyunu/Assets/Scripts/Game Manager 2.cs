@@ -152,6 +152,12 @@ namespace DS
             }
         }
 
+        public void olum()
+        {
+
+            story.itiraf = false;
+
+        }
         public void globalArttırıcı()
         {
             story.globalGorev += 1;

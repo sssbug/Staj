@@ -11,8 +11,11 @@ namespace DS
             
             TaskManager.Instance.taskBasla = true;
             TaskManager.Instance.missionContainer = gameObject;
-           
-        }
 
+        }
+        private void OnEnable()
+        {
+            
+        }
     }
 }

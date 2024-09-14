@@ -73,7 +73,7 @@ namespace DS
                 {
                     if (story.isRun[2] == false)
                     {
-                        GorevSil(1);
+                        GorevSil(1,1);
                         GorevEkle(2);
                         story.isRun[2] = true;
                     }
@@ -83,7 +83,7 @@ namespace DS
                 {
                     if (story.isRun[23] == false)
                     {
-                        GorevSil(1);
+                        GorevSil(1,2);
 
                         story.isRun[23] = true;
                     }
@@ -93,7 +93,7 @@ namespace DS
                 {
                     if (story.isRun[3] == false)
                     {
-                        GorevSil(1);
+                        
                         GorevEkle(3);
                         story.isRun[3] = true;
                     }
@@ -103,7 +103,7 @@ namespace DS
                 {
                     if (story.isRun[22] == false)
                     {
-                        GorevSil(1);
+                        GorevSil(1,3);
                         story.isRun[22] = true;
                     }
 
@@ -112,8 +112,8 @@ namespace DS
                 {
                     if (story.isRun[4] == false)
                     {
-                        GorevSil(1);
-                        GorevSil(0);
+                        
+                        GorevSil(0,0);
                         GorevEkle(4);
                         story.isRun[4] = true;
                     }
@@ -123,7 +123,7 @@ namespace DS
                 {
                     if (story.isRun[5] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,4);
                         GorevEkle(5);
                         story.isRun[5] = true;
                     }
@@ -133,7 +133,7 @@ namespace DS
                 {
                     if (story.isRun[6] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,5);
                         GorevEkle(6);
                         story.isRun[6] = true;
                     }
@@ -143,7 +143,7 @@ namespace DS
                 {
                     if (story.isRun[7] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,6);
                         GorevEkle(7);
                         story.isRun[7] = true;
                     }
@@ -153,7 +153,7 @@ namespace DS
                 {
                     if (story.isRun[8] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,7);
                         GorevEkle(8);
                         story.isRun[8] = true;
                     }
@@ -163,7 +163,7 @@ namespace DS
                 {
                     if (story.isRun[9] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,8);
                         GorevEkle(9);
                         story.isRun[9] = true;
                     }
@@ -174,7 +174,7 @@ namespace DS
                 {
                     if (story.isRun[10] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,9);
                         GorevEkle(10);
                         story.isRun[10] = true;
                     }
@@ -184,27 +184,27 @@ namespace DS
                 {
                     if (story.isRun[11] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,10);
                         GorevEkle(11);
                         story.isRun[11] = true;
                     }
 
                 }
-                else if (story.gunSayacı == 8 && story.sorgulama == 2)
+                else if (story.gunSayacı == 8 && story.gunSayacı == 2)
                 {
                     if (story.isRun[12] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,11);
                         GorevEkle(12);
                         story.isRun[12] = true;
                     }
 
                 }
-                else if (story.gunSayacı == 8 && story.globalGorev == 3)
+                else if (story.gunSayacı == 8 && story.sorgulama == 3)
                 {
                     if (story.isRun[13] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,12);
                         GorevEkle(13);
                         story.isRun[13] = true;
                     }
@@ -214,7 +214,7 @@ namespace DS
                 {
                     if (story.isRun[14] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,13);
                         GorevEkle(14);
                         story.isRun[14] = true;
                     }
@@ -224,7 +224,7 @@ namespace DS
                 {
                     if (story.isRun[15] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,14);
                         GorevEkle(15);
                         story.isRun[15] = true;
                     }
@@ -234,7 +234,7 @@ namespace DS
                 {
                     if (story.isRun[16] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,15);
                         GorevEkle(16);
                         story.isRun[16] = true;
                     }
@@ -244,7 +244,7 @@ namespace DS
                 {
                     if (story.isRun[17] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,16);
                         GorevEkle(17);
                         story.isRun[17] = true;
                     }
@@ -254,7 +254,7 @@ namespace DS
                 {
                     if (story.isRun[18] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,17);
                         GorevEkle(18);
                         story.isRun[18] = true;
                     }
@@ -264,7 +264,7 @@ namespace DS
                 {
                     if (story.isRun[19] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,18);
                         GorevEkle(19);
                         story.isRun[19] = true;
                     }
@@ -274,7 +274,7 @@ namespace DS
                 {
                     if (story.isRun[20] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,19);
                         GorevEkle(20);
                         story.isRun[20] = true;
                     }
@@ -284,7 +284,7 @@ namespace DS
                 {
                     if (story.isRun[21] == false)
                     {
-                        GorevSil(0);
+                        GorevSil(0,20);
                         GorevEkle(21);
                         story.isRun[21] = true;
                     }
@@ -309,10 +309,11 @@ namespace DS
 
             SaveTasks();
         }
-        public void GorevSil(int görevId)
+        public void GorevSil(int görevId, int gorev)
         {
             // Find and remove the task from the taskData list
-            TaskData taskToRemove = taskData.Find(task => task.görevId == görevId);
+            
+            TaskData taskToRemove = taskData.Find(task => task.görevId == gorev);
             if (taskToRemove != null)
             {
                 taskData.Remove(taskToRemove);
@@ -321,7 +322,7 @@ namespace DS
                 foreach (Transform child in missionContainer.transform)
                 {
                     TextMeshProUGUI textComponent = child.GetComponentInChildren<TextMeshProUGUI>();
-                    if (textComponent != null && textComponent.text == tasks[görevId])
+                    if (textComponent != null && textComponent.text == tasks[gorev])
                     {
                         Destroy(child.gameObject);
                         break;

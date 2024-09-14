@@ -702,10 +702,33 @@ namespace DS
             if (clickedObject != null && clickedObject.tag == "25")
             {
 
-                ConversationManager.Instance.StartConversation(_myConvarsation);
-                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                if (gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)] != null)
+                {
+                    for (int i = 1; i < gameManager.Characters.Count; i++)
+                    {
+                        if (gameManager.Characters[i] != null)
+                        {
+                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
+                            {
+                                audioSource = GetComponent<AudioSource>();
+                                audioSource.Play();
+                                ConversationManager.Instance.StartConversation(_myConvarsation);
+                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
+                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                                ConversationManager.Instance.SetInt("misafir", i);
+                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
+                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
+                                gameManager.closePlease = clickedObject;
+                                break;
+                            }
+                        }
 
-                ConversationManager.Instance.SetInt("misafir", 25);
+
+
+                    }
+                }
 
 
             }
@@ -741,33 +764,12 @@ namespace DS
             }
             if (clickedObject != null && clickedObject.tag == "27")
             {
-                if (gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)] != null)
-                {
-                    for (int i = 1; i < gameManager.Characters.Count; i++)
-                    {
-                        if (gameManager.Characters[i] != null)
-                        {
-                            if (gameManager.Characters[i].name == gameManager.odaVeriTabanıı.isimdata[int.Parse(clickedObject.tag)])
-                            {
-                                audioSource = GetComponent<AudioSource>();
-                                audioSource.Play();
-                                ConversationManager.Instance.StartConversation(_myConvarsation);
-                                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
-                                clickedObject.transform.GetChild(1).GetComponent<Image>().sprite = gameManager.sprites[i];
-                                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
-                                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
-                                ConversationManager.Instance.SetInt("misafir", i);
-                                _skeletonGraphic = clickedObject.transform.GetChild(2).GetComponent<SkeletonGraphic>();
-                                _skeletonGraphic.AnimationState.SetAnimation(1, "Open", false);
-                                gameManager.closePlease = clickedObject;
-                                break;
-                            }
-                        }
-
-
-
-                    }
-                }
+                ConversationManager.Instance.StartConversation(_myConvarsation);
+                ConversationManager.Instance.SetInt("gun", TimeManager.Instance.story.gunSayacı);
+                ConversationManager.Instance.SetInt("globalGorev", TimeManager.Instance.story.globalGorev);
+                ConversationManager.Instance.SetInt("sorgulama", TimeManager.Instance.story.sorgulama);
+                ConversationManager.Instance.SetInt("misafir", 25);
+               
             }
             if (clickedObject != null && clickedObject.tag == "28")
             {

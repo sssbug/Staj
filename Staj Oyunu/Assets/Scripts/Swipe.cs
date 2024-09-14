@@ -34,11 +34,11 @@ namespace DS
         {
             if (transform.localPosition.x < -840)
             {
-                transform.localPosition = new Vector3(-840, -765,0);
+                transform.localPosition = new Vector3(-840, -470,0);
             }
             if (transform.localPosition.x > 840)
             {
-                transform.localPosition = new Vector3(840,-765,0);
+                transform.localPosition = new Vector3(840,-470,0);
             }
             panelLocation = transform.localPosition;
         }

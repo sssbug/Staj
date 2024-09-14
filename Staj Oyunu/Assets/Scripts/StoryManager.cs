@@ -260,42 +260,42 @@ namespace DS
             /*GenerateUniqueRandomNumber()*/
             if (gameManager.story.gun[0] == true)
             {
-                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), gun[gameManager.story.generated]);
+                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.78f, 0f, 0), gun[gameManager.story.generated]);
                 gameManager.story.generated += 1;
             }
             else if (gameManager.story.gun[1] == true)
             {
-                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), gun1[gameManager.story.generated1]);
+                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.78f, 0f, 0), gun1[gameManager.story.generated1]);
                 gameManager.story.generated1 += 1;
             }
             else if (gameManager.story.gun[2] == true)
             {
-                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), gun2[gameManager.story.generated2]);
+                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.78f, 0f, 0), gun2[gameManager.story.generated2]);
                 gameManager.story.generated2 += 1;
             }
             else if (gameManager.story.gun[3] == true)
             {
-                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), gun3[gameManager.story.generated3]);
+                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.78f, 0f, 0), gun3[gameManager.story.generated3]);
                 gameManager.story.generated3 += 1;
             }
             else if (gameManager.story.gun[4] == true)
             {
-                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), gun4[gameManager.story.generated4]);
+                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.78f, 0f, 0), gun4[gameManager.story.generated4]);
                 gameManager.story.generated4 += 1;
             }
             else if (gameManager.story.gun[5] == true)
             {
-                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), gun5[gameManager.story.generated5]);
+                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.78f, 0f, 0), gun5[gameManager.story.generated5]);
                 gameManager.story.generated5 += 1;
             }
             else if (gameManager.story.gun[6] == true)
             {
-                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.72f, 0f, 0), gun6[gameManager.story.generated6]);
+                CharacterSpawn characterSpawn = new CharacterSpawn(new Vector3(-2.78f, 0f, 0), gun6[gameManager.story.generated6]);
                 gameManager.story.generated6 += 1;
             }
         }
 
-        void SaveProgress()
+        public void SaveProgress()
         {
             
             gameManager.story.timer = timerLocal;

@@ -133,6 +133,8 @@ GameObject:
   - component: {fileID: 3157667155308007294}
   - component: {fileID: 3958760554749810450}
   - component: {fileID: 3537403378256358978}
+  - component: {fileID: 3798430173938928317}
+  - component: {fileID: 8952744809201694249}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -854,6 +856,56 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
+--- !u!114 &3798430173938928317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830340075882559159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 57
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: d47212e2e3646fe479227fbc39404ac9, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &8952744809201694249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830340075882559159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8334417381745436511}
+        m_TargetAssemblyTypeName: DS.Walk, Assembly-CSharp
+        m_MethodName: yokOl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 58
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &9033961706996020934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,64 +1054,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 57
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-674,\"yPos\":1485},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamamd\u0131r
-    sa\u011Folun.\",\"parentUIDs\":[31],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-338.5,\"yPos\":21},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nedir\",\"parentUIDs\":[33],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-170.5,\"yPos\":261},\"ID\":37,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"Value\":1}],\"TMPFontGUID\":null,\"Text\":\"OLur\",\"parentUIDs\":[36],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-425.5,\"yPos\":279},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Neden
-    \",\"parentUIDs\":[36],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-135.5,\"yPos\":510},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"olur\",\"parentUIDs\":[40],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-444.5,\"yPos\":514},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ne
-    yapm\u0131\u015F ki.\",\"parentUIDs\":[40],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-427.5,\"yPos\":785},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Olur\",\"parentUIDs\":[44],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":518,\"yPos\":248},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hay\u0131r,
-    g\xF6rmedim.\",\"parentUIDs\":[46],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":63,\"yPos\":-66},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Evet\",\"parentUIDs\":[46],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":39,\"yPos\":254},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamamd\u0131r\",\"parentUIDs\":[49],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":256,\"yPos\":252},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ne
-    oldu.\",\"parentUIDs\":[49],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":406,\"yPos\":735},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamamd\u0131r\",\"parentUIDs\":[55],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"sira\",\"IntValue\":1},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"stori\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":0}],\"NodeUID\":18},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":1}],\"NodeUID\":33},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":2}],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-285,\"yPos\":-408},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ho\u015F
+  CurrentIDCounter: 59
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-155,\"yPos\":1915},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamamd\u0131r
+    sa\u011Folun.\",\"parentUIDs\":[31],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":180.5,\"yPos\":451},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nedir\",\"parentUIDs\":[33],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":348.5,\"yPos\":691},\"ID\":37,\"ParamActions\":[{\"__type\":\"EditableSetIntParamAction:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"Value\":1}],\"TMPFontGUID\":null,\"Text\":\"OLur\",\"parentUIDs\":[36],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":93.5,\"yPos\":709},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Neden
+    \",\"parentUIDs\":[36],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":383.5,\"yPos\":940},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"olur\",\"parentUIDs\":[40],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":74.5,\"yPos\":944},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ne
+    yapm\u0131\u015F ki.\",\"parentUIDs\":[40],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":91.5,\"yPos\":1215},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Olur\",\"parentUIDs\":[44],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1037,\"yPos\":678},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hay\u0131r,
+    g\xF6rmedim.\",\"parentUIDs\":[46],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":582,\"yPos\":364},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Evet\",\"parentUIDs\":[46],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":558,\"yPos\":684},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamamd\u0131r\",\"parentUIDs\":[49],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":775,\"yPos\":682},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ne
+    oldu.\",\"parentUIDs\":[49],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":925,\"yPos\":1165},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamamd\u0131r\",\"parentUIDs\":[55],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":382,\"yPos\":387},\"ID\":58,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamamd\u0131r\",\"parentUIDs\":[57],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"sira\",\"IntValue\":1},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"g\xFCn\",\"IntValue\":0},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"stori\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":0}],\"NodeUID\":18},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":1}],\"NodeUID\":33},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":3}],\"NodeUID\":46},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"stori\",\"CheckType\":0,\"RequiredValue\":2}],\"NodeUID\":57}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":234,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ho\u015F
     geldininiz! \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-670,\"yPos\":-129},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Selam\xFCnaleyk\xFCm,
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-151,\"yPos\":301},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Selam\xFCnaleyk\xFCm,
     hay\u0131rl\u0131 olsun! Ne zaman ba\u015Flad\u0131n?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-673,\"yPos\":28},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"D\xFCn
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-154,\"yPos\":458},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"D\xFCn
     ba\u015Flad\u0131m\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-668,\"yPos\":165},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hay\u0131rl\u0131
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-149,\"yPos\":595},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hay\u0131rl\u0131
     olsun, karde\u015Fim! Ad\u0131n nedir?\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-666,\"yPos\":316},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oktay
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-147,\"yPos\":746},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oktay
     Hal\u0131g\xFCr\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"OKtay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-667,\"yPos\":449},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tan\u0131\u015Ft\u0131\u011F\u0131m\u0131za
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-148,\"yPos\":881},\"ID\":23,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tan\u0131\u015Ft\u0131\u011F\u0131m\u0131za
     memnun oldum, Oktay. Sen G\xF6kay'\u0131n nesi oluyorsun?\",\"parentUIDs\":[22],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-657,\"yPos\":593},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Karde\u015Fiyim.\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-659,\"yPos\":719},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oktay'\u0131n
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-138,\"yPos\":1023},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Karde\u015Fiyim.\",\"parentUIDs\":[23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-140,\"yPos\":1149},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"G\xF6kay\u0131n'\u0131n
     bir karde\u015Fi mi varm\u0131\u015F? Daha \xF6nce hi\xE7 bahsetmemi\u015Fti.\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-662,\"yPos\":845},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Neyse,
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-143,\"yPos\":1275},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Neyse,
     otelin sahibi sana bu durumu iletti mi bilmiyorum. Ancak, ba\u015F\u0131na bir
     \u015Fey gelirse bana bildirmen gerekiyor \xE7\xFCnk\xFC burada hem otel \xE7al\u0131\u015Fan\u0131
     hem de g\xFCvenlik g\xF6revlisi olarak g\xF6rev yap\u0131yorum\",\"parentUIDs\":[25],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-652,\"yPos\":970},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Zaten
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-133,\"yPos\":1400},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Zaten
     \xE7ok fazla m\xFC\u015Fterisi olmaz buran\u0131n gelenler de sakin insanlard\u0131r.\",\"parentUIDs\":[26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-654,\"yPos\":1111},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam,
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-135,\"yPos\":1541},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tamam,
     haber verece\u011Fim.\",\"parentUIDs\":[27],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Oktay
-    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-663,\"yPos\":1252},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hadi
+    Hal\u0131g\xFCr\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-144,\"yPos\":1682},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hadi
     karde\u015Fim, kolay gelsin\",\"parentUIDs\":[29],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-663,\"yPos\":1357},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Arada
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-144,\"yPos\":1787},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Arada
     kontrol etmek i\xE7in gelebilirim.\",\"parentUIDs\":[30],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-346.5,\"yPos\":-131},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Selam\xFCnaleyk\xFCm,
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":172.5,\"yPos\":299},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Selam\xFCnaleyk\xFCm,
     can\u0131m. Senden bir \u015Fey istesem yapar m\u0131s\u0131n?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-332.5,\"yPos\":128},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"D\xFCn
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":186.5,\"yPos\":558},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"D\xFCn
     buraya bir siyaset\xE7i geldi, hat\u0131rl\u0131yor musun? Onun kald\u0131\u011F\u0131
     oday\u0131 bana verebilir misin?\",\"parentUIDs\":[34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-302.5,\"yPos\":364},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Baz\u0131
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":216.5,\"yPos\":794},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Baz\u0131
     ipu\xE7lar\u0131na ihtiyac\u0131m var, \xE7\xFCnk\xFC bir soru\u015Fturma meselesi
     \xFCzerinde \xE7al\u0131\u015F\u0131yorum. Bu konuda bana yard\u0131m edebilir
     misin?\",\"parentUIDs\":[38],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-440.5,\"yPos\":642},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oras\u0131
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":78.5,\"yPos\":1072},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oras\u0131
     da bana kals\u0131n. \u015Eimdi anahtar\u0131 verecek misin?\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":155,\"yPos\":-192},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Patlamay\u0131
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":674,\"yPos\":238},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Patlamay\u0131
     g\xF6rd\xFCn m\xFC?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":57,\"yPos\":48},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"O
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":576,\"yPos\":478},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"O
     zaman herkese, olaylar durulana kadar otelden \xE7\u0131kmamalar\u0131n\u0131
     s\xF6yle.\",\"parentUIDs\":[48],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":388,\"yPos\":404},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bug\xFCn
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":907,\"yPos\":834},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bug\xFCn
     otelin \xF6n\xFCnde bir y\xFCr\xFCy\xFC\u015F d\xFCzenlenecekti, bu y\xFCzden
     \xE7ift\xE7iler topland\u0131. Ancak yolda bir bomba patlad\u0131; on ki\u015Fi
     \xF6ld\xFC, birka\xE7 ki\u015Fi a\u011F\u0131r yaraland\u0131. Neyse ki oteldekiler
     zarar g\xF6rmedi.\",\"parentUIDs\":[47,51],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":396,\"yPos\":587},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Herkese,
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":915,\"yPos\":1017},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Herkese,
     olaylar durulana kadar otelden d\u0131\u015Far\u0131 \xE7\u0131kmamalar\u0131n\u0131
     s\xF6yle.\",\"parentUIDs\":[52],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
-    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2}]}"
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.2},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":383,\"yPos\":253},\"ID\":57,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"D\xFCnki
+    muhabbeti kimseye s\xF6yleme tamam m\u0131 aram\u0131zda kals\u0131n.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Cumhur
+    Akarca\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: Cumhur Akarca
   DefaultSprite: {fileID: 0}
@@ -1098,6 +1152,8 @@ MonoBehaviour:
   - {fileID: 3157667155308007294}
   - {fileID: 3958760554749810450}
   - {fileID: 3537403378256358978}
+  - {fileID: 3798430173938928317}
+  - {fileID: 8952744809201694249}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
